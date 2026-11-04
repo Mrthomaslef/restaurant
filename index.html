@@ -242,7 +242,7 @@
       color: #FFF;
     }
 
-    /* BANNIÈRE AJACCIO */
+    /* BANNIÈRE VERGHIA */
     .ajaccio-banner {
       background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
       color: #FFF;
@@ -573,7 +573,7 @@
         <img src="assets/icon.svg" alt="Resto M&amp;T" />
         <div>
           <div class="brand-title">Resto Marie &amp; Thomas</div>
-          <div class="brand-sub">📍 7 ter rue du Colonel Oudot &amp; ☀️ Ajaccio (Mai)</div>
+          <div class="brand-sub">📍 Paris 12e (Colonel Oudot) &amp; ☀️ Verghia (Mai)</div>
         </div>
       </div>
       <button type="button" class="btn-add-gp" onclick="openGuardModal()">🏡 + Garde Émile</button>
@@ -590,7 +590,7 @@
         🌟 Gardé (<span id="cnt-gold">0</span>)
       </button>
       <button type="button" class="seg-btn" id="tab-restos" onclick="setTab('restos')">
-        🍽️ Restos (26)
+        🍽️ Restos (28)
       </button>
       <button type="button" class="seg-btn" id="tab-free" onclick="setTab('free')">
         🥂 Libres
@@ -602,9 +602,9 @@
 
     <!-- FILTRES RESTOS -->
     <div id="resto-filters" class="filter-row" style="display:none;">
-      <button type="button" class="chip active" data-rf="paris" onclick="setRestoFilter('paris')">🏠 Proche Maison (18)</button>
-      <button type="button" class="chip" data-rf="walk" onclick="setRestoFilter('walk')">🚶 À pied (&lt; 15 min)</button>
-      <button type="button" class="chip" data-rf="ajaccio" onclick="setRestoFilter('ajaccio')">☀️ Ajaccio Mai (8)</button>
+      <button type="button" class="chip active" data-rf="paris" onclick="setRestoFilter('paris')">🏠 Paris 12e (18)</button>
+      <button type="button" class="chip" data-rf="walk" onclick="setRestoFilter('walk')">🚶 À pied Paris (&lt; 15 min)</button>
+      <button type="button" class="chip" data-rf="ajaccio" onclick="setRestoFilter('ajaccio')">☀️ Verghia &amp; Rive Sud (10)</button>
       <button type="button" class="chip" data-rf="top" onclick="setRestoFilter('top')">⭐ Note 4,7+ Google</button>
       <button type="button" class="chip" data-rf="gastro" onclick="setRestoFilter('gastro')">💎 Michelin &amp; Gastro</button>
     </div>
@@ -675,7 +675,7 @@
           <select id="gd-slot">
             <option value="Soirée & Nuit">🌙 Soirée &amp; Nuit</option>
             <option value="Journée entière">☀️ Journée entière</option>
-            <option value="Séjour Ajaccio">☀️ Séjour Ajaccio (Corse)</option>
+            <option value="Maison Verghia (Corse)">☀️ Maison Verghia (Corse)</option>
           </select>
         </div>
       </div>
@@ -683,7 +683,7 @@
         <label>Grands-Parents</label>
         <select id="gd-who">
           <option value="Parents de Thomas (Fontenay)">🏡 Parents de Thomas</option>
-          <option value="Parents de Thomas (Séjour Ajaccio ☀️)">☀️ Parents de Thomas (Séjour Ajaccio)</option>
+          <option value="Parents de Thomas (Maison Verghia ☀️)">☀️ Parents de Thomas (Maison Verghia)</option>
           <option value="Maman de Marie">🌸 Maman de Marie</option>
           <option value="Papa de Marie (Vincent)">👨 Papa de Marie (Vincent)</option>
         </select>
@@ -696,12 +696,12 @@
 
   <script>
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxLGqUevVWi36mNQ7WNoY2uhRsYLdsG_gQcscMPkP1GcQEt0LgdhGIuzYL2SM-uTcPq/exec";
-    const STORAGE_KEY_EVENTS = "resto_mt_family_events_v2";
+    const STORAGE_KEY_EVENTS = "resto_mt_family_events_v3";
     const STORAGE_KEY_BOOKINGS = "resto_mt_bookings_v1";
 
-    // 18 Restaurants proches du 7 ter rue du Colonel Oudot (Paris 12e / St-Mandé / Vincennes) + 8 Tables d'exception à Ajaccio (Mai)
+    // 18 Restaurants proches du 7 ter rue du Colonel Oudot (Paris 12e) + 10 Restaurants proches de la maison à Verghia (Rive Sud d'Ajaccio)
     const RESTAURANTS = [
-      // --- PARIS 12e / PROCHE MAISON ---
+      // --- PARIS 12e / PROCHE MAISON (7 ter rue du Colonel Oudot) ---
       {
         id: "le-swann",
         city: "paris",
@@ -980,134 +980,166 @@
         url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ours+Vincennes+reservation"
       },
 
-      // --- AJACCIO (VACANCES EN MAI AVEC LES PARENTS DE THOMAS) ---
+      // --- VERGHIA & RIVE SUD D'AJACCIO (DEPUIS LA MAISON À VERGHIA) ---
       {
-        id: "ajaccio-table-emeraude",
+        id: "verghia-rustica",
         city: "ajaccio",
-        name: "La Table d'Émeraude ☀️",
-        cuisine: "Gastronomique créatif • Terrasse suspendue sur l'eau",
-        address: "1245 bd Albert 1er (Route des Sanguinaires), Ajaccio",
+        name: "Le Rustica Verghia ☀️",
+        cuisine: "Crêperie & Pizzeria au feu de bois vue mer",
+        address: "Bord de mer, Verghia (Coti-Chiavari)",
         rating: "4,9",
         ratingNum: 4.9,
-        reviews: "310 avis",
-        distMeters: 1500,
-        distLabel: "Ajaccio • Sanguinaires (5 min)",
+        reviews: "250 avis",
+        distMeters: 400,
+        distLabel: "400 m de la maison • 2 min à pied",
         walk: false,
-        gastro: true,
-        badge: "Vue Mer",
-        url: "https://www.google.com/maps/search/?api=1&query=La+Table+d+Emeraude+Ajaccio"
+        gastro: false,
+        badge: "À Verghia",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Rustica+Verghia+Coti+Chiavari"
       },
       {
-        id: "ajaccio-lecrin",
+        id: "verghia-cala",
         city: "ajaccio",
-        name: "L'Écrin ☀️",
-        cuisine: "Table gastronomique intimiste (Sélection Michelin)",
-        address: "16 Cours Général Leclerc, Ajaccio",
-        rating: "4,9",
-        ratingNum: 4.9,
-        reviews: "350 avis",
-        distMeters: 400,
-        distLabel: "Ajaccio Centre • 5 min à pied",
+        name: "Cala Verghia ☀️",
+        cuisine: "Poissons frais & terrasse coucher de soleil",
+        address: "Plage de Verghia (Coti-Chiavari)",
+        rating: "4,4",
+        ratingNum: 4.4,
+        reviews: "190 avis",
+        distMeters: 500,
+        distLabel: "500 m de la maison • 3 min à pied",
+        walk: false,
+        gastro: false,
+        badge: "Plage Verghia",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Cala+Verghia+Coti+Chiavari"
+      },
+      {
+        id: "verghia-lagnonu",
+        city: "ajaccio",
+        name: "La Table de Lagnonu 5★ ☀️",
+        cuisine: "Gastronomique feutré face à une crique privée",
+        address: "Domaine Lagnonu, Verghia",
+        rating: "4,8",
+        ratingNum: 4.8,
+        reviews: "140 avis",
+        distMeters: 900,
+        distLabel: "900 m de la maison • 2 min",
+        walk: false,
+        gastro: true,
+        badge: "Gastro Verghia",
+        url: "https://www.lagnonu.fr/"
+      },
+      {
+        id: "verghia-plage-argent",
+        city: "ajaccio",
+        name: "La Plage d'Argent (Mare e Sole) ☀️",
+        cuisine: "Poissons grillés & dîner pieds dans le sable",
+        address: "Plage d'Argent, Pietrosella (juste à côté de Verghia)",
+        rating: "4,4",
+        ratingNum: 4.4,
+        reviews: "780 avis",
+        distMeters: 1800,
+        distLabel: "1,8 km de Verghia • 3 min voiture",
+        walk: false,
+        gastro: false,
+        badge: "Pieds dans l'eau",
+        url: "https://www.laplagedargent.fr/"
+      },
+      {
+        id: "verghia-oriu-ruppione",
+        city: "ajaccio",
+        name: "L'Oriu – Paillote du Ruppione ☀️",
+        cuisine: "Paillote chic sur la plage, poissons & viandes",
+        address: "Plage du Ruppione, Pietrosella",
+        rating: "4,5",
+        ratingNum: 4.5,
+        reviews: "600 avis",
+        distMeters: 4500,
+        distLabel: "4,5 km de Verghia • 7 min voiture",
+        walk: false,
+        gastro: false,
+        badge: "Plage Ruppione",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Oriu+Paillote+du+Ruppione+Pietrosella"
+      },
+      {
+        id: "verghia-chez-vero",
+        city: "ajaccio",
+        name: "Resto' Chez Véro (Coti-Chiavari) ☀️",
+        cuisine: "Cuisine corse maison & vue panoramique sur le Golfe",
+        address: "Village de Coti-Chiavari (au-dessus de Verghia)",
+        rating: "4,6",
+        ratingNum: 4.6,
+        reviews: "850 avis",
+        distMeters: 7000,
+        distLabel: "7 km de Verghia • 11 min voiture",
+        walk: false,
+        gastro: false,
+        badge: "Vue Panoramique",
+        url: "https://www.google.com/maps/search/?api=1&query=Resto+Chez+Vero+Coti+Chiavari"
+      },
+      {
+        id: "verghia-chez-francis",
+        city: "ajaccio",
+        name: "Chez Francis (Cala d'Orzu) ☀️",
+        cuisine: "Paillote mythique • Langoustes & poissons grillés",
+        address: "Plage de Cala d'Orzu, Coti-Chiavari",
+        rating: "4,3",
+        ratingNum: 4.3,
+        reviews: "2 000 avis",
+        distMeters: 7500,
+        distLabel: "7,5 km de Verghia • 15 min",
+        walk: false,
+        gastro: true,
+        badge: "Crique Mythique",
+        url: "https://www.google.com/maps/search/?api=1&query=Chez+Francis+Cala+d+Orzu+Coti+Chiavari"
+      },
+      {
+        id: "verghia-arbousier-maquis",
+        city: "ajaccio",
+        name: "L'Arbousier (Hôtel Le Maquis) ☀️",
+        cuisine: "Gastronomique romantique en bord de mer (Michelin)",
+        address: "D55 Rive Sud, Porticcio",
+        rating: "4,5",
+        ratingNum: 4.5,
+        reviews: "450 avis",
+        distMeters: 12000,
+        distLabel: "12 km de Verghia • 16 min voiture",
         walk: false,
         gastro: true,
         badge: "Guide Michelin",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ecrin+16+Cours+General+Leclerc+Ajaccio"
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Arbousier+Hotel+Le+Maquis+Porticcio"
       },
       {
-        id: "ajaccio-a-nepita",
-        city: "ajaccio",
-        name: "A Nepita ☀️",
-        cuisine: "Bistronomie corse du marché (Bib Gourmand Michelin)",
-        address: "4 rue San Lazaro, Ajaccio",
-        rating: "4,8",
-        ratingNum: 4.8,
-        reviews: "520 avis",
-        distMeters: 500,
-        distLabel: "Ajaccio Centre • 6 min à pied",
-        walk: false,
-        gastro: true,
-        badge: "Bib Michelin",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+A+Nepita+Ajaccio"
-      },
-      {
-        id: "ajaccio-le-charlie",
+        id: "verghia-le-charlie",
         city: "ajaccio",
         name: "Le Charlie ★ (Bella Vista) ☀️",
-        cuisine: "1 Étoile Michelin • Panorama Golfe d'Ajaccio",
+        cuisine: "1 Étoile Michelin • Panorama Golfe & Sanguinaires",
         address: "Hôtel Bella Vista, Porticcio (Rive Sud)",
         rating: "4,8",
         ratingNum: 4.8,
         reviews: "120 avis",
-        distMeters: 8000,
-        distLabel: "Golfe d'Ajaccio • 15 min (Navette/Voiture)",
+        distMeters: 14000,
+        distLabel: "14 km de Verghia • 19 min voiture",
         walk: false,
         gastro: true,
         badge: "1★ Michelin",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Charlie+Bella+Vista+Porticcio+Ajaccio"
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Charlie+Bella+Vista+Porticcio"
       },
       {
-        id: "ajaccio-petit-resto",
+        id: "verghia-bistrot-corse",
         city: "ajaccio",
-        name: "Le Petit Restaurant ☀️",
-        cuisine: "Gastronomique romantique près de la Citadelle",
-        address: "3 rue Pozzo di Borgo, Vieille Ville, Ajaccio",
-        rating: "4,8",
-        ratingNum: 4.8,
-        reviews: "410 avis",
-        distMeters: 300,
-        distLabel: "Vieux Port Ajaccio • 3 min à pied",
-        walk: false,
-        gastro: true,
-        badge: "Romantique",
-        url: "https://www.google.com/maps/search/?api=1&query=Le+Petit+Restaurant+3+rue+Pozzo+di+Borgo+Ajaccio"
-      },
-      {
-        id: "ajaccio-20123",
-        city: "ajaccio",
-        name: "Le 20123 ☀️",
-        cuisine: "Terroir corse authentique (décor place de village)",
-        address: "2 rue Roi de Rome, Ajaccio",
+        name: "Le Bistrot Corse (Porticcio) ☀️",
+        cuisine: "Spécialités corses généreuses & chants corses",
+        address: "Centre Les Échoppes, Porticcio (Rive Sud)",
         rating: "4,7",
         ratingNum: 4.7,
-        reviews: "1 100 avis",
-        distMeters: 350,
-        distLabel: "Vieille Ville Ajaccio • 4 min à pied",
+        reviews: "420 avis",
+        distMeters: 14500,
+        distLabel: "14,5 km de Verghia • 20 min voiture",
         walk: false,
         gastro: false,
-        badge: "Typique Corse",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+20123+Ajaccio"
-      },
-      {
-        id: "ajaccio-a-terrazza",
-        city: "ajaccio",
-        name: "A Terrazza (Les Mouettes) ☀️",
-        cuisine: "Relais & Châteaux • Terrasse romantique pieds dans l'eau",
-        address: "9 Cours Lucien Bonaparte (Sanguinaires), Ajaccio",
-        rating: "4,5",
-        ratingNum: 4.5,
-        reviews: "160 avis",
-        distMeters: 1400,
-        distLabel: "Route des Sanguinaires • 5 min",
-        walk: false,
-        gastro: true,
-        badge: "Pieds dans l'eau",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+A+Terrazza+Hotel+Les+Mouettes+Ajaccio"
-      },
-      {
-        id: "ajaccio-le-weekend",
-        city: "ajaccio",
-        name: "Le Week-End ☀️",
-        cuisine: "Paillote chic & poissons sauvages face aux Sanguinaires",
-        address: "Plage de Terre Sacrée, Route des Sanguinaires, Ajaccio",
-        rating: "4,5",
-        ratingNum: 4.5,
-        reviews: "480 avis",
-        distMeters: 6000,
-        distLabel: "Terre Sacrée • 12 min",
-        walk: false,
-        gastro: false,
-        badge: "Plage & Vue Îles",
-        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Week+End+Terre+Sacree+Ajaccio"
+        badge: "Terroir Corse",
+        url: "https://www.google.com/maps/search/?api=1&query=Le+Bistrot+Corse+Porticcio"
       }
     ];
 
@@ -1133,16 +1165,16 @@
       { id: "ev-2027-02-06-thomas-garde", isoDate: "2027-02-06", person: "thomas", category: "garde", title: "Garde 24h Thomas", horaire: "24h" },
       { id: "ev-2027-02-25-thomas-garde", isoDate: "2027-02-25", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
       { id: "ev-2027-04-14-thomas-garde", isoDate: "2027-04-14", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
-      // Séjour à Ajaccio en Mai avec les parents de Thomas (Pont de mai / Ascension)
-      { id: "ev-2027-05-08-famille-ajaccio", isoDate: "2027-05-08", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-09-famille-ajaccio", isoDate: "2027-05-09", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-10-famille-ajaccio", isoDate: "2027-05-10", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-11-famille-ajaccio", isoDate: "2027-05-11", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-12-famille-ajaccio", isoDate: "2027-05-12", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-13-famille-ajaccio", isoDate: "2027-05-13", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-14-famille-ajaccio", isoDate: "2027-05-14", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-15-famille-ajaccio", isoDate: "2027-05-15", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" },
-      { id: "ev-2027-05-16-famille-ajaccio", isoDate: "2027-05-16", person: "famille", category: "relais", title: "☀️ Ajaccio avec les parents de Thomas", horaire: "Séjour Corse" }
+      // Séjour Maison à Verghia (Corse) en Mai avec les parents de Thomas
+      { id: "ev-2027-05-08-famille-ajaccio", isoDate: "2027-05-08", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-09-famille-ajaccio", isoDate: "2027-05-09", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-10-famille-ajaccio", isoDate: "2027-05-10", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-11-famille-ajaccio", isoDate: "2027-05-11", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-12-famille-ajaccio", isoDate: "2027-05-12", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-13-famille-ajaccio", isoDate: "2027-05-13", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-14-famille-ajaccio", isoDate: "2027-05-14", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-15-famille-ajaccio", isoDate: "2027-05-15", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-16-famille-ajaccio", isoDate: "2027-05-16", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" }
     ];
 
     let events = [];
@@ -1182,13 +1214,13 @@
       const booking = bookings.find(b => b.isoDate === iso);
 
       const gpTitle = gpEv ? gpEv.title.replace(/^Relais Émile\s*:\s*/i, "") : "";
-      const isAjaccio = /ajaccio|corse/i.test(gpTitle) || (gpEv && /ajaccio|corse/i.test(gpEv.horaire || ""));
+      const isAjaccio = /verghia|ajaccio|corse/i.test(gpTitle) || (gpEv && /verghia|ajaccio|corse/i.test(gpEv.horaire || ""));
 
       const bothFree = !marieBusy && !thomasBusy;
       const isOffWorkDay = isWeekend || isThuFree || isHolidayWeek || isAjaccio || dow === 5;
 
       let reasonFree = isAjaccio
-        ? "Vacances à Ajaccio"
+        ? "Vacances à Verghia (Corse)"
         : isWeekend
           ? "Week-end sans garde"
           : isHolidayWeek
@@ -1293,10 +1325,10 @@
       const ajaccioBannerHtml = activeTab === "gold" ? `
         <div class="ajaccio-banner">
           <div>
-            <div class="ajaccio-banner-title">☀️ Séjour Ajaccio en Mai avec tes parents</div>
-            <div class="ajaccio-banner-sub">Émile gardé sur place • 8 tables corses &amp; vue mer prêtes à réserver</div>
+            <div class="ajaccio-banner-title">☀️ Maison à Verghia en Mai avec tes parents</div>
+            <div class="ajaccio-banner-sub">Émile gardé sur place • 10 tables à Verghia, Plage d'Argent &amp; Rive Sud</div>
           </div>
-          <button type="button" class="btn-ajaccio-restos" onclick="openAjaccioRestos()">Voir les 8 restos ☀️</button>
+          <button type="button" class="btn-ajaccio-restos" onclick="openAjaccioRestos()">Restos Verghia ☀️</button>
         </div>
       ` : "";
 
@@ -1418,7 +1450,7 @@
           </div>
           <div class="cal-grid">${cells}</div>
           <div style="margin-top:10px; font-size:11.5px; color:var(--muted); font-weight:700; text-align:center;">
-            🌟 Gardé Paris &nbsp;•&nbsp; ☀️ Ajaccio (Mai) &nbsp;•&nbsp; 🥂 Libres tous les 2
+            🌟 Gardé Paris &nbsp;•&nbsp; ☀️ Maison Verghia (Mai) &nbsp;•&nbsp; 🥂 Libres tous les 2
           </div>
         </div>
       `;
@@ -1435,7 +1467,7 @@
       const sel = document.getElementById("bk-resto");
       const lbl = document.getElementById("bk-resto-label");
 
-      // Si c'est pendant le séjour à Ajaccio en mai, on met les restos d'Ajaccio en tête !
+      // Si c'est pendant le séjour à Verghia en mai, on met les restos de Verghia / Rive Sud en tête !
       const sorted = [...RESTAURANTS].sort((a, b) => {
         if (st.isAjaccio) {
           if (a.city !== b.city) return a.city === "ajaccio" ? -1 : 1;
@@ -1446,7 +1478,7 @@
       });
 
       lbl.textContent = st.isAjaccio
-        ? "☀️ Restaurant à Ajaccio (Séjour avec tes parents)"
+        ? "☀️ Restaurant proche de la maison à Verghia (Rive Sud)"
         : "🏠 Restaurant proche de la maison (7 ter rue du Colonel Oudot)";
 
       sel.innerHTML = sorted.map(r =>
@@ -1500,7 +1532,7 @@
       const st = getDayStatus(iso);
       const el = document.getElementById("book-day-badge");
       if (st.bothFree && st.isAjaccio) {
-        el.innerHTML = `<div style="background:#E0F2FE; color:#0369A1; padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">☀️ Séjour Ajaccio • Émile gardé par les parents de Thomas</div>`;
+        el.innerHTML = `<div style="background:#E0F2FE; color:#0369A1; padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">☀️ Maison à Verghia • Émile gardé par les parents de Thomas</div>`;
       } else if (st.bothFree && st.hasGp) {
         el.innerHTML = `<div style="background:var(--gold-soft); color:#92400E; padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">🌟 Marie &amp; Thomas libres • Émile gardé (${esc(st.gpWho)})</div>`;
       } else if (st.bothFree) {
