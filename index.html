@@ -208,24 +208,111 @@
       padding: 5px 10px;
       border-radius: 9px;
     }
-    .hero-seances {
+
+    /* CARROUSEL D'AFFICHES DANS LE HERO & LES CARTES JOURS */
+    .poster-strip {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+      scrollbar-width: none;
+    }
+    .poster-strip::-webkit-scrollbar { display: none; }
+    .mini-movie {
+      width: 112px;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 12px;
+      padding: 6px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .mini-movie img {
+      width: 100%;
+      height: 132px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #1E293B;
+    }
+    .mini-movie-title {
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #FFF;
+    }
+    .mini-movie-times {
       display: flex;
       flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 12px;
+      gap: 3px;
     }
-    .seance-pill {
-      height: 30px;
-      padding: 0 10px;
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.35);
-      background: rgba(255,255,255,0.14);
-      color: #FFF;
-      font-size: 12px;
+    .mini-time-badge {
+      font-size: 9.5px;
+      font-weight: 900;
+      background: #FEF08A;
+      color: #451A03;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+
+    /* CARROUSEL D'AFFICHES SUR FOND CLAIR (DANS LES CARTES JOURS) */
+    .day-poster-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-top: 9px;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+    }
+    .day-poster-strip::-webkit-scrollbar { display: none; }
+    .day-mini-movie {
+      width: 108px;
+      flex-shrink: 0;
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 5px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .day-mini-movie img {
+      width: 100%;
+      height: 122px;
+      object-fit: cover;
+      border-radius: 7px;
+      background: #E2E8F0;
+    }
+    .day-mini-title {
+      font-size: 10.5px;
+      font-weight: 900;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .day-mini-slots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .day-mini-slot {
+      font-size: 9.5px;
       font-weight: 800;
+      background: var(--cine);
+      color: #FFF;
+      padding: 2px 5px;
+      border-radius: 5px;
+      border: none;
       cursor: pointer;
     }
-    .seance-pill:active { transform: scale(0.96); }
+
     .btn-main-book {
       width: 100%;
       height: 46px;
@@ -300,8 +387,13 @@
       border-color: var(--wine);
       color: #FFF;
     }
+    .chip.active-cine {
+      background: var(--cine);
+      border-color: var(--cine);
+      color: #FFF;
+    }
 
-    /* BANNIÈRE VERGHIA / UGC BERCY */
+    /* BANNIÈRE VERGHIA */
     .ajaccio-banner {
       background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
       color: #FFF;
@@ -351,6 +443,16 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
+    }
+    .slot-card.col-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .slot-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
     .slot-card.gold {
       border-color: #F59E0B;
@@ -406,6 +508,84 @@
     .tag.michelin { background: #FEE2E2; color: #991B1B; }
     .tag.cine { background: var(--cine-soft); color: var(--cine); }
 
+    /* CARTE FILM AVEC VRAIE AFFICHE */
+    .movie-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 13px;
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+    }
+    .movie-poster {
+      width: 78px;
+      height: 112px;
+      border-radius: 11px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #E2E8F0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .movie-body {
+      flex: 1;
+      min-width: 0;
+    }
+    .movie-title {
+      font-size: 15.5px;
+      font-weight: 900;
+      margin: 0 0 3px;
+      color: var(--text);
+    }
+    .movie-info {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .movie-synopsis {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.35;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .seance-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .s-chip {
+      height: 29px;
+      padding: 0 9px;
+      border-radius: 8px;
+      border: 1px solid #BFDBFE;
+      background: var(--cine-soft);
+      color: var(--cine);
+      font-size: 11.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .s-chip.evening {
+      background: #1E3A8A;
+      border-color: #1E3A8A;
+      color: #FFF;
+    }
+    .s-chip .ver {
+      font-size: 9.5px;
+      opacity: 0.85;
+      font-weight: 900;
+    }
+    .s-chip:active {
+      transform: scale(0.96);
+    }
+
     /* BOUTON SUPPRIMER RÉSERVATION (ENLEVER LE VERT) */
     .btn-unbook {
       border: none;
@@ -426,29 +606,6 @@
     }
     .btn-unbook:hover, .btn-unbook:active {
       background: #DC2626;
-      color: #FFF;
-    }
-
-    /* HORAIRES SÉANCES CINÉ SUR LES CARTES */
-    .seance-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 7px;
-    }
-    .s-chip {
-      height: 27px;
-      padding: 0 9px;
-      border-radius: 7px;
-      border: 1px solid #BFDBFE;
-      background: var(--cine-soft);
-      color: var(--cine);
-      font-size: 11.5px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-    .s-chip:active {
-      background: var(--cine);
       color: #FFF;
     }
 
@@ -595,6 +752,8 @@
       background: var(--card);
       border-radius: 24px 24px 0 0;
       padding: 20px 18px calc(22px + var(--safe-bottom));
+      max-height: 92vh;
+      overflow-y: auto;
     }
     .modal-head {
       display: flex;
@@ -646,7 +805,25 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 8px;
+      gap: 10px;
+    }
+    .cine-modal-preview {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 14px;
+      padding: 10px;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .cine-modal-preview img {
+      width: 54px;
+      height: 76px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      background: #CBD5E1;
     }
     .row-2 {
       display: grid;
@@ -710,7 +887,7 @@
         <img src="assets/icon.svg" alt="Resto &amp; Ciné M&amp;T" />
         <div>
           <div class="brand-title">Sorties Marie &amp; Thomas</div>
-          <div class="brand-sub" id="header-sub">📍 Paris 12e • 🍿 UGC Bercy • ☀️ Verghia</div>
+          <div class="brand-sub">📍 Paris 12e • 🍿 UGC Bercy • ☀️ Verghia</div>
         </div>
       </div>
       <button type="button" class="btn-add-gp" onclick="openGuardModal()">🏡 + Garde Émile</button>
@@ -754,6 +931,14 @@
       <button type="button" class="chip" data-rf="ajaccio" onclick="setRestoFilter('ajaccio')">☀️ Verghia Corse (10)</button>
       <button type="button" class="chip" data-rf="top" onclick="setRestoFilter('top')">⭐ Note 4,7+ Google</button>
       <button type="button" class="chip" data-rf="gastro" onclick="setRestoFilter('gastro')">💎 Michelin &amp; Gastro</button>
+    </div>
+
+    <!-- FILTRES CINÉMA UGC BERCY -->
+    <div id="cine-filters" class="filter-row" style="display:none;">
+      <button type="button" class="chip active-cine" data-cf="all" onclick="setCineFilter('all')">🎬 Tous les films (19)</button>
+      <button type="button" class="chip" data-cf="evening" onclick="setCineFilter('evening')">🌙 Séances du soir (18h30+)</button>
+      <button type="button" class="chip" data-cf="vost" onclick="setCineFilter('vost')">🗣️ VOST</button>
+      <button type="button" class="chip" data-cf="vf" onclick="setCineFilter('vf')">🇫🇷 VF</button>
     </div>
 
     <!-- CONTENU -->
@@ -819,61 +1004,36 @@
 
       <div id="cine-day-badge" style="margin-bottom:12px;"></div>
 
-      <div class="resto-preview" style="background:#EFF6FF; border-color:#BFDBFE;">
-        <div>
-          <div style="color:#1E3A8A; font-weight:900;">UGC Ciné Cité Bercy (18 salles)</div>
-          <div style="color:#3B82F6; font-size:11px;">2 Cour Saint-Émilion, Bercy Village (75012)</div>
+      <!-- APERÇU AFFICHE DU FILM SÉLECTIONNÉ -->
+      <div id="cn-movie-preview" class="cine-modal-preview"></div>
+
+      <div class="field">
+        <label>Film à l'affiche à l'UGC Ciné Cité Bercy</label>
+        <select id="cn-movie" onchange="onCineMovieChange()"></select>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label>Date de la sortie</label>
+          <input type="date" id="cn-date" onchange="onCineDateChange()" />
         </div>
-        <div style="text-align:right; flex-shrink:0;">
-          <div style="color:#92400E; font-weight:900;">★ 4,4/5 Google</div>
-          <div style="color:#1D4ED8; font-size:11px; font-weight:800;">📍 1,7 km • 7 min vélo / T3a</div>
+        <div class="field">
+          <label>Vraie séance UGC Bercy</label>
+          <select id="cn-slot"></select>
         </div>
       </div>
 
       <div class="field">
-        <label>Film / Programme à l'UGC Bercy</label>
-        <select id="cn-movie"></select>
-      </div>
-
-      <div class="row-2">
-        <div class="field">
-          <label>Date de la séance</label>
-          <input type="date" id="cn-date" onchange="updateCineModalBadge()" />
-        </div>
-        <div class="field">
-          <label>Séance (2 places)</label>
-          <select id="cn-time">
-            <option value="14:15">14h15 (Après-midi)</option>
-            <option value="16:45">16h45 (Fin d'aprèm)</option>
-            <option value="19:30">19h30 (Avant dîner)</option>
-            <option value="20:15">20h15 (Soirée)</option>
-            <option value="20:45" selected>20h45 (Soirée)</option>
-            <option value="21:15">21h15 (Soirée)</option>
-            <option value="22:00">22h00 (Après dîner)</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="row-2">
-        <div class="field">
-          <label>Version</label>
-          <select id="cn-version">
-            <option value="VOSTFR" selected>VOSTFR (Original)</option>
-            <option value="VF">VF (Français)</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>Billets (Marie &amp; Thomas)</label>
-          <select id="cn-tariff">
-            <option value="2 places Standard">🎟️ 2 places Standard</option>
-            <option value="2 cartes UGC Illimité">💳 UGC Illimité (2 places)</option>
-            <option value="2 places CSE / Réduit">✨ Tarif CSE / Réduit (2)</option>
-          </select>
-        </div>
+        <label>Billets (Marie &amp; Thomas • 2 places)</label>
+        <select id="cn-tariff">
+          <option value="2 places Standard">🎟️ 2 places Standard</option>
+          <option value="2 cartes UGC Illimité">💳 UGC Illimité (2 places)</option>
+          <option value="2 places CSE / Réduit">✨ Tarif CSE / Réduit (2)</option>
+        </select>
       </div>
 
       <button type="button" class="btn-submit cine-submit" onclick="launchAutoCineBooking()">
-        🎟️ Acheter les 2 billets sur UGC Bercy
+        🎟️ Acheter les 2 billets (Séance directe UGC)
       </button>
 
       <button type="button" class="btn-remove-booking" id="btn-unbook-modal-cine" style="display:none;" onclick="removeBookingFromCineModal()">
@@ -929,49 +1089,311 @@
     const STORAGE_KEY_BOOKINGS = "resto_mt_bookings_v2";
     const UGC_BERCY_URL = "https://www.ugc.fr/cinema.html?id=14";
 
-    // Séances & Films à l'affiche à l'UGC Ciné Cité Bercy (2 Cour Saint-Émilion, 75012 Paris)
-    const UGC_MOVIES = [
+    // Vraies séances, vraies affiches & vrais liens directs de réservation UGC Ciné Cité Bercy (2 Cour Saint-Émilion, 75012 Paris)
+    let UGC_MOVIES = [
       {
-        id: "ugc-programme-complet",
-        title: "🎬 Toutes les séances à l'affiche (UGC Bercy)",
-        genre: "18 salles • VOSTFR & VF • Bercy Village",
+        id: "1000036932",
+        title: "Club Kid",
+        runtime: "2h 02min",
+        genres: "Comédie dramatique",
+        rating: "4,1",
+        ratingNum: 4.1,
+        poster: "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
+        synopsis: "Peter (Jordan Firstman), organisateur de soirées branchées à New York, voit sa vie basculer lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte.",
+        slots: [
+          { time: "10:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506673&part=all" },
+          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506666&part=all" },
+          { time: "16:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506993&part=all" },
+          { time: "19:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506602&part=all" },
+          { time: "21:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506595&part=all" }
+        ]
+      },
+      {
+        id: "323550",
+        title: "L'Affaire Marie-Claire",
+        runtime: "1h 42min",
+        genres: "Thriller • Judiciaire",
+        rating: "4,3",
+        ratingNum: 4.3,
+        poster: "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
+        synopsis: "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière autour de Marie-Claire Chevalier et Gisèle Halimi.",
+        slots: [
+          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506437&part=all" },
+          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506434&part=all" },
+          { time: "15:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506394&part=all" },
+          { time: "17:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506401&part=all" },
+          { time: "20:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506408&part=all" },
+          { time: "22:10", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506439&part=all" }
+        ]
+      },
+      {
+        id: "298024",
+        title: "Wild Horse Nine",
+        runtime: "1h 58min",
+        genres: "Thriller",
+        rating: "4,0",
+        ratingNum: 4.0,
+        poster: "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+        synopsis: "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques.",
+        slots: [
+          { time: "10:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506545&part=all" },
+          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506963&part=all" },
+          { time: "16:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506549&part=all" },
+          { time: "19:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506488&part=all" },
+          { time: "21:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506420&part=all" }
+        ]
+      },
+      {
+        id: "1000014492",
+        title: "Godzilla Minus Zero",
+        runtime: "2h 15min",
+        genres: "Science Fiction",
+        rating: "3,9",
+        ratingNum: 3.9,
+        poster: "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
+        synopsis: "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé lorsque la menace resurgit.",
+        slots: [
+          { time: "10:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506996&part=all" },
+          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506722&part=all" },
+          { time: "17:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506716&part=all" },
+          { time: "20:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506710&part=all" }
+        ]
+      },
+      {
+        id: "326160",
+        title: "Les Misérables",
+        runtime: "2h 56min",
+        genres: "Drame • Historique",
+        rating: "4,1",
+        ratingNum: 4.1,
+        poster: "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
+        synopsis: "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui.",
+        slots: [
+          { time: "10:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506588&part=all" },
+          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506603&part=all" },
+          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506624&part=all" },
+          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506617&part=all" }
+        ]
+      },
+      {
+        id: "1000018384",
+        title: "Karma",
+        runtime: "2h 20min",
+        genres: "Thriller • Drame",
+        rating: "4,1",
+        ratingNum: 4.1,
+        poster: "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
+        synopsis: "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.",
+        slots: [
+          { time: "10:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506820&part=all" },
+          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506888&part=all" },
+          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506881&part=all" },
+          { time: "20:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506874&part=all" }
+        ]
+      },
+      {
+        id: "318225",
+        title: "La Gradiva",
+        runtime: "2h 25min",
+        genres: "Drame • Comédie",
+        rating: "4,0",
+        ratingNum: 4.0,
+        poster: "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
+        synopsis: "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve.",
+        slots: [
+          { time: "10:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506651&part=all" },
+          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506644&part=all" },
+          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506637&part=all" },
+          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506655&part=all" }
+        ]
+      },
+      {
+        id: "1000036515",
+        title: "Quelques mots d'amour",
+        runtime: "1h 37min",
+        genres: "Comédie dramatique",
+        rating: "4,0",
+        ratingNum: 4.0,
+        poster: "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
+        synopsis: "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père l’aime en silence quelque part.",
+        slots: [
+          { time: "11:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506833&part=all" },
+          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506826&part=all" },
+          { time: "15:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506868&part=all" },
+          { time: "18:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506862&part=all" },
+          { time: "20:10", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506855&part=all" },
+          { time: "22:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506848&part=all" }
+        ]
+      },
+      {
+        id: "1000016901",
+        title: "Clayface",
+        runtime: "1h 49min",
+        genres: "Epouvante-horreur • Thriller",
+        rating: "3,8",
+        ratingNum: 3.8,
+        poster: "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
+        synopsis: "Star hollywoodienne en pleine ascension, Matt Hagen se tourne vers un traitement expérimental qui lui réserve un destin tragique.",
+        slots: [
+          { time: "10:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506493&part=all" },
+          { time: "13:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506570&part=all" },
+          { time: "15:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506500&part=all" },
+          { time: "17:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506507&part=all" },
+          { time: "19:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506562&part=all" },
+          { time: "22:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506576&part=all" }
+        ]
+      },
+      {
+        id: "314882",
+        title: "Hope",
+        runtime: "2h 37min",
+        genres: "Thriller • Science Fiction",
+        rating: "3,5",
+        ratingNum: 3.5,
+        poster: "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
+        synopsis: "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village face à un phénomène mystérieux.",
+        slots: [
+          { time: "10:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506512&part=all" },
+          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506519&part=all" },
+          { time: "17:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506526&part=all" },
+          { time: "20:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506510&part=all" }
+        ]
+      },
+      {
+        id: "1000020311",
+        title: "Moulin",
+        runtime: "2h 14min",
+        genres: "Drame • Historique",
+        rating: "3,5",
+        ratingNum: 3.5,
+        poster: "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
+        synopsis: "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète.",
+        slots: [
+          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506918&part=all" },
+          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506911&part=all" },
+          { time: "16:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506904&part=all" },
+          { time: "19:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506897&part=all" },
+          { time: "21:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506840&part=all" }
+        ]
+      },
+      {
+        id: "1000031925",
+        title: "Un bon patron",
+        runtime: "1h 27min",
+        genres: "Comédie",
+        rating: "3,1",
+        ratingNum: 3.1,
+        poster: "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
+        synopsis: "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier d'une fabrique familiale.",
+        slots: [
+          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506470&part=all" },
+          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506477&part=all" },
+          { time: "16:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506484&part=all" },
+          { time: "18:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506443&part=all" },
+          { time: "20:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506451&part=all" },
+          { time: "22:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506457&part=all" }
+        ]
+      },
+      {
+        id: "1000019622",
+        title: "Le Fantôme de l'Opéra",
+        runtime: "2h 14min",
+        genres: "Drame • Romance",
+        rating: "2,9",
+        ratingNum: 2.9,
+        poster: "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
+        synopsis: "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris.",
+        slots: [
+          { time: "10:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506791&part=all" },
+          { time: "13:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506784&part=all" },
+          { time: "16:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506815&part=all" },
+          { time: "19:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506808&part=all" },
+          { time: "21:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506801&part=all" }
+        ]
+      },
+      {
+        id: "1000047396",
+        title: "Lorie Party 2026 au cinéma",
+        runtime: "1h 45min",
+        genres: "Concert",
+        rating: "4,0",
+        ratingNum: 4.0,
+        poster: "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
+        synopsis: "Lorie signe son grand retour sur scène avec la Lorie Party au cinéma.",
+        slots: [
+          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091494182&part=all" }
+        ]
+      },
+      {
+        id: "1000051934",
+        title: "Papa où t'es ?",
+        runtime: "1h 41min",
+        genres: "Documentaire",
         rating: "4,4",
-        seances: ["14:15", "16:45", "19:30", "20:15", "20:45", "21:15", "22:00"],
-        badge: "Billetterie Directe"
+        ratingNum: 4.4,
+        poster: "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
+        synopsis: "À 27 ans, Nicolas décide de retrouver son père et récupère son dossier de l’Aide sociale à l’enfance.",
+        slots: [
+          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506684&part=all" },
+          { time: "13:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506691&part=all" },
+          { time: "17:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506769&part=all" }
+        ]
       },
       {
-        id: "ugc-thriller-sf",
-        title: "🚀 Grand Spectacle / Science-Fiction (Salle Grand Large)",
-        genre: "VOSTFR • Son Dolby Atmos • Salle Grand Large UGC Bercy",
-        rating: "4,7",
-        seances: ["16:45", "19:45", "20:45", "21:30"],
-        badge: "Grand Large"
+        id: "12587",
+        title: "Safe",
+        runtime: "1h 59min",
+        genres: "Drame",
+        rating: "3,4",
+        ratingNum: 3.4,
+        poster: "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
+        synopsis: "Séance spéciale VOST à l'UGC Ciné Cité Bercy.",
+        slots: [
+          { time: "20:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091504949&part=all" }
+        ]
       },
       {
-        id: "ugc-auteur-palme",
-        title: "🏆 Film d'Auteur & Sélection Festival (UGC Culte / Labels)",
-        genre: "VOSTFR • Label UGC Spectateurs • Bercy Village",
-        rating: "4,8",
-        seances: ["14:15", "19:30", "20:15", "21:15"],
-        badge: "Label UGC ★"
+        id: "1000023600",
+        title: "Sanguine",
+        runtime: "1h 43min",
+        genres: "Epouvante-horreur",
+        rating: "3,1",
+        ratingNum: 3.1,
+        poster: "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
+        synopsis: "Margot débute son internat aux urgences et fait face à des patients aux symptômes inexpliqués.",
+        slots: [
+          { time: "15:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506746&part=all" },
+          { time: "17:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506739&part=all" }
+        ]
       },
       {
-        id: "ugc-comedie-fr",
-        title: "🥂 Comédie & Avant-Première Française",
-        genre: "VF • Comédie / Romance • Idéal après un verre Cour St-Émilion",
-        rating: "4,5",
-        seances: ["14:30", "17:00", "20:00", "20:45", "22:00"],
-        badge: "Détente"
+        id: "1000024131",
+        title: "Shaun le Mouton : La Bêêête d'Halloween",
+        runtime: "1h 20min",
+        genres: "Animation • Famille",
+        rating: "3,9",
+        ratingNum: 3.9,
+        poster: "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
+        synopsis: "Les habitants de la ferme de Mossy Bottom se réjouissent des festivités d'Halloween.",
+        slots: [
+          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091507013&part=all" }
+        ]
       },
       {
-        id: "ugc-thriller-polar",
-        title: "🕵️ Thriller & Polar Haletant du Soir",
-        genre: "VOSTFR • Thriller • Séances de soirée UGC Bercy",
-        rating: "4,6",
-        seances: ["19:30", "20:30", "21:15", "22:00"],
-        badge: "Soirée"
+        id: "1000019249",
+        title: "Ducobu et le fantôme de Saint-Potache",
+        runtime: "1h 30min",
+        genres: "Comédie • Famille",
+        rating: "2,3",
+        ratingNum: 2.3,
+        poster: "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
+        synopsis: "Ducobu revient pour une aventure pleine de rires et de mystères à Saint-Potache.",
+        slots: [
+          { time: "15:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506956&part=all" }
+        ]
       }
     ];
+    let UGC_BY_DATE = {};
 
     // 18 Restaurants proches du 7 ter rue du Colonel Oudot (Paris 12e) + 10 Restaurants proches de la maison à Verghia (Rive Sud d'Ajaccio)
     const RESTAURANTS = [
@@ -1439,7 +1861,6 @@
       { id: "ev-2027-02-06-thomas-garde", isoDate: "2027-02-06", person: "thomas", category: "garde", title: "Garde 24h Thomas", horaire: "24h" },
       { id: "ev-2027-02-25-thomas-garde", isoDate: "2027-02-25", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
       { id: "ev-2027-04-14-thomas-garde", isoDate: "2027-04-14", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
-      // Séjour Maison à Verghia (Corse) en Mai avec les parents de Thomas
       { id: "ev-2027-05-08-famille-ajaccio", isoDate: "2027-05-08", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
       { id: "ev-2027-05-09-famille-ajaccio", isoDate: "2027-05-09", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
       { id: "ev-2027-05-10-famille-ajaccio", isoDate: "2027-05-10", person: "famille", category: "relais", title: "☀️ Maison Verghia avec les parents de Thomas", horaire: "Séjour Corse" },
@@ -1456,6 +1877,7 @@
     let activeMode = "resto"; // "resto" ou "cine"
     let activeTab = "gold";   // "gold", "catalog", "free", "cal"
     let restoFilter = "paris";
+    let cineFilter = "all";
     let calMonth = new Date(2026, 10, 1, 12, 0, 0);
 
     function esc(s) {
@@ -1475,11 +1897,18 @@
       return isoToDate(iso).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
     }
 
+    function getMoviesForDate(iso) {
+      if (UGC_BY_DATE && Array.isArray(UGC_BY_DATE[iso]) && UGC_BY_DATE[iso].length > 0) {
+        return UGC_BY_DATE[iso];
+      }
+      return UGC_MOVIES;
+    }
+
     function saveBookings() {
       localStorage.setItem(STORAGE_KEY_BOOKINGS, JSON.stringify(bookings));
     }
 
-    // Supprimer un bouton vert "Réservé" (par ID ou par date+type)
+    // Supprimer un bouton vert "Réservé"
     function cancelBooking(bookingId, ev) {
       if (ev) ev.stopPropagation();
       bookings = bookings.filter(b => b.id !== bookingId);
@@ -1558,8 +1987,9 @@
       activeMode = m;
       document.getElementById("mode-btn-resto").className = m === "resto" ? "mode-btn active-resto" : "mode-btn";
       document.getElementById("mode-btn-cine").className = m === "cine" ? "mode-btn active-cine" : "mode-btn";
-      document.getElementById("tab-catalog").innerHTML = m === "cine" ? "🎬 Séances (5)" : "🍽️ Restos (28)";
+      document.getElementById("tab-catalog").innerHTML = m === "cine" ? `🎬 Films (${UGC_MOVIES.length})` : "🍽️ Restos (28)";
       document.getElementById("resto-filters").style.display = (m === "resto" && activeTab === "catalog") ? "flex" : "none";
+      document.getElementById("cine-filters").style.display = (m === "cine" && activeTab === "catalog") ? "flex" : "none";
       render();
     }
 
@@ -1569,6 +1999,7 @@
         document.getElementById("tab-" + k).classList.toggle("active", k === t);
       });
       document.getElementById("resto-filters").style.display = (activeMode === "resto" && t === "catalog") ? "flex" : "none";
+      document.getElementById("cine-filters").style.display = (activeMode === "cine" && t === "catalog") ? "flex" : "none";
       document.getElementById("main-list").style.display = t === "cal" ? "none" : "flex";
       document.getElementById("cal-view").style.display = t === "cal" ? "block" : "none";
       render();
@@ -1578,6 +2009,14 @@
       restoFilter = rf;
       document.querySelectorAll("#resto-filters .chip").forEach(btn => {
         btn.classList.toggle("active", btn.getAttribute("data-rf") === rf);
+      });
+      render();
+    }
+
+    function setCineFilter(cf) {
+      cineFilter = cf;
+      document.querySelectorAll("#cine-filters .chip").forEach(btn => {
+        btn.classList.toggle("active-cine", btn.getAttribute("data-cf") === cf);
       });
       render();
     }
@@ -1615,27 +2054,40 @@
       const freeDays = days.filter(d => d.bothFree && !d.hasGp && (d.dow === 4 || d.dow === 5 || d.dow === 6 || d.dow === 0)).slice(0, 16);
 
       document.getElementById("cnt-gold").textContent = String(goldDays.length);
+      document.getElementById("tab-catalog").innerHTML = activeMode === "cine" ? `🎬 Films (${UGC_MOVIES.length})` : "🍽️ Restos (28)";
 
-      // 1. Hero : Prochain Jour d'Or (Resto ou Cinéma UGC Bercy)
+      // 1. Hero : Prochain Jour d'Or (Resto ou Cinéma UGC Bercy avec vraies affiches)
       const next = (activeMode === "cine" ? goldDays.find(d => !d.isAjaccio) : goldDays[0]) || goldDays[0] || freeDays[0];
       const heroBox = document.getElementById("hero-box");
       if (next) {
         if (activeMode === "cine") {
+          const dayMovies = getMoviesForDate(next.iso);
+          const eveningMovies = dayMovies.filter(m => m.slots.some(s => s.time >= "18:30")).slice(0, 8);
           heroBox.innerHTML = `
             <div class="hero cine-hero">
-              <div class="hero-tag">🍿 Prochaine soirée Cinéma • UGC Ciné Cité Bercy</div>
+              <div class="hero-tag">🍿 Prochaine soirée • UGC Ciné Cité Bercy</div>
               <h1 class="hero-date">${esc(formatDateFr(next.iso))}</h1>
               <div class="hero-badges">
-                <span class="h-pill">📍 Bercy Village (1,7 km • 7 min vélo / T3a)</span>
+                <span class="h-pill">📍 2 Cour St-Émilion (1,7 km)</span>
                 <span class="h-pill">👵 Émile : ${esc(next.hasGp ? next.gpWho : "À confier")}</span>
               </div>
-              <div class="hero-seances">
-                ${["19:30", "20:15", "20:45", "21:15", "22:00"].map(t =>
-                  `<button type="button" class="seance-pill" onclick="openCineModal('${next.iso}', null, '${t}')">🎟️ ${t.replace(":", "h")}</button>`
-                ).join("")}
+              <div class="poster-strip">
+                ${eveningMovies.map(m => {
+                  const evSlots = m.slots.filter(s => s.time >= "18:30");
+                  const firstEv = evSlots[0] || m.slots[0];
+                  return `
+                    <div class="mini-movie" onclick="openCineModal('${next.iso}', '${m.id}', '${firstEv.time}_${firstEv.version}')">
+                      <img src="${esc(m.poster)}" alt="${esc(m.title)}" loading="lazy" />
+                      <div class="mini-movie-title">${esc(m.title)}</div>
+                      <div class="mini-movie-times">
+                        ${evSlots.slice(0, 2).map(s => `<span class="mini-time-badge">${esc(s.time.replace(":", "h"))} ${esc(s.version)}</span>`).join("")}
+                      </div>
+                    </div>
+                  `;
+                }).join("")}
               </div>
-              <button type="button" class="btn-main-book" onclick="openCineModal('${next.iso}')">
-                🍿 Acheter 2 billets UGC Bercy automatiquement
+              <button type="button" class="btn-main-book" onclick="setTab('catalog')">
+                🎬 Voir les ${dayMovies.length} films à l'affiche &amp; acheter 2 billets
               </button>
             </div>
           `;
@@ -1664,7 +2116,7 @@
 
       if (activeTab === "catalog") {
         if (activeMode === "cine") {
-          renderCineCatalog(next ? next.iso : "2026-11-12");
+          renderCineCatalog(next ? next.iso : "2026-11-05");
         } else {
           renderRestos(next ? next.iso : "2026-11-12");
         }
@@ -1692,12 +2144,12 @@
       listEl.innerHTML = topBannerHtml + list.map(d => {
         const hasAnyBooking = Boolean(d.restoBooking || d.cineBooking);
         const cls = hasAnyBooking
-          ? "slot-card booked"
+          ? "slot-card col-card booked"
           : d.isAjaccio
-            ? "slot-card ajaccio"
+            ? "slot-card col-card ajaccio"
             : d.hasGp
-              ? "slot-card gold"
-              : "slot-card";
+              ? "slot-card col-card gold"
+              : "slot-card col-card";
 
         const bookingBadgesHtml = renderBookingBadges(d);
 
@@ -1707,34 +2159,53 @@
             ? `<span class="tag gold">👵 ${esc(d.gpWho)}</span>`
             : `<span class="tag free">🥂 ${esc(d.reasonFree)}</span>`;
 
-        const seanceRowHtml = (activeMode === "cine" && !d.isAjaccio) ? `
-          <div class="seance-chips">
-            ${["19:30", "20:15", "20:45", "21:15", "22:00"].map(t =>
-              `<button type="button" class="s-chip" onclick="openCineModal('${d.iso}', null, '${t}')">🍿 ${t.replace(":", "h")}</button>`
-            ).join("")}
-          </div>
-        ` : "";
-
-        const currentModeBooking = activeMode === "cine" ? d.cineBooking : d.restoBooking;
+        // En mode Cinéma : carrousel des vraies affiches et vraies séances du soir pour ce jour
+        let dayMoviesStripHtml = "";
+        if (activeMode === "cine" && !d.isAjaccio) {
+          const dayMovies = getMoviesForDate(d.iso).filter(m => m.slots.some(s => s.time >= "18:00")).slice(0, 10);
+          dayMoviesStripHtml = `
+            <div class="day-poster-strip">
+              ${dayMovies.map(m => {
+                const evSlots = m.slots.filter(s => s.time >= "18:00");
+                const firstSlot = evSlots[0] || m.slots[0];
+                return `
+                  <div class="day-mini-movie" onclick="openCineModal('${d.iso}', '${m.id}', '${firstSlot.time}_${firstSlot.version}')">
+                    <img src="${esc(m.poster)}" alt="${esc(m.title)}" loading="lazy" />
+                    <div class="day-mini-title">${esc(m.title)}</div>
+                    <div class="day-mini-slots">
+                      ${evSlots.slice(0, 2).map(s => `
+                        <button type="button" class="day-mini-slot" onclick="event.stopPropagation(); openCineModal('${d.iso}', '${m.id}', '${s.time}_${s.version}')">
+                          ${esc(s.time.replace(":", "h"))} ${esc(s.version)}
+                        </button>
+                      `).join("")}
+                    </div>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          `;
+        }
 
         return `
           <div class="${cls}">
-            <div class="slot-left">
-              <div class="slot-date">${esc(formatDateFr(d.iso))}</div>
-              <div class="slot-meta">
-                ${bookingBadgesHtml}
-                ${defaultMetaHtml}
+            <div class="slot-top-row">
+              <div class="slot-left">
+                <div class="slot-date">${esc(formatDateFr(d.iso))}</div>
+                <div class="slot-meta">
+                  ${bookingBadgesHtml}
+                  ${defaultMetaHtml}
+                </div>
               </div>
-              ${seanceRowHtml}
+              <div class="slot-actions">
+                ${hasAnyBooking ? `<button type="button" class="btn-cancel-card" onclick="cancelAllBookingsForDate('${d.iso}', null, event)" title="Enlever le bouton vert Réservé">✕ Enlever</button>` : ""}
+                ${(!d.hasGp && !hasAnyBooking) ? `<button type="button" class="btn-gp" onclick="openGuardModal('${d.iso}')" title="Noter que les grands-parents gardent Émile">👵 Garde</button>` : ""}
+                ${activeMode === "cine"
+                  ? `<button type="button" class="btn-book cine-btn" onclick="openCineModal('${d.iso}')">🎟️ Billets</button>`
+                  : `<button type="button" class="btn-book" onclick="openBookModal('${d.iso}')">🍷 Réserver</button>`
+                }
+              </div>
             </div>
-            <div class="slot-actions">
-              ${hasAnyBooking ? `<button type="button" class="btn-cancel-card" onclick="cancelAllBookingsForDate('${d.iso}', null, event)" title="Enlever le bouton vert Réservé">✕ Enlever</button>` : ""}
-              ${(!d.hasGp && !hasAnyBooking) ? `<button type="button" class="btn-gp" onclick="openGuardModal('${d.iso}')" title="Noter que les grands-parents gardent Émile">👵 Garde</button>` : ""}
-              ${activeMode === "cine"
-                ? `<button type="button" class="btn-book cine-btn" onclick="openCineModal('${d.iso}')">🎟️ Billets</button>`
-                : `<button type="button" class="btn-book" onclick="openBookModal('${d.iso}')">🍷 Réserver</button>`
-              }
-            </div>
+            ${dayMoviesStripHtml}
           </div>
         `;
       }).join("");
@@ -1781,29 +2252,45 @@
 
     function renderCineCatalog(defaultIso) {
       const listEl = document.getElementById("main-list");
-      listEl.innerHTML = UGC_MOVIES.map(m => `
-        <div class="slot-card">
-          <div class="slot-left">
-            <div class="slot-date" style="text-transform:none;">${esc(m.title)}</div>
-            <div class="slot-sub">${esc(m.genre)}</div>
-            <div class="slot-meta">
-              <span class="tag gold">★ ${esc(m.rating)}/5</span>
-              <span class="tag cine">📍 UGC Bercy Village (1,7 km)</span>
-              <span class="tag dist">${esc(m.badge)}</span>
-            </div>
-            <div class="seance-chips">
-              ${m.seances.map(t =>
-                `<button type="button" class="s-chip" onclick="openCineModal('${defaultIso}', '${m.id}', '${t}')">🎟️ ${t.replace(":", "h")}</button>`
-              ).join("")}
+      let movies = [...getMoviesForDate(defaultIso)];
+
+      if (cineFilter === "evening") {
+        movies = movies.filter(m => m.slots.some(s => s.time >= "18:30"));
+      } else if (cineFilter === "vost") {
+        movies = movies.filter(m => m.slots.some(s => s.version === "VOST"));
+      } else if (cineFilter === "vf") {
+        movies = movies.filter(m => m.slots.some(s => s.version === "VF"));
+      }
+
+      listEl.innerHTML = movies.map(m => {
+        let slots = m.slots;
+        if (cineFilter === "evening") slots = slots.filter(s => s.time >= "18:30");
+        else if (cineFilter === "vost") slots = slots.filter(s => s.version === "VOST");
+        else if (cineFilter === "vf") slots = slots.filter(s => s.version === "VF");
+
+        return `
+          <div class="movie-card">
+            <img class="movie-poster" src="${esc(m.poster)}" alt="${esc(m.title)}" loading="lazy" onclick="openCineModal('${defaultIso}', '${m.id}')" style="cursor:pointer;" />
+            <div class="movie-body">
+              <h3 class="movie-title">${esc(m.title)}</h3>
+              <div class="movie-info">
+                ★ ${esc(m.rating)}/5 &nbsp;•&nbsp; ${esc(m.runtime)} &nbsp;•&nbsp; ${esc(m.genres)}
+              </div>
+              ${m.synopsis ? `<div class="movie-synopsis">${esc(m.synopsis)}</div>` : ""}
+              <div class="seance-chips">
+                ${slots.map(s => {
+                  const isEvening = s.time >= "18:30";
+                  return `
+                    <button type="button" class="s-chip ${isEvening ? 'evening' : ''}" onclick="openCineModal('${defaultIso}', '${m.id}', '${s.time}_${s.version}')" title="Acheter 2 billets UGC Bercy (${s.time} ${s.version})">
+                      🎟️ ${esc(s.time.replace(":", "h"))} <span class="ver">${esc(s.version)}</span>
+                    </button>
+                  `;
+                }).join("")}
+              </div>
             </div>
           </div>
-          <div class="slot-actions">
-            <button type="button" class="btn-book cine-btn" onclick="openCineModal('${defaultIso}', '${m.id}')">
-              🎟️ Billets
-            </button>
-          </div>
-        </div>
-      `).join("");
+        `;
+      }).join("");
     }
 
     function renderCalendar() {
@@ -2006,26 +2493,77 @@
       a.click();
     }
 
-    /* --- BILLETTERIE AUTOMATIQUE CINÉMA UGC BERCY VILLAGE --- */
-    function openCineModal(iso, movieId, seanceTime) {
-      const sel = document.getElementById("cn-movie");
-      sel.innerHTML = UGC_MOVIES.map(m =>
-        `<option value="${m.id}">${esc(m.title)}</option>`
-      ).join("");
-      if (movieId) sel.value = movieId;
-      document.getElementById("cn-date").value = iso || "2026-11-12";
-      if (seanceTime) {
-        const timeSel = document.getElementById("cn-time");
-        if (![...timeSel.options].some(o => o.value === seanceTime)) {
-          const opt = document.createElement("option");
-          opt.value = seanceTime;
-          opt.textContent = seanceTime.replace(":", "h") + " (Séance)";
-          timeSel.appendChild(opt);
-        }
-        timeSel.value = seanceTime;
-      }
+    /* --- BILLETTERIE AUTOMATIQUE CINÉMA UGC BERCY VILLAGE (VRAIS FILMS & VRAIES SÉANCES) --- */
+    function openCineModal(iso, movieId, slotKey) {
+      const targetIso = iso || "2026-11-05";
+      document.getElementById("cn-date").value = targetIso;
+      populateCineMovies(targetIso, movieId, slotKey);
       updateCineModalBadge();
       document.getElementById("modal-cine").classList.add("open");
+    }
+
+    function populateCineMovies(iso, preferredMovieId, preferredSlotKey) {
+      const movies = getMoviesForDate(iso);
+      const sel = document.getElementById("cn-movie");
+      sel.innerHTML = movies.map(m =>
+        `<option value="${esc(m.id)}">${esc(m.title)} — ★ ${esc(m.rating)} (${esc(m.runtime)})</option>`
+      ).join("");
+
+      if (preferredMovieId && movies.some(m => m.id === preferredMovieId)) {
+        sel.value = preferredMovieId;
+      }
+      populateCineSlots(iso, sel.value, preferredSlotKey);
+      updateCinePreview(iso, sel.value);
+    }
+
+    function populateCineSlots(iso, movieId, preferredSlotKey) {
+      const movies = getMoviesForDate(iso);
+      const movie = movies.find(m => m.id === movieId) || movies[0];
+      const slotSel = document.getElementById("cn-slot");
+      if (!movie) return;
+
+      slotSel.innerHTML = movie.slots.map(s => {
+        const key = `${s.time}_${s.version}`;
+        const label = `${s.time.replace(":", "h")} — ${s.version}${s.time >= "18:30" ? " (Soirée)" : ""}`;
+        return `<option value="${esc(key)}" data-url="${esc(s.url)}">${esc(label)}</option>`;
+      }).join("");
+
+      if (preferredSlotKey && [...slotSel.options].some(o => o.value === preferredSlotKey)) {
+        slotSel.value = preferredSlotKey;
+      } else {
+        // Sélectionner par défaut la première séance de soirée (>= 19h00)
+        const eveningOpt = movie.slots.find(s => s.time >= "19:00") || movie.slots[movie.slots.length - 1];
+        if (eveningOpt) slotSel.value = `${eveningOpt.time}_${eveningOpt.version}`;
+      }
+    }
+
+    function updateCinePreview(iso, movieId) {
+      const movies = getMoviesForDate(iso);
+      const m = movies.find(x => x.id === movieId) || movies[0];
+      const el = document.getElementById("cn-movie-preview");
+      if (!el || !m) return;
+      el.innerHTML = `
+        <img src="${esc(m.poster)}" alt="${esc(m.title)}" />
+        <div style="min-width:0; flex:1;">
+          <div style="font-size:15px; font-weight:900; color:#1E3A8A; margin-bottom:2px;">${esc(m.title)}</div>
+          <div style="font-size:11.5px; font-weight:800; color:#3B82F6; margin-bottom:4px;">★ ${esc(m.rating)}/5 • ${esc(m.runtime)} • ${esc(m.genres)}</div>
+          <div style="font-size:11px; color:#475569; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">${esc(m.synopsis)}</div>
+        </div>
+      `;
+    }
+
+    function onCineMovieChange() {
+      const iso = document.getElementById("cn-date").value;
+      const movieId = document.getElementById("cn-movie").value;
+      populateCineSlots(iso, movieId);
+      updateCinePreview(iso, movieId);
+    }
+
+    function onCineDateChange() {
+      const iso = document.getElementById("cn-date").value;
+      const movieId = document.getElementById("cn-movie").value;
+      populateCineMovies(iso, movieId);
+      updateCineModalBadge();
     }
 
     function closeCineModal() {
@@ -2056,56 +2594,58 @@
 
     function launchAutoCineBooking() {
       const iso = document.getElementById("cn-date").value;
-      const time = document.getElementById("cn-time").value;
-      const version = document.getElementById("cn-version").value;
-      const tariff = document.getElementById("cn-tariff").value;
+      const movies = getMoviesForDate(iso);
       const mId = document.getElementById("cn-movie").value;
-      const movie = UGC_MOVIES.find(m => m.id === mId) || UGC_MOVIES[0];
+      const movie = movies.find(m => m.id === mId) || movies[0];
+      const slotKey = document.getElementById("cn-slot").value;
+      const [time, version] = String(slotKey).split("_");
+      const slotObj = movie.slots.find(s => s.time === time && s.version === version) || movie.slots[0];
+      const tariff = document.getElementById("cn-tariff").value;
 
-      const shortTitle = movie.title.replace(/^[^\s]+\s*/, "").split("(")[0].trim();
       const bk = {
         id: "bk-cine-" + Date.now(),
         type: "cine",
         isoDate: iso,
         time: `${time.replace(":", "h")} ${version}`,
-        movieTitle: shortTitle
+        movieTitle: movie.title
       };
 
       bookings = bookings.filter(b => !(b.isoDate === iso && b.type === "cine"));
       bookings.unshift(bk);
       saveBookings();
 
-      // Copie des infos d'achat UGC dans le presse-papiers + ouverture directe d'UGC Ciné Cité Bercy
       if (navigator.clipboard) {
-        navigator.clipboard.writeText(`UGC Ciné Cité Bercy • ${shortTitle} • ${formatDateFr(iso)} à ${time} (${version}) • ${tariff} • thomaslefevre18@live.fr`).catch(() => {});
+        navigator.clipboard.writeText(`UGC Ciné Cité Bercy • ${movie.title} • ${formatDateFr(iso)} à ${time} (${version}) • ${tariff} • thomaslefevre18@live.fr`).catch(() => {});
       }
 
-      const targetUrl = `${UGC_BERCY_URL}&date=${iso}&time=${encodeURIComponent(time)}&tickets=2&version=${encodeURIComponent(version)}`;
-      window.open(targetUrl, "_blank", "noopener");
+      // Ouvre directement le lien officiel UGC de la séance choisie (reservationSeances.html?id=...)
+      const directUrl = (slotObj && slotObj.url) ? slotObj.url : UGC_BERCY_URL;
+      window.open(directUrl, "_blank", "noopener");
       closeCineModal();
       render();
     }
 
     function sendSmsMarieCine() {
       const iso = document.getElementById("cn-date").value;
-      const time = document.getElementById("cn-time").value;
-      const version = document.getElementById("cn-version").value;
-      const movie = UGC_MOVIES.find(m => m.id === document.getElementById("cn-movie").value) || UGC_MOVIES[0];
-      const msg = `🍿 On se fait une séance à l'UGC Bercy Village (${movie.title} en ${version}) le ${formatDateFr(iso)} à ${time.replace(":", "h")} ? ❤️`;
+      const movies = getMoviesForDate(iso);
+      const movie = movies.find(m => m.id === document.getElementById("cn-movie").value) || movies[0];
+      const [time, version] = String(document.getElementById("cn-slot").value).split("_");
+      const msg = `🍿 On va voir "${movie.title}" (${version}) à l'UGC Bercy Village le ${formatDateFr(iso)} à ${time.replace(":", "h")} ? ❤️`;
       window.location.href = `sms:+33607688499?&body=${encodeURIComponent(msg)}`;
     }
 
     function downloadIcsCine() {
       const iso = document.getElementById("cn-date").value;
-      const time = document.getElementById("cn-time").value;
-      const movie = UGC_MOVIES.find(m => m.id === document.getElementById("cn-movie").value) || UGC_MOVIES[0];
+      const movies = getMoviesForDate(iso);
+      const movie = movies.find(m => m.id === document.getElementById("cn-movie").value) || movies[0];
+      const [time, version] = String(document.getElementById("cn-slot").value).split("_");
       const [Y, M, D] = iso.split("-");
       const [h, m] = time.split(":");
       const ics = [
         "BEGIN:VCALENDAR", "VERSION:2.0", "BEGIN:VEVENT",
         `DTSTART:${Y}${M}${D}T${h}${m}00`,
         `DTEND:${Y}${M}${D}T${String(Math.min(23, Number(h) + 2)).padStart(2, "0")}${m}00`,
-        `SUMMARY:🍿 UGC Bercy : ${movie.title}`,
+        `SUMMARY:🍿 UGC Bercy : ${movie.title} (${version})`,
         "LOCATION:UGC Ciné Cité Bercy, 2 Cour Saint-Émilion, 75012 Paris",
         "END:VEVENT", "END:VCALENDAR"
       ].join("\r\n");
@@ -2143,9 +2683,26 @@
       setTab("gold");
     }
 
-    /* --- SYNCHRO CLOUD AGENDA FAMILLE + PULL TO REFRESH --- */
+    /* --- CHARGEMENT DES VRAIES SÉANCES UGC BERCY + SYNCHRO AGENDA FAMILLE --- */
+    async function loadUgcShowtimesJson() {
+      try {
+        const r = await fetch("ugc_bercy_showtimes.json?t=" + Date.now());
+        if (r.ok) {
+          const data = await r.json();
+          if (Array.isArray(data.movies) && data.movies.length > 0) {
+            UGC_MOVIES = data.movies;
+          }
+          if (data.byDate && typeof data.byDate === "object") {
+            UGC_BY_DATE = data.byDate;
+          }
+          render();
+        }
+      } catch (e) {}
+    }
+
     async function syncFromAgendaFamille() {
       try {
+        await loadUgcShowtimesJson();
         const k = "eval" + "_code";
         const r = await fetch(WEBHOOK_URL, {
           method: "POST",
@@ -2223,7 +2780,6 @@
       } catch (e) { events = [...INITIAL_EVENTS]; }
 
       try {
-        // Migration souple si anciennes réservations dans v1
         const v2 = localStorage.getItem(STORAGE_KEY_BOOKINGS);
         const v1 = localStorage.getItem("resto_mt_bookings_v1");
         bookings = JSON.parse(v2 || v1 || "[]");
@@ -2231,6 +2787,7 @@
 
       initPullToRefresh();
       render();
+      loadUgcShowtimesJson();
       syncFromAgendaFamille();
     });
   </script>
