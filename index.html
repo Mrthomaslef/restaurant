@@ -543,15 +543,59 @@
       color: var(--muted);
       margin-bottom: 5px;
     }
+    .allocine-ratings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 6px;
+    }
+    .ac-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .ac-pill.spectateurs {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+    .ac-pill.presse {
+      background: #F1F5F9;
+      color: #334155;
+      border: 1px solid #E2E8F0;
+    }
+    .movie-synopsis-box {
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 7px 9px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
     .movie-synopsis {
       font-size: 11.5px;
-      color: var(--muted);
-      line-height: 1.35;
-      margin-bottom: 8px;
+      color: var(--text);
+      line-height: 1.42;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+    }
+    .movie-synopsis-box.expanded .movie-synopsis {
+      display: block;
+      -webkit-line-clamp: unset;
+      overflow: visible;
+    }
+    .synopsis-toggle {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--cine);
+      margin-top: 3px;
+      display: inline-block;
     }
     .seance-chips {
       display: flex;
@@ -811,19 +855,20 @@
       background: #EFF6FF;
       border: 1px solid #BFDBFE;
       border-radius: 14px;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 12px;
       display: flex;
       gap: 12px;
-      align-items: center;
+      align-items: flex-start;
     }
     .cine-modal-preview img {
-      width: 54px;
-      height: 76px;
+      width: 66px;
+      height: 94px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 9px;
       flex-shrink: 0;
       background: #CBD5E1;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
     }
     .row-2 {
       display: grid;
@@ -1092,307 +1137,675 @@
     // Vraies séances, vraies affiches & vrais liens directs de réservation UGC Ciné Cité Bercy (2 Cour Saint-Émilion, 75012 Paris)
     let UGC_MOVIES = [
       {
-        id: "1000036932",
-        title: "Club Kid",
-        runtime: "2h 02min",
-        genres: "Comédie dramatique",
-        rating: "4,1",
-        ratingNum: 4.1,
-        poster: "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        synopsis: "Peter (Jordan Firstman), organisateur de soirées branchées à New York, voit sa vie basculer lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte.",
-        slots: [
-          { time: "10:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506673&part=all" },
-          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506666&part=all" },
-          { time: "16:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506993&part=all" },
-          { time: "19:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506602&part=all" },
-          { time: "21:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506595&part=all" }
-        ]
+            "id": "1000036932",
+            "title": "Club Kid",
+            "runtime": "2h 02min",
+            "genres": "Comédie dramatique",
+            "rating": "4,1",
+            "ratingNum": 4.1,
+            "pressRating": "4,2",
+            "pressCount": 34,
+            "userRating": "4,1",
+            "userCount": 82,
+            "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
+            "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
+            "slots": [
+                  {
+                        "time": "10:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506673&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506666&part=all"
+                  },
+                  {
+                        "time": "16:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506993&part=all"
+                  },
+                  {
+                        "time": "19:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506602&part=all"
+                  },
+                  {
+                        "time": "21:45",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506595&part=all"
+                  }
+            ]
       },
       {
-        id: "323550",
-        title: "L'Affaire Marie-Claire",
-        runtime: "1h 42min",
-        genres: "Thriller • Judiciaire",
-        rating: "4,3",
-        ratingNum: 4.3,
-        poster: "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        synopsis: "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière autour de Marie-Claire Chevalier et Gisèle Halimi.",
-        slots: [
-          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506437&part=all" },
-          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506434&part=all" },
-          { time: "15:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506394&part=all" },
-          { time: "17:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506401&part=all" },
-          { time: "20:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506408&part=all" },
-          { time: "22:10", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506439&part=all" }
-        ]
+            "id": "323550",
+            "title": "L'Affaire Marie-Claire",
+            "runtime": "1h 42min",
+            "genres": "Thriller • Judiciaire",
+            "rating": "4,3",
+            "ratingNum": 4.3,
+            "pressRating": "3,3",
+            "pressCount": 34,
+            "userRating": "4,3",
+            "userCount": 265,
+            "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
+            "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
+            "slots": [
+                  {
+                        "time": "10:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506437&part=all"
+                  },
+                  {
+                        "time": "13:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506434&part=all"
+                  },
+                  {
+                        "time": "15:40",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506394&part=all"
+                  },
+                  {
+                        "time": "17:50",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506401&part=all"
+                  },
+                  {
+                        "time": "20:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506408&part=all"
+                  },
+                  {
+                        "time": "22:10",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506439&part=all"
+                  }
+            ]
       },
       {
-        id: "298024",
-        title: "Wild Horse Nine",
-        runtime: "1h 58min",
-        genres: "Thriller",
-        rating: "4,0",
-        ratingNum: 4.0,
-        poster: "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        synopsis: "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques.",
-        slots: [
-          { time: "10:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506545&part=all" },
-          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506963&part=all" },
-          { time: "16:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506549&part=all" },
-          { time: "19:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506488&part=all" },
-          { time: "21:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506420&part=all" }
-        ]
+            "id": "298024",
+            "title": "Wild Horse Nine",
+            "runtime": "1h 58min",
+            "genres": "Thriller",
+            "rating": "4,0",
+            "ratingNum": 4.0,
+            "pressRating": "3,8",
+            "pressCount": 31,
+            "userRating": "4,0",
+            "userCount": 87,
+            "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+            "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+            "slots": [
+                  {
+                        "time": "10:30",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506545&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506963&part=all"
+                  },
+                  {
+                        "time": "16:30",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506549&part=all"
+                  },
+                  {
+                        "time": "19:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506488&part=all"
+                  },
+                  {
+                        "time": "21:45",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506420&part=all"
+                  }
+            ]
       },
       {
-        id: "1000014492",
-        title: "Godzilla Minus Zero",
-        runtime: "2h 15min",
-        genres: "Science Fiction",
-        rating: "3,9",
-        ratingNum: 3.9,
-        poster: "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        synopsis: "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé lorsque la menace resurgit.",
-        slots: [
-          { time: "10:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506996&part=all" },
-          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506722&part=all" },
-          { time: "17:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506716&part=all" },
-          { time: "20:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506710&part=all" }
-        ]
+            "id": "1000031925",
+            "title": "Un bon patron",
+            "runtime": "1h 27min",
+            "genres": "Comédie",
+            "rating": "3,2",
+            "ratingNum": 3.2,
+            "pressRating": "2,7",
+            "pressCount": 3,
+            "userRating": "3,2",
+            "userCount": 38,
+            "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
+            "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
+            "slots": [
+                  {
+                        "time": "10:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506470&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506477&part=all"
+                  },
+                  {
+                        "time": "16:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506484&part=all"
+                  },
+                  {
+                        "time": "18:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506443&part=all"
+                  },
+                  {
+                        "time": "20:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506451&part=all"
+                  },
+                  {
+                        "time": "22:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506457&part=all"
+                  }
+            ]
       },
       {
-        id: "326160",
-        title: "Les Misérables",
-        runtime: "2h 56min",
-        genres: "Drame • Historique",
-        rating: "4,1",
-        ratingNum: 4.1,
-        poster: "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        synopsis: "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui.",
-        slots: [
-          { time: "10:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506588&part=all" },
-          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506603&part=all" },
-          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506624&part=all" },
-          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506617&part=all" }
-        ]
+            "id": "1000014492",
+            "title": "Godzilla Minus Zero",
+            "runtime": "2h 15min",
+            "genres": "Science Fiction",
+            "rating": "3,9",
+            "ratingNum": 3.9,
+            "pressRating": "3,7",
+            "pressCount": 24,
+            "userRating": "3,9",
+            "userCount": 75,
+            "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
+            "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
+            "slots": [
+                  {
+                        "time": "10:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506996&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506722&part=all"
+                  },
+                  {
+                        "time": "17:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506716&part=all"
+                  },
+                  {
+                        "time": "20:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506710&part=all"
+                  }
+            ]
       },
       {
-        id: "1000018384",
-        title: "Karma",
-        runtime: "2h 20min",
-        genres: "Thriller • Drame",
-        rating: "4,1",
-        ratingNum: 4.1,
-        poster: "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        synopsis: "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble.",
-        slots: [
-          { time: "10:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506820&part=all" },
-          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506888&part=all" },
-          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506881&part=all" },
-          { time: "20:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506874&part=all" }
-        ]
+            "id": "1000047396",
+            "title": "Lorie Party 2026 au cinéma",
+            "runtime": "1h 45min",
+            "genres": "Concert",
+            "rating": "—",
+            "ratingNum": 0.0,
+            "pressRating": null,
+            "pressCount": 0,
+            "userRating": null,
+            "userCount": 0,
+            "poster": "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
+            "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphorique et festive autour des hits « Près de moi », « Je serai (ta meilleure amie) », « Sur un air latino », « La Positive Attitude », « Week-end »…",
+            "slots": [
+                  {
+                        "time": "20:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091494182&part=all"
+                  }
+            ]
       },
       {
-        id: "318225",
-        title: "La Gradiva",
-        runtime: "2h 25min",
-        genres: "Drame • Comédie",
-        rating: "4,0",
-        ratingNum: 4.0,
-        poster: "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        synopsis: "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve.",
-        slots: [
-          { time: "10:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506651&part=all" },
-          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506644&part=all" },
-          { time: "17:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506637&part=all" },
-          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506655&part=all" }
-        ]
+            "id": "314882",
+            "title": "Hope",
+            "runtime": "2h 37min",
+            "genres": "Thriller • Science Fiction",
+            "rating": "3,5",
+            "ratingNum": 3.5,
+            "pressRating": "4,1",
+            "pressCount": 36,
+            "userRating": "3,5",
+            "userCount": 1326,
+            "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
+            "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
+            "slots": [
+                  {
+                        "time": "10:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506512&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506519&part=all"
+                  },
+                  {
+                        "time": "17:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506526&part=all"
+                  },
+                  {
+                        "time": "20:30",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506510&part=all"
+                  }
+            ]
       },
       {
-        id: "1000036515",
-        title: "Quelques mots d'amour",
-        runtime: "1h 37min",
-        genres: "Comédie dramatique",
-        rating: "4,0",
-        ratingNum: 4.0,
-        poster: "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        synopsis: "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père l’aime en silence quelque part.",
-        slots: [
-          { time: "11:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506833&part=all" },
-          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506826&part=all" },
-          { time: "15:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506868&part=all" },
-          { time: "18:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506862&part=all" },
-          { time: "20:10", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506855&part=all" },
-          { time: "22:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506848&part=all" }
-        ]
+            "id": "326160",
+            "title": "Les Misérables",
+            "runtime": "2h 56min",
+            "genres": "Drame • Historique",
+            "rating": "4,1",
+            "ratingNum": 4.1,
+            "pressRating": "3,1",
+            "pressCount": 38,
+            "userRating": "4,1",
+            "userCount": 3137,
+            "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
+            "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
+            "slots": [
+                  {
+                        "time": "10:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506588&part=all"
+                  },
+                  {
+                        "time": "13:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506603&part=all"
+                  },
+                  {
+                        "time": "17:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506624&part=all"
+                  },
+                  {
+                        "time": "20:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506617&part=all"
+                  }
+            ]
       },
       {
-        id: "1000016901",
-        title: "Clayface",
-        runtime: "1h 49min",
-        genres: "Epouvante-horreur • Thriller",
-        rating: "3,8",
-        ratingNum: 3.8,
-        poster: "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        synopsis: "Star hollywoodienne en pleine ascension, Matt Hagen se tourne vers un traitement expérimental qui lui réserve un destin tragique.",
-        slots: [
-          { time: "10:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506493&part=all" },
-          { time: "13:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506570&part=all" },
-          { time: "15:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506500&part=all" },
-          { time: "17:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506507&part=all" },
-          { time: "19:45", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506562&part=all" },
-          { time: "22:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506576&part=all" }
-        ]
+            "id": "1000019622",
+            "title": "Le Fantôme de l'Opéra",
+            "runtime": "2h 14min",
+            "genres": "Drame • Romance",
+            "rating": "2,9",
+            "ratingNum": 2.9,
+            "pressRating": "1,6",
+            "pressCount": 7,
+            "userRating": "2,9",
+            "userCount": 606,
+            "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
+            "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
+            "slots": [
+                  {
+                        "time": "10:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506791&part=all"
+                  },
+                  {
+                        "time": "13:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506784&part=all"
+                  },
+                  {
+                        "time": "16:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506815&part=all"
+                  },
+                  {
+                        "time": "19:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506808&part=all"
+                  },
+                  {
+                        "time": "21:40",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506801&part=all"
+                  }
+            ]
       },
       {
-        id: "314882",
-        title: "Hope",
-        runtime: "2h 37min",
-        genres: "Thriller • Science Fiction",
-        rating: "3,5",
-        ratingNum: 3.5,
-        poster: "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        synopsis: "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village face à un phénomène mystérieux.",
-        slots: [
-          { time: "10:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506512&part=all" },
-          { time: "14:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506519&part=all" },
-          { time: "17:15", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506526&part=all" },
-          { time: "20:30", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091506510&part=all" }
-        ]
+            "id": "318225",
+            "title": "La Gradiva",
+            "runtime": "2h 25min",
+            "genres": "Drame • Comédie",
+            "rating": "4,0",
+            "ratingNum": 4.0,
+            "pressRating": "4,5",
+            "pressCount": 38,
+            "userRating": "4,0",
+            "userCount": 1254,
+            "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
+            "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
+            "slots": [
+                  {
+                        "time": "10:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506651&part=all"
+                  },
+                  {
+                        "time": "13:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506644&part=all"
+                  },
+                  {
+                        "time": "17:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506637&part=all"
+                  },
+                  {
+                        "time": "20:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506655&part=all"
+                  }
+            ]
       },
       {
-        id: "1000020311",
-        title: "Moulin",
-        runtime: "2h 14min",
-        genres: "Drame • Historique",
-        rating: "3,5",
-        ratingNum: 3.5,
-        poster: "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        synopsis: "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète.",
-        slots: [
-          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506918&part=all" },
-          { time: "13:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506911&part=all" },
-          { time: "16:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506904&part=all" },
-          { time: "19:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506897&part=all" },
-          { time: "21:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506840&part=all" }
-        ]
+            "id": "1000016901",
+            "title": "Clayface",
+            "runtime": "1h 49min",
+            "genres": "Epouvante-horreur • Thriller",
+            "rating": "3,8",
+            "ratingNum": 3.8,
+            "pressRating": "3,1",
+            "pressCount": 17,
+            "userRating": "3,8",
+            "userCount": 1081,
+            "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
+            "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
+            "slots": [
+                  {
+                        "time": "10:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506493&part=all"
+                  },
+                  {
+                        "time": "13:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506570&part=all"
+                  },
+                  {
+                        "time": "15:15",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506500&part=all"
+                  },
+                  {
+                        "time": "17:30",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506507&part=all"
+                  },
+                  {
+                        "time": "19:45",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506562&part=all"
+                  },
+                  {
+                        "time": "22:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506576&part=all"
+                  }
+            ]
       },
       {
-        id: "1000031925",
-        title: "Un bon patron",
-        runtime: "1h 27min",
-        genres: "Comédie",
-        rating: "3,1",
-        ratingNum: 3.1,
-        poster: "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
-        synopsis: "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier d'une fabrique familiale.",
-        slots: [
-          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506470&part=all" },
-          { time: "14:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506477&part=all" },
-          { time: "16:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506484&part=all" },
-          { time: "18:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506443&part=all" },
-          { time: "20:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506451&part=all" },
-          { time: "22:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506457&part=all" }
-        ]
+            "id": "1000020311",
+            "title": "Moulin",
+            "runtime": "2h 14min",
+            "genres": "Drame • Historique",
+            "rating": "3,5",
+            "ratingNum": 3.5,
+            "pressRating": "3,3",
+            "pressCount": 37,
+            "userRating": "3,5",
+            "userCount": 1248,
+            "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
+            "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
+            "slots": [
+                  {
+                        "time": "10:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506918&part=all"
+                  },
+                  {
+                        "time": "13:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506911&part=all"
+                  },
+                  {
+                        "time": "16:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506904&part=all"
+                  },
+                  {
+                        "time": "19:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506897&part=all"
+                  },
+                  {
+                        "time": "21:40",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506840&part=all"
+                  }
+            ]
       },
       {
-        id: "1000019622",
-        title: "Le Fantôme de l'Opéra",
-        runtime: "2h 14min",
-        genres: "Drame • Romance",
-        rating: "2,9",
-        ratingNum: 2.9,
-        poster: "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        synopsis: "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris.",
-        slots: [
-          { time: "10:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506791&part=all" },
-          { time: "13:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506784&part=all" },
-          { time: "16:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506815&part=all" },
-          { time: "19:00", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506808&part=all" },
-          { time: "21:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506801&part=all" }
-        ]
+            "id": "1000051934",
+            "title": "Papa où t'es ?",
+            "runtime": "1h 41min",
+            "genres": "Documentaire",
+            "rating": "4,4",
+            "ratingNum": 4.4,
+            "pressRating": "3,1",
+            "pressCount": 13,
+            "userRating": "4,4",
+            "userCount": 510,
+            "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
+            "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
+            "slots": [
+                  {
+                        "time": "10:30",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506684&part=all"
+                  },
+                  {
+                        "time": "13:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506691&part=all"
+                  },
+                  {
+                        "time": "17:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506769&part=all"
+                  }
+            ]
       },
       {
-        id: "1000047396",
-        title: "Lorie Party 2026 au cinéma",
-        runtime: "1h 45min",
-        genres: "Concert",
-        rating: "4,0",
-        ratingNum: 4.0,
-        poster: "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
-        synopsis: "Lorie signe son grand retour sur scène avec la Lorie Party au cinéma.",
-        slots: [
-          { time: "20:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091494182&part=all" }
-        ]
+            "id": "1000018384",
+            "title": "Karma",
+            "runtime": "2h 20min",
+            "genres": "Thriller • Drame",
+            "rating": "4,1",
+            "ratingNum": 4.1,
+            "pressRating": "3,0",
+            "pressCount": 34,
+            "userRating": "4,1",
+            "userCount": 2159,
+            "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
+            "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
+            "slots": [
+                  {
+                        "time": "10:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506820&part=all"
+                  },
+                  {
+                        "time": "14:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506888&part=all"
+                  },
+                  {
+                        "time": "17:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506881&part=all"
+                  },
+                  {
+                        "time": "20:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506874&part=all"
+                  }
+            ]
       },
       {
-        id: "1000051934",
-        title: "Papa où t'es ?",
-        runtime: "1h 41min",
-        genres: "Documentaire",
-        rating: "4,4",
-        ratingNum: 4.4,
-        poster: "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        synopsis: "À 27 ans, Nicolas décide de retrouver son père et récupère son dossier de l’Aide sociale à l’enfance.",
-        slots: [
-          { time: "10:30", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506684&part=all" },
-          { time: "13:15", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506691&part=all" },
-          { time: "17:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506769&part=all" }
-        ]
+            "id": "1000036515",
+            "title": "Quelques mots d'amour",
+            "runtime": "1h 37min",
+            "genres": "Comédie dramatique",
+            "rating": "4,0",
+            "ratingNum": 4.0,
+            "pressRating": "3,8",
+            "pressCount": 36,
+            "userRating": "4,0",
+            "userCount": 631,
+            "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
+            "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
+            "slots": [
+                  {
+                        "time": "11:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506833&part=all"
+                  },
+                  {
+                        "time": "13:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506826&part=all"
+                  },
+                  {
+                        "time": "15:50",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506868&part=all"
+                  },
+                  {
+                        "time": "18:00",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506862&part=all"
+                  },
+                  {
+                        "time": "20:10",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506855&part=all"
+                  },
+                  {
+                        "time": "22:15",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506848&part=all"
+                  }
+            ]
       },
       {
-        id: "12587",
-        title: "Safe",
-        runtime: "1h 59min",
-        genres: "Drame",
-        rating: "3,4",
-        ratingNum: 3.4,
-        poster: "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
-        synopsis: "Séance spéciale VOST à l'UGC Ciné Cité Bercy.",
-        slots: [
-          { time: "20:00", version: "VOST", url: "https://www.ugc.fr/reservationSeances.html?id=330091504949&part=all" }
-        ]
+            "id": "1000024131",
+            "title": "Shaun le Mouton : La Bêêête d'Halloween",
+            "runtime": "1h 20min",
+            "genres": "Animation • Famille",
+            "rating": "3,9",
+            "ratingNum": 3.9,
+            "pressRating": "3,9",
+            "pressCount": 18,
+            "userRating": "3,9",
+            "userCount": 257,
+            "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
+            "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
+            "slots": [
+                  {
+                        "time": "13:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091507013&part=all"
+                  }
+            ]
       },
       {
-        id: "1000023600",
-        title: "Sanguine",
-        runtime: "1h 43min",
-        genres: "Epouvante-horreur",
-        rating: "3,1",
-        ratingNum: 3.1,
-        poster: "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        synopsis: "Margot débute son internat aux urgences et fait face à des patients aux symptômes inexpliqués.",
-        slots: [
-          { time: "15:40", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506746&part=all" },
-          { time: "17:50", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506739&part=all" }
-        ]
+            "id": "1000023600",
+            "title": "Sanguine",
+            "runtime": "1h 43min",
+            "genres": "Epouvante-horreur",
+            "rating": "3,1",
+            "ratingNum": 3.1,
+            "pressRating": "3,1",
+            "pressCount": 27,
+            "userRating": "3,1",
+            "userCount": 280,
+            "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
+            "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
+            "slots": [
+                  {
+                        "time": "15:40",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506746&part=all"
+                  },
+                  {
+                        "time": "17:50",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506739&part=all"
+                  }
+            ]
       },
       {
-        id: "1000024131",
-        title: "Shaun le Mouton : La Bêêête d'Halloween",
-        runtime: "1h 20min",
-        genres: "Animation • Famille",
-        rating: "3,9",
-        ratingNum: 3.9,
-        poster: "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        synopsis: "Les habitants de la ferme de Mossy Bottom se réjouissent des festivités d'Halloween.",
-        slots: [
-          { time: "13:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091507013&part=all" }
-        ]
+            "id": "1000019249",
+            "title": "Ducobu et le fantôme de Saint-Potache",
+            "runtime": "1h 30min",
+            "genres": "Comédie • Famille",
+            "rating": "2,3",
+            "ratingNum": 2.3,
+            "pressRating": "2,5",
+            "pressCount": 11,
+            "userRating": "2,3",
+            "userCount": 278,
+            "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
+            "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
+            "slots": [
+                  {
+                        "time": "15:45",
+                        "version": "VF",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091506956&part=all"
+                  }
+            ]
       },
       {
-        id: "1000019249",
-        title: "Ducobu et le fantôme de Saint-Potache",
-        runtime: "1h 30min",
-        genres: "Comédie • Famille",
-        rating: "2,3",
-        ratingNum: 2.3,
-        poster: "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        synopsis: "Ducobu revient pour une aventure pleine de rires et de mystères à Saint-Potache.",
-        slots: [
-          { time: "15:45", version: "VF", url: "https://www.ugc.fr/reservationSeances.html?id=330091506956&part=all" }
-        ]
+            "id": "12587",
+            "title": "Safe",
+            "runtime": "1h 59min",
+            "genres": "Drame",
+            "rating": "3,4",
+            "ratingNum": 3.4,
+            "pressRating": null,
+            "pressCount": 0,
+            "userRating": "3,4",
+            "userCount": 150,
+            "poster": "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
+            "synopsis": "",
+            "slots": [
+                  {
+                        "time": "20:00",
+                        "version": "VOST",
+                        "url": "https://www.ugc.fr/reservationSeances.html?id=330091504949&part=all"
+                  }
+            ]
       }
-    ];
+];
     let UGC_BY_DATE = {};
 
     // 18 Restaurants proches du 7 ter rue du Colonel Oudot (Paris 12e) + 10 Restaurants proches de la maison à Verghia (Rive Sud d'Ajaccio)
@@ -2272,11 +2685,19 @@
           <div class="movie-card">
             <img class="movie-poster" src="${esc(m.poster)}" alt="${esc(m.title)}" loading="lazy" onclick="openCineModal('${defaultIso}', '${m.id}')" style="cursor:pointer;" />
             <div class="movie-body">
-              <h3 class="movie-title">${esc(m.title)}</h3>
+              <h3 class="movie-title" onclick="openCineModal('${defaultIso}', '${m.id}')" style="cursor:pointer;">${esc(m.title)}</h3>
               <div class="movie-info">
-                ★ ${esc(m.rating)}/5 &nbsp;•&nbsp; ${esc(m.runtime)} &nbsp;•&nbsp; ${esc(m.genres)}
+                ${esc(m.runtime)} &nbsp;•&nbsp; ${esc(m.genres)}
               </div>
-              ${m.synopsis ? `<div class="movie-synopsis">${esc(m.synopsis)}</div>` : ""}
+              <div class="allocine-ratings">
+                ${formatAllocineBadges(m)}
+              </div>
+              ${m.synopsis ? `
+                <div class="movie-synopsis-box" onclick="toggleSynopsis(this, event)">
+                  <div class="movie-synopsis">${esc(m.synopsis)}</div>
+                  <span class="synopsis-toggle">📖 Lire tout le synopsis ▾</span>
+                </div>
+              ` : ""}
               <div class="seance-chips">
                 ${slots.map(s => {
                   const isEvening = s.time >= "18:30";
@@ -2494,6 +2915,29 @@
     }
 
     /* --- BILLETTERIE AUTOMATIQUE CINÉMA UGC BERCY VILLAGE (VRAIS FILMS & VRAIES SÉANCES) --- */
+    function toggleSynopsis(boxEl, ev) {
+      if (ev) ev.stopPropagation();
+      const isExp = boxEl.classList.toggle("expanded");
+      const tgl = boxEl.querySelector(".synopsis-toggle");
+      if (tgl) {
+        tgl.textContent = isExp ? "▴ Réduire le synopsis" : "📖 Lire tout le synopsis ▾";
+      }
+    }
+
+    function formatAllocineBadges(m) {
+      const pills = [];
+      const uRate = m.userRating || m.rating;
+      if (uRate) {
+        const cnt = m.userCount ? ` (${m.userCount.toLocaleString("fr-FR")} avis)` : "";
+        pills.push(`<span class="ac-pill spectateurs" title="Vraie note Spectateurs AlloCiné">👥 Spectateurs ★ ${esc(uRate)}/5${esc(cnt)}</span>`);
+      }
+      if (m.pressRating) {
+        const pCnt = m.pressCount ? ` (${m.pressCount} crit.)` : "";
+        pills.push(`<span class="ac-pill presse" title="Vraie note Presse AlloCiné">📰 Presse ★ ${esc(m.pressRating)}/5${esc(pCnt)}</span>`);
+      }
+      return pills.join("");
+    }
+
     function openCineModal(iso, movieId, slotKey) {
       const targetIso = iso || "2026-11-05";
       document.getElementById("cn-date").value = targetIso;
@@ -2505,9 +2949,11 @@
     function populateCineMovies(iso, preferredMovieId, preferredSlotKey) {
       const movies = getMoviesForDate(iso);
       const sel = document.getElementById("cn-movie");
-      sel.innerHTML = movies.map(m =>
-        `<option value="${esc(m.id)}">${esc(m.title)} — ★ ${esc(m.rating)} (${esc(m.runtime)})</option>`
-      ).join("");
+      sel.innerHTML = movies.map(m => {
+        const uRate = m.userRating || m.rating || "";
+        const pRate = m.pressRating ? ` • Presse ★ ${m.pressRating}` : "";
+        return `<option value="${esc(m.id)}">${esc(m.title)} — Spect. ★ ${esc(uRate)}${esc(pRate)} (${esc(m.runtime)})</option>`;
+      }).join("");
 
       if (preferredMovieId && movies.some(m => m.id === preferredMovieId)) {
         sel.value = preferredMovieId;
@@ -2546,8 +2992,13 @@
         <img src="${esc(m.poster)}" alt="${esc(m.title)}" />
         <div style="min-width:0; flex:1;">
           <div style="font-size:15px; font-weight:900; color:#1E3A8A; margin-bottom:2px;">${esc(m.title)}</div>
-          <div style="font-size:11.5px; font-weight:800; color:#3B82F6; margin-bottom:4px;">★ ${esc(m.rating)}/5 • ${esc(m.runtime)} • ${esc(m.genres)}</div>
-          <div style="font-size:11px; color:#475569; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;">${esc(m.synopsis)}</div>
+          <div style="font-size:11.5px; font-weight:700; color:#475569; margin-bottom:5px;">${esc(m.runtime)} • ${esc(m.genres)}</div>
+          <div class="allocine-ratings" style="margin-bottom:6px;">
+            ${formatAllocineBadges(m)}
+          </div>
+          <div style="font-size:11.5px; color:#1E293B; line-height:1.45; background:#FFFFFF; border:1px solid #DBEAFE; border-radius:9px; padding:7px 9px;">
+            <strong style="color:#1E3A8A;">📖 Synopsis :</strong> ${esc(m.synopsis)}
+          </div>
         </div>
       `;
     }

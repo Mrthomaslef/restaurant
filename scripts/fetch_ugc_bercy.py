@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import html
 import json
 import urllib.request
 from datetime import datetime, timedelta
@@ -24,7 +25,7 @@ def fetch_ugc_bercy_day(date_str):
         results = data.get("results") or []
         for item in results:
             m = item.get("movie") or {}
-            title = m.get("title")
+            title = html.unescape(m.get("title") or "")
             if not title:
                 continue
             mid = str(m.get("internalId") or title)
@@ -35,9 +36,20 @@ def fetch_ugc_bercy_day(date_str):
             poster = (m.get("poster") or {}).get("url") or ""
             genres = [g.get("translate") for g in (m.get("genres") or []) if g.get("translate")]
             stats = m.get("stats") or {}
-            ur = (stats.get("userRating") or {}).get("score")
-            pr = (stats.get("pressReview") or {}).get("score")
-            score = round(float(ur or pr or 4.0), 1)
+            ur_obj = stats.get("userRating") or {}
+            pr_obj = stats.get("pressReview") or {}
+
+            ur_score = ur_obj.get("score")
+            ur_count = ur_obj.get("count") or 0
+            pr_score = pr_obj.get("score")
+            pr_count = pr_obj.get("count") or 0
+
+            user_rating_str = f"{float(ur_score):.1f}".replace(".", ",") if ur_score else None
+            press_rating_str = f"{float(pr_score):.1f}".replace(".", ",") if pr_score else None
+            main_score = round(float(ur_score or pr_score or 0.0), 1)
+            main_rating_str = f"{main_score:.1f}".replace(".", ",") if main_score > 0 else "—"
+
+            full_synopsis = html.unescape((m.get("synopsis") or "").strip())
 
             st_obj = item.get("showtimes") or {}
             slots = []
@@ -72,10 +84,14 @@ def fetch_ugc_bercy_day(date_str):
                     "title": title,
                     "runtime": m.get("runtime") or "",
                     "genres": " • ".join(genres[:2]) if genres else "Cinéma",
-                    "rating": f"{score:.1f}".replace(".", ","),
-                    "ratingNum": score,
+                    "rating": main_rating_str,
+                    "ratingNum": main_score,
+                    "pressRating": press_rating_str,
+                    "pressCount": pr_count,
+                    "userRating": user_rating_str,
+                    "userCount": ur_count,
                     "poster": poster,
-                    "synopsis": (m.get("synopsis") or "")[:150] + ("…" if len(m.get("synopsis") or "") > 150 else ""),
+                    "synopsis": full_synopsis,
                     "slots": slots
                 })
 
@@ -85,7 +101,7 @@ def fetch_ugc_bercy_day(date_str):
 
     return movies
 
-def build_showtimes_bundle(base_date_str="2026-11-05", days=6):
+def build_showtimes_bundle(base_date_str="2026-11-05", days=5):
     base_dt = datetime.strptime(base_date_str, "%Y-%m-%d")
     by_date = {}
     master_map = {}
@@ -109,4 +125,4 @@ if __name__ == "__main__":
     bundle = build_showtimes_bundle("2026-11-05", days=5)
     with open("ugc_bercy_showtimes.json", "w", encoding="utf-8") as f:
         json.dump(bundle, f, ensure_ascii=False, indent=2)
-    print("Saved ugc_bercy_showtimes.json with dates:", list(bundle["byDate"].keys()), "and", len(bundle["movies"]), "default movies.")
+    print("Updated ugc_bercy_showtimes.json with full synopses and exact AlloCiné Presse + Spectateurs ratings.")

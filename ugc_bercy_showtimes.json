@@ -9,8 +9,12 @@
       "genres": "Comédie dramatique",
       "rating": "4,1",
       "ratingNum": 4.1,
+      "pressRating": "4,2",
+      "pressCount": 34,
+      "userRating": "4,1",
+      "userCount": 82,
       "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-      "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+      "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
       "slots": [
         {
           "time": "10:15",
@@ -46,8 +50,12 @@
       "genres": "Thriller • Judiciaire",
       "rating": "4,3",
       "ratingNum": 4.3,
+      "pressRating": "3,3",
+      "pressCount": 34,
+      "userRating": "4,3",
+      "userCount": 265,
       "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
       "slots": [
         {
           "time": "10:30",
@@ -88,8 +96,12 @@
       "genres": "Thriller",
       "rating": "4,0",
       "ratingNum": 4.0,
+      "pressRating": "3,8",
+      "pressCount": 31,
+      "userRating": "4,0",
+      "userCount": 87,
       "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+      "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "slots": [
         {
           "time": "10:30",
@@ -125,6 +137,10 @@
       "genres": "Comédie",
       "rating": "3,2",
       "ratingNum": 3.2,
+      "pressRating": "2,7",
+      "pressCount": 3,
+      "userRating": "3,2",
+      "userCount": 38,
       "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
       "slots": [
@@ -167,8 +183,12 @@
       "genres": "Science Fiction",
       "rating": "3,9",
       "ratingNum": 3.9,
+      "pressRating": "3,7",
+      "pressCount": 24,
+      "userRating": "3,9",
+      "userCount": 75,
       "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-      "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+      "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
       "slots": [
         {
           "time": "10:45",
@@ -197,10 +217,14 @@
       "title": "Lorie Party 2026 au cinéma",
       "runtime": "1h 45min",
       "genres": "Concert",
-      "rating": "4,0",
-      "ratingNum": 4.0,
+      "rating": "—",
+      "ratingNum": 0.0,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": null,
+      "userCount": 0,
       "poster": "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
-      "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphoriq…",
+      "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphorique et festive autour des hits « Près de moi », « Je serai (ta meilleure amie) », « Sur un air latino », « La Positive Attitude », « Week-end »…",
       "slots": [
         {
           "time": "20:30",
@@ -216,8 +240,12 @@
       "genres": "Thriller • Science Fiction",
       "rating": "3,5",
       "ratingNum": 3.5,
+      "pressRating": "4,1",
+      "pressCount": 36,
+      "userRating": "3,5",
+      "userCount": 1326,
       "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-      "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+      "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
       "slots": [
         {
           "time": "10:00",
@@ -248,8 +276,12 @@
       "genres": "Drame • Historique",
       "rating": "4,1",
       "ratingNum": 4.1,
+      "pressRating": "3,1",
+      "pressCount": 38,
+      "userRating": "4,1",
+      "userCount": 3137,
       "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-      "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+      "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "slots": [
         {
           "time": "10:00",
@@ -280,8 +312,12 @@
       "genres": "Drame • Romance",
       "rating": "2,9",
       "ratingNum": 2.9,
+      "pressRating": "1,6",
+      "pressCount": 7,
+      "userRating": "2,9",
+      "userCount": 606,
       "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-      "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+      "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
       "slots": [
         {
           "time": "10:15",
@@ -317,8 +353,12 @@
       "genres": "Drame • Comédie",
       "rating": "4,0",
       "ratingNum": 4.0,
+      "pressRating": "4,5",
+      "pressCount": 38,
+      "userRating": "4,0",
+      "userCount": 1254,
       "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-      "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+      "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
       "slots": [
         {
           "time": "10:15",
@@ -349,8 +389,12 @@
       "genres": "Epouvante-horreur • Thriller",
       "rating": "3,8",
       "ratingNum": 3.8,
+      "pressRating": "3,1",
+      "pressCount": 17,
+      "userRating": "3,8",
+      "userCount": 1081,
       "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-      "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+      "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
       "slots": [
         {
           "time": "10:15",
@@ -391,8 +435,12 @@
       "genres": "Drame • Historique",
       "rating": "3,5",
       "ratingNum": 3.5,
+      "pressRating": "3,3",
+      "pressCount": 37,
+      "userRating": "3,5",
+      "userCount": 1248,
       "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-      "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+      "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
       "slots": [
         {
           "time": "10:30",
@@ -428,8 +476,12 @@
       "genres": "Documentaire",
       "rating": "4,4",
       "ratingNum": 4.4,
+      "pressRating": "3,1",
+      "pressCount": 13,
+      "userRating": "4,4",
+      "userCount": 510,
       "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-      "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+      "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
       "slots": [
         {
           "time": "10:30",
@@ -455,8 +507,12 @@
       "genres": "Thriller • Drame",
       "rating": "4,1",
       "ratingNum": 4.1,
+      "pressRating": "3,0",
+      "pressCount": 34,
+      "userRating": "4,1",
+      "userCount": 2159,
       "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+      "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "slots": [
         {
           "time": "10:45",
@@ -487,8 +543,12 @@
       "genres": "Comédie dramatique",
       "rating": "4,0",
       "ratingNum": 4.0,
+      "pressRating": "3,8",
+      "pressCount": 36,
+      "userRating": "4,0",
+      "userCount": 631,
       "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-      "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+      "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
       "slots": [
         {
           "time": "11:00",
@@ -529,8 +589,12 @@
       "genres": "Animation • Famille",
       "rating": "3,9",
       "ratingNum": 3.9,
+      "pressRating": "3,9",
+      "pressCount": 18,
+      "userRating": "3,9",
+      "userCount": 257,
       "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-      "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien…",
+      "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
       "slots": [
         {
           "time": "13:45",
@@ -546,8 +610,12 @@
       "genres": "Epouvante-horreur",
       "rating": "3,1",
       "ratingNum": 3.1,
+      "pressRating": "3,1",
+      "pressCount": 27,
+      "userRating": "3,1",
+      "userCount": 280,
       "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-      "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+      "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
       "slots": [
         {
           "time": "15:40",
@@ -568,8 +636,12 @@
       "genres": "Comédie • Famille",
       "rating": "2,3",
       "ratingNum": 2.3,
+      "pressRating": "2,5",
+      "pressCount": 11,
+      "userRating": "2,3",
+      "userCount": 278,
       "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-      "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans un…",
+      "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
       "slots": [
         {
           "time": "15:45",
@@ -585,6 +657,10 @@
       "genres": "Drame",
       "rating": "3,4",
       "ratingNum": 3.4,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": "3,4",
+      "userCount": 150,
       "poster": "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
       "synopsis": "",
       "slots": [
@@ -605,8 +681,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "4,2",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 82,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
           {
             "time": "10:15",
@@ -642,8 +722,12 @@
         "genres": "Thriller • Judiciaire",
         "rating": "4,3",
         "ratingNum": 4.3,
+        "pressRating": "3,3",
+        "pressCount": 34,
+        "userRating": "4,3",
+        "userCount": 265,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
           {
             "time": "10:30",
@@ -684,8 +768,12 @@
         "genres": "Thriller",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 31,
+        "userRating": "4,0",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
         "slots": [
           {
             "time": "10:30",
@@ -721,6 +809,10 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,7",
+        "pressCount": 3,
+        "userRating": "3,2",
+        "userCount": 38,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -763,8 +855,12 @@
         "genres": "Science Fiction",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,7",
+        "pressCount": 24,
+        "userRating": "3,9",
+        "userCount": 75,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
           {
             "time": "10:45",
@@ -793,10 +889,14 @@
         "title": "Lorie Party 2026 au cinéma",
         "runtime": "1h 45min",
         "genres": "Concert",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
-        "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphoriq…",
+        "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphorique et festive autour des hits « Près de moi », « Je serai (ta meilleure amie) », « Sur un air latino », « La Positive Attitude », « Week-end »…",
         "slots": [
           {
             "time": "20:30",
@@ -812,8 +912,12 @@
         "genres": "Thriller • Science Fiction",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "4,1",
+        "pressCount": 36,
+        "userRating": "3,5",
+        "userCount": 1326,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
           {
             "time": "10:00",
@@ -844,8 +948,12 @@
         "genres": "Drame • Historique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,1",
+        "pressCount": 38,
+        "userRating": "4,1",
+        "userCount": 3137,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
           {
             "time": "10:00",
@@ -876,8 +984,12 @@
         "genres": "Drame • Romance",
         "rating": "2,9",
         "ratingNum": 2.9,
+        "pressRating": "1,6",
+        "pressCount": 7,
+        "userRating": "2,9",
+        "userCount": 606,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
           {
             "time": "10:15",
@@ -913,8 +1025,12 @@
         "genres": "Drame • Comédie",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "4,5",
+        "pressCount": 38,
+        "userRating": "4,0",
+        "userCount": 1254,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
           {
             "time": "10:15",
@@ -945,8 +1061,12 @@
         "genres": "Epouvante-horreur • Thriller",
         "rating": "3,8",
         "ratingNum": 3.8,
+        "pressRating": "3,1",
+        "pressCount": 17,
+        "userRating": "3,8",
+        "userCount": 1081,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
           {
             "time": "10:15",
@@ -987,8 +1107,12 @@
         "genres": "Drame • Historique",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "3,3",
+        "pressCount": 37,
+        "userRating": "3,5",
+        "userCount": 1248,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
           {
             "time": "10:30",
@@ -1024,8 +1148,12 @@
         "genres": "Documentaire",
         "rating": "4,4",
         "ratingNum": 4.4,
+        "pressRating": "3,1",
+        "pressCount": 13,
+        "userRating": "4,4",
+        "userCount": 510,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
           {
             "time": "10:30",
@@ -1051,8 +1179,12 @@
         "genres": "Thriller • Drame",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,0",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 2159,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
           {
             "time": "10:45",
@@ -1083,8 +1215,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 36,
+        "userRating": "4,0",
+        "userCount": 631,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
           {
             "time": "11:00",
@@ -1125,8 +1261,12 @@
         "genres": "Animation • Famille",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,9",
+        "pressCount": 18,
+        "userRating": "3,9",
+        "userCount": 257,
         "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien…",
+        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
         "slots": [
           {
             "time": "13:45",
@@ -1142,8 +1282,12 @@
         "genres": "Epouvante-horreur",
         "rating": "3,1",
         "ratingNum": 3.1,
+        "pressRating": "3,1",
+        "pressCount": 27,
+        "userRating": "3,1",
+        "userCount": 280,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
           {
             "time": "15:40",
@@ -1164,8 +1308,12 @@
         "genres": "Comédie • Famille",
         "rating": "2,3",
         "ratingNum": 2.3,
+        "pressRating": "2,5",
+        "pressCount": 11,
+        "userRating": "2,3",
+        "userCount": 278,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans un…",
+        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
           {
             "time": "15:45",
@@ -1181,6 +1329,10 @@
         "genres": "Drame",
         "rating": "3,4",
         "ratingNum": 3.4,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": "3,4",
+        "userCount": 150,
         "poster": "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
         "synopsis": "",
         "slots": [
@@ -1198,10 +1350,14 @@
         "title": "Infirmary",
         "runtime": "1h 27min",
         "genres": "Epouvante-horreur",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/65/97/6597b4d07ce512c9eebe240fc67babd7.jpg",
-        "synopsis": "Un gardien a disparu lors de sa première nuit dans un ancien hôpital psychiatrique. Les images de vidéosurveillance montrent des incidents inexplicabl…",
+        "synopsis": "Un gardien a disparu lors de sa première nuit dans un ancien hôpital psychiatrique. Les images de vidéosurveillance montrent des incidents inexplicables qui continuent de déconcerter les enquêteurs.",
         "slots": [
           {
             "time": "20:00",
@@ -1217,8 +1373,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "4,2",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 82,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
           {
             "time": "10:15",
@@ -1254,8 +1414,12 @@
         "genres": "Thriller • Judiciaire",
         "rating": "4,3",
         "ratingNum": 4.3,
+        "pressRating": "3,3",
+        "pressCount": 34,
+        "userRating": "4,3",
+        "userCount": 265,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
           {
             "time": "10:30",
@@ -1296,8 +1460,12 @@
         "genres": "Thriller",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 31,
+        "userRating": "4,0",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
         "slots": [
           {
             "time": "10:30",
@@ -1333,6 +1501,10 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,7",
+        "pressCount": 3,
+        "userRating": "3,2",
+        "userCount": 38,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -1375,8 +1547,12 @@
         "genres": "Science Fiction",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,7",
+        "pressCount": 24,
+        "userRating": "3,9",
+        "userCount": 75,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
           {
             "time": "10:45",
@@ -1405,8 +1581,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -1422,10 +1602,14 @@
         "title": "Rammstein - Live in Mexico City",
         "runtime": "1h 54min",
         "genres": "Concert",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img4.acsta.net/img/e1/3d/e13dc3f4068ce0e5c855d3223a9a54fd.jpg",
-        "synopsis": "Tourné sur trois soirées à guichets fermés au Foro Sol, d’une capacité de 65 000 spectateurs, Rammstein – Live in Mexico City capture l’une des perfor…",
+        "synopsis": "Tourné sur trois soirées à guichets fermés au Foro Sol, d’une capacité de 65 000 spectateurs, Rammstein – Live in Mexico City capture l’une des performances emblématiques de la monumentale tournée mondiale des stades du groupe, qui s’est étendue sur cinq ans.",
         "slots": [
           {
             "time": "20:30",
@@ -1441,8 +1625,12 @@
         "genres": "Thriller • Science Fiction",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "4,1",
+        "pressCount": 36,
+        "userRating": "3,5",
+        "userCount": 1326,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
           {
             "time": "10:00",
@@ -1473,8 +1661,12 @@
         "genres": "Drame • Historique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,1",
+        "pressCount": 38,
+        "userRating": "4,1",
+        "userCount": 3137,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
           {
             "time": "10:00",
@@ -1505,8 +1697,12 @@
         "genres": "Drame • Romance",
         "rating": "2,9",
         "ratingNum": 2.9,
+        "pressRating": "1,6",
+        "pressCount": 7,
+        "userRating": "2,9",
+        "userCount": 606,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
           {
             "time": "10:15",
@@ -1542,8 +1738,12 @@
         "genres": "Drame • Comédie",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "4,5",
+        "pressCount": 38,
+        "userRating": "4,0",
+        "userCount": 1254,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
           {
             "time": "10:15",
@@ -1564,8 +1764,12 @@
         "genres": "Epouvante-horreur • Thriller",
         "rating": "3,8",
         "ratingNum": 3.8,
+        "pressRating": "3,1",
+        "pressCount": 17,
+        "userRating": "3,8",
+        "userCount": 1081,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
           {
             "time": "10:15",
@@ -1606,8 +1810,12 @@
         "genres": "Drame • Historique",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "3,3",
+        "pressCount": 37,
+        "userRating": "3,5",
+        "userCount": 1248,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
           {
             "time": "10:30",
@@ -1643,8 +1851,12 @@
         "genres": "Documentaire",
         "rating": "4,4",
         "ratingNum": 4.4,
+        "pressRating": "3,1",
+        "pressCount": 13,
+        "userRating": "4,4",
+        "userCount": 510,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
           {
             "time": "10:30",
@@ -1670,8 +1882,12 @@
         "genres": "Thriller • Drame",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,0",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 2159,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
           {
             "time": "10:45",
@@ -1702,8 +1918,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 36,
+        "userRating": "4,0",
+        "userCount": 631,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
           {
             "time": "11:00",
@@ -1739,8 +1959,12 @@
         "genres": "Epouvante-horreur",
         "rating": "3,1",
         "ratingNum": 3.1,
+        "pressRating": "3,1",
+        "pressCount": 27,
+        "userRating": "3,1",
+        "userCount": 280,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
           {
             "time": "13:30",
@@ -1771,8 +1995,12 @@
         "genres": "Animation • Famille",
         "rating": "4,5",
         "ratingNum": 4.5,
+        "pressRating": "3,9",
+        "pressCount": 26,
+        "userRating": "4,5",
+        "userCount": 216,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
-        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre M…",
+        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
           {
             "time": "18:00",
@@ -1788,8 +2016,12 @@
         "genres": "Animation • Comédie",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,5",
+        "pressCount": 11,
+        "userRating": "3,9",
+        "userCount": 379,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
-        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de …",
+        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
           {
             "time": "18:00",
@@ -1805,8 +2037,12 @@
         "genres": "Comédie • Famille",
         "rating": "2,3",
         "ratingNum": 2.3,
+        "pressRating": "2,5",
+        "pressCount": 11,
+        "userRating": "2,3",
+        "userCount": 278,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans un…",
+        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
           {
             "time": "18:00",
@@ -1824,8 +2060,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "4,2",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 82,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
           {
             "time": "10:15",
@@ -1861,8 +2101,12 @@
         "genres": "Thriller • Judiciaire",
         "rating": "4,3",
         "ratingNum": 4.3,
+        "pressRating": "3,3",
+        "pressCount": 34,
+        "userRating": "4,3",
+        "userCount": 265,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
           {
             "time": "10:30",
@@ -1903,8 +2147,12 @@
         "genres": "Thriller",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 31,
+        "userRating": "4,0",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
         "slots": [
           {
             "time": "10:30",
@@ -1940,6 +2188,10 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,7",
+        "pressCount": 3,
+        "userRating": "3,2",
+        "userCount": 38,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -1982,8 +2234,12 @@
         "genres": "Science Fiction",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,7",
+        "pressCount": 24,
+        "userRating": "3,9",
+        "userCount": 75,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
           {
             "time": "10:45",
@@ -2012,10 +2268,14 @@
         "title": "Stray Kids World Tour <RUN IT> Live viewing",
         "runtime": "3h 15min",
         "genres": "Concert",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/74/75/74750df809ce03d9ef93502e9b287402.jpg",
-        "synopsis": "Pour la première fois, Stray Kids investit les salles de cinéma du monde entier avec une projection événement de sa tournée mondiale « Stray Kids Worl…",
+        "synopsis": "Pour la première fois, Stray Kids investit les salles de cinéma du monde entier avec une projection événement de sa tournée mondiale « Stray Kids World Tour », filmée au Tokyo Dome.",
         "slots": [
           {
             "time": "13:00",
@@ -2029,8 +2289,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -2048,8 +2312,12 @@
         "genres": "Science Fiction • Action",
         "rating": "3,7",
         "ratingNum": 3.7,
+        "pressRating": "3,0",
+        "pressCount": 22,
+        "userRating": "3,7",
+        "userCount": 7378,
         "poster": "https://fr.web.img4.acsta.net/img/83/fd/83fdacdaceb7e25b257d44bef7f6d133.jpg",
-        "synopsis": "Le jeune Coriolanus est le dernier espoir de sa lignée, la famille Snow autrefois riche et fière est aujourd’hui tombée en disgrâce dans un Capitole d…",
+        "synopsis": "Le jeune Coriolanus est le dernier espoir de sa lignée, la famille Snow autrefois riche et fière est aujourd’hui tombée en disgrâce dans un Capitole d'après-guerre. À l’approche des 10ème HUNGER GAMES, il est assigné à contrecœur à être le mentor de Lucy Gray Baird, une tribut originaire du District 12.",
         "slots": [
           {
             "time": "18:00",
@@ -2065,8 +2333,12 @@
         "genres": "Thriller • Science Fiction",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "4,1",
+        "pressCount": 36,
+        "userRating": "3,5",
+        "userCount": 1326,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
           {
             "time": "10:00",
@@ -2097,8 +2369,12 @@
         "genres": "Drame • Historique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,1",
+        "pressCount": 38,
+        "userRating": "4,1",
+        "userCount": 3137,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
           {
             "time": "10:00",
@@ -2124,8 +2400,12 @@
         "genres": "Drame • Romance",
         "rating": "2,9",
         "ratingNum": 2.9,
+        "pressRating": "1,6",
+        "pressCount": 7,
+        "userRating": "2,9",
+        "userCount": 606,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
           {
             "time": "10:15",
@@ -2161,8 +2441,12 @@
         "genres": "Epouvante-horreur • Thriller",
         "rating": "3,8",
         "ratingNum": 3.8,
+        "pressRating": "3,1",
+        "pressCount": 17,
+        "userRating": "3,8",
+        "userCount": 1081,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
           {
             "time": "10:15",
@@ -2203,8 +2487,12 @@
         "genres": "Drame • Historique",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "3,3",
+        "pressCount": 37,
+        "userRating": "3,5",
+        "userCount": 1248,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
           {
             "time": "10:30",
@@ -2240,8 +2528,12 @@
         "genres": "Animation • Comédie",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,5",
+        "pressCount": 11,
+        "userRating": "3,9",
+        "userCount": 379,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
-        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de …",
+        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
           {
             "time": "10:30",
@@ -2267,8 +2559,12 @@
         "genres": "Animation • Famille",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,9",
+        "pressCount": 18,
+        "userRating": "3,9",
+        "userCount": 257,
         "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien…",
+        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
         "slots": [
           {
             "time": "10:30",
@@ -2294,8 +2590,12 @@
         "genres": "Thriller • Drame",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,0",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 2159,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
           {
             "time": "10:45",
@@ -2326,8 +2626,12 @@
         "genres": "Animation",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "3,2",
+        "pressCount": 16,
+        "userRating": "3,2",
+        "userCount": 143,
         "poster": "https://fr.web.img4.acsta.net/img/2e/29/2e292d36aa0d7fc0efb2e1d08578357d.jpg",
-        "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau …",
+        "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien.",
         "slots": [
           {
             "time": "10:45",
@@ -2353,8 +2657,12 @@
         "genres": "Animation • Famille",
         "rating": "4,5",
         "ratingNum": 4.5,
+        "pressRating": "3,9",
+        "pressCount": 26,
+        "userRating": "4,5",
+        "userCount": 216,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
-        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre M…",
+        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
           {
             "time": "11:00",
@@ -2380,8 +2688,12 @@
         "genres": "Comédie • Famille",
         "rating": "2,3",
         "ratingNum": 2.3,
+        "pressRating": "2,5",
+        "pressCount": 11,
+        "userRating": "2,3",
+        "userCount": 278,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans un…",
+        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
           {
             "time": "11:00",
@@ -2407,8 +2719,12 @@
         "genres": "Documentaire",
         "rating": "4,4",
         "ratingNum": 4.4,
+        "pressRating": "3,1",
+        "pressCount": 13,
+        "userRating": "4,4",
+        "userCount": 510,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
           {
             "time": "17:45",
@@ -2434,8 +2750,12 @@
         "genres": "Epouvante-horreur",
         "rating": "3,1",
         "ratingNum": 3.1,
+        "pressRating": "3,1",
+        "pressCount": 27,
+        "userRating": "3,1",
+        "userCount": 280,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
           {
             "time": "17:50",
@@ -2461,8 +2781,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 36,
+        "userRating": "4,0",
+        "userCount": 631,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
           {
             "time": "18:00",
@@ -2488,8 +2812,12 @@
         "genres": "Drame • Comédie",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "4,5",
+        "pressCount": 38,
+        "userRating": "4,0",
+        "userCount": 1254,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
           {
             "time": "18:00",
@@ -2510,8 +2838,12 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,8",
+        "pressCount": 29,
+        "userRating": "3,2",
+        "userCount": 571,
         "poster": "https://fr.web.img5.acsta.net/img/21/11/211184243b4ab7c37127ace9ced2e939.jpg",
-        "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette …",
+        "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette quête improbable pourrait bien le ramener à ses propres rêves oubliés...",
         "slots": [
           {
             "time": "18:00",
@@ -2537,8 +2869,12 @@
         "genres": "Epouvante-horreur",
         "rating": "1,9",
         "ratingNum": 1.9,
+        "pressRating": "2,0",
+        "pressCount": 6,
+        "userRating": "1,9",
+        "userCount": 556,
         "poster": "https://fr.web.img5.acsta.net/img/9e/c5/9ec5c971224bc443153c1a8da6c73e07.jpg",
-        "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entret…",
+        "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entretient, au cœur de sa propre maison, avec une entité malveillante qui ressemble étrangement à sa propre mère.",
         "slots": [
           {
             "time": "22:00",
@@ -2554,10 +2890,14 @@
         "title": "15/18",
         "runtime": "1h 44min",
         "genres": "Drame",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img5.acsta.net/img/04/a4/04a4c539c199c806d48c2f2e4eaf6607.jpg",
-        "synopsis": "Lucia, 17 ans, est amenée par la police dans une unité de soins pédopsychiatriques de l’hôpital public. Ici tous les patients ont entre 15 et 18 ans. …",
+        "synopsis": "Lucia, 17 ans, est amenée par la police dans une unité de soins pédopsychiatriques de l’hôpital public. Ici tous les patients ont entre 15 et 18 ans. Lucia connaît l’endroit, elle y a fait de nombreux séjours. Elle retrouve son amie Eloïse, en hospitalisation longue durée, mais aussi Yasmine, Camilia, Ulysse, André… tous ont des pathologies et des parcours différents.",
         "slots": [
           {
             "time": "18:30",
@@ -2573,8 +2913,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "4,2",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 82,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
           {
             "time": "10:15",
@@ -2610,8 +2954,12 @@
         "genres": "Thriller • Judiciaire",
         "rating": "4,3",
         "ratingNum": 4.3,
+        "pressRating": "3,3",
+        "pressCount": 34,
+        "userRating": "4,3",
+        "userCount": 265,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
           {
             "time": "10:30",
@@ -2652,8 +3000,12 @@
         "genres": "Thriller",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 31,
+        "userRating": "4,0",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
         "slots": [
           {
             "time": "10:30",
@@ -2689,6 +3041,10 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,7",
+        "pressCount": 3,
+        "userRating": "3,2",
+        "userCount": 38,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -2731,8 +3087,12 @@
         "genres": "Science Fiction",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,7",
+        "pressCount": 24,
+        "userRating": "3,9",
+        "userCount": 75,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
           {
             "time": "10:45",
@@ -2761,8 +3121,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -2778,10 +3142,14 @@
         "title": "Roméo et Juliette (Opéra de Paris)",
         "runtime": "2h 35min",
         "genres": "Ballet",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img2.acsta.net/img/52/4f/524f18fa05092e02f9cc0ffd728c1123.jpg",
-        "synopsis": "A Vérone, Roméo Montaigu et Juliette Capulet se rencontrent et tombent éperdument amoureux, mais leurs deux familles se vouent une haine ancestrale. P…",
+        "synopsis": "A Vérone, Roméo Montaigu et Juliette Capulet se rencontrent et tombent éperdument amoureux, mais leurs deux familles se vouent une haine ancestrale. Portés par une passion aussi foudroyante qu'impossible, les deux amants se heurtent à un destin tragique qui les réunit pour toujours.",
         "slots": [
           {
             "time": "16:00",
@@ -2797,8 +3165,12 @@
         "genres": "Thriller • Science Fiction",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "4,1",
+        "pressCount": 36,
+        "userRating": "3,5",
+        "userCount": 1326,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
           {
             "time": "10:00",
@@ -2829,8 +3201,12 @@
         "genres": "Drame • Historique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,1",
+        "pressCount": 38,
+        "userRating": "4,1",
+        "userCount": 3137,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
           {
             "time": "10:00",
@@ -2861,8 +3237,12 @@
         "genres": "Drame • Romance",
         "rating": "2,9",
         "ratingNum": 2.9,
+        "pressRating": "1,6",
+        "pressCount": 7,
+        "userRating": "2,9",
+        "userCount": 606,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
           {
             "time": "10:15",
@@ -2898,8 +3278,12 @@
         "genres": "Epouvante-horreur • Thriller",
         "rating": "3,8",
         "ratingNum": 3.8,
+        "pressRating": "3,1",
+        "pressCount": 17,
+        "userRating": "3,8",
+        "userCount": 1081,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
           {
             "time": "10:15",
@@ -2940,8 +3324,12 @@
         "genres": "Drame • Historique",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "3,3",
+        "pressCount": 37,
+        "userRating": "3,5",
+        "userCount": 1248,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
           {
             "time": "10:30",
@@ -2977,8 +3365,12 @@
         "genres": "Animation • Comédie",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,5",
+        "pressCount": 11,
+        "userRating": "3,9",
+        "userCount": 379,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
-        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de …",
+        "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
           {
             "time": "10:30",
@@ -3004,8 +3396,12 @@
         "genres": "Animation • Famille",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,9",
+        "pressCount": 18,
+        "userRating": "3,9",
+        "userCount": 257,
         "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien…",
+        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
         "slots": [
           {
             "time": "10:30",
@@ -3031,8 +3427,12 @@
         "genres": "Thriller • Drame",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,0",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 2159,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
           {
             "time": "10:45",
@@ -3063,8 +3463,12 @@
         "genres": "Animation",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "3,2",
+        "pressCount": 16,
+        "userRating": "3,2",
+        "userCount": 143,
         "poster": "https://fr.web.img4.acsta.net/img/2e/29/2e292d36aa0d7fc0efb2e1d08578357d.jpg",
-        "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau …",
+        "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien.",
         "slots": [
           {
             "time": "10:45",
@@ -3085,8 +3489,12 @@
         "genres": "Animation • Famille",
         "rating": "4,5",
         "ratingNum": 4.5,
+        "pressRating": "3,9",
+        "pressCount": 26,
+        "userRating": "4,5",
+        "userCount": 216,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
-        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre M…",
+        "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
           {
             "time": "11:00",
@@ -3112,8 +3520,12 @@
         "genres": "Comédie • Famille",
         "rating": "2,3",
         "ratingNum": 2.3,
+        "pressRating": "2,5",
+        "pressCount": 11,
+        "userRating": "2,3",
+        "userCount": 278,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans un…",
+        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
           {
             "time": "11:00",
@@ -3139,6 +3551,10 @@
         "genres": "Animation • Aventure",
         "rating": "3,7",
         "ratingNum": 3.7,
+        "pressRating": "3,8",
+        "pressCount": 17,
+        "userRating": "3,7",
+        "userCount": 2301,
         "poster": "https://fr.web.img6.acsta.net/medias/nmedia/18/89/45/25/20135954.jpg",
         "synopsis": "Norman est un petit garçon qui a la capacité de parler aux morts. Celui-ci va devoir sauver sa ville d'une invasion de zombies.",
         "slots": [
@@ -3156,8 +3572,12 @@
         "genres": "Documentaire",
         "rating": "4,4",
         "ratingNum": 4.4,
+        "pressRating": "3,1",
+        "pressCount": 13,
+        "userRating": "4,4",
+        "userCount": 510,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
           {
             "time": "17:45",
@@ -3183,8 +3603,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 36,
+        "userRating": "4,0",
+        "userCount": 631,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
           {
             "time": "18:00",
@@ -3210,8 +3634,12 @@
         "genres": "Drame • Comédie",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "4,5",
+        "pressCount": 38,
+        "userRating": "4,0",
+        "userCount": 1254,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
           {
             "time": "18:00",
@@ -3232,8 +3660,12 @@
         "genres": "Comédie",
         "rating": "3,2",
         "ratingNum": 3.2,
+        "pressRating": "2,8",
+        "pressCount": 29,
+        "userRating": "3,2",
+        "userCount": 571,
         "poster": "https://fr.web.img5.acsta.net/img/21/11/211184243b4ab7c37127ace9ced2e939.jpg",
-        "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette …",
+        "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette quête improbable pourrait bien le ramener à ses propres rêves oubliés...",
         "slots": [
           {
             "time": "18:00",
@@ -3259,8 +3691,12 @@
         "genres": "Drame",
         "rating": "3,7",
         "ratingNum": 3.7,
+        "pressRating": "3,1",
+        "pressCount": 30,
+        "userRating": "3,7",
+        "userCount": 1226,
         "poster": "https://fr.web.img6.acsta.net/img/9e/55/9e553042ac8f31f580cb0540fae60dc4.jpg",
-        "synopsis": "Le film s'inspire de l'histoire vraie d'une jeune ingénieure chez Facebook, qui sollicite l'aide d'un journaliste au Wall Street Journal. Ensemble, il…",
+        "synopsis": "Le film s'inspire de l'histoire vraie d'une jeune ingénieure chez Facebook, qui sollicite l'aide d'un journaliste au Wall Street Journal. Ensemble, ils se lancent dans une enquête pour révéler les secrets les mieux gardés du puissant réseau social.",
         "slots": [
           {
             "time": "19:50",
@@ -3276,8 +3712,12 @@
         "genres": "Epouvante-horreur",
         "rating": "3,1",
         "ratingNum": 3.1,
+        "pressRating": "3,1",
+        "pressCount": 27,
+        "userRating": "3,1",
+        "userCount": 280,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
           {
             "time": "20:45",
@@ -3293,8 +3733,12 @@
         "genres": "Epouvante-horreur",
         "rating": "1,9",
         "ratingNum": 1.9,
+        "pressRating": "2,0",
+        "pressCount": 6,
+        "userRating": "1,9",
+        "userCount": 556,
         "poster": "https://fr.web.img5.acsta.net/img/9e/c5/9ec5c971224bc443153c1a8da6c73e07.jpg",
-        "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entret…",
+        "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entretient, au cœur de sa propre maison, avec une entité malveillante qui ressemble étrangement à sa propre mère.",
         "slots": [
           {
             "time": "22:15",
@@ -3312,8 +3756,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "4,2",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 82,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festive…",
+        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
           {
             "time": "10:15",
@@ -3349,8 +3797,12 @@
         "genres": "Thriller • Judiciaire",
         "rating": "4,3",
         "ratingNum": 4.3,
+        "pressRating": "3,3",
+        "pressCount": 34,
+        "userRating": "4,3",
+        "userCount": 265,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illég…",
+        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
           {
             "time": "10:30",
@@ -3391,8 +3843,12 @@
         "genres": "Thriller",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 31,
+        "userRating": "4,0",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. A…",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
         "slots": [
           {
             "time": "10:30",
@@ -3426,8 +3882,12 @@
         "title": "Un bon patron",
         "runtime": "1h 27min",
         "genres": "Comédie",
-        "rating": "3,1",
-        "ratingNum": 3.1,
+        "rating": "3,2",
+        "ratingNum": 3.2,
+        "pressRating": "2,7",
+        "pressCount": 3,
+        "userRating": "3,2",
+        "userCount": 38,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -3470,8 +3930,12 @@
         "genres": "Science Fiction",
         "rating": "3,9",
         "ratingNum": 3.9,
+        "pressRating": "3,7",
+        "pressCount": 24,
+        "userRating": "3,9",
+        "userCount": 75,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une…",
+        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
           {
             "time": "10:45",
@@ -3500,8 +3964,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -3519,8 +3987,12 @@
         "genres": "Thriller • Science Fiction",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "4,1",
+        "pressCount": 36,
+        "userRating": "3,5",
+        "userCount": 1326,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses…",
+        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
           {
             "time": "10:00",
@@ -3551,8 +4023,12 @@
         "genres": "Drame • Historique",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,1",
+        "pressCount": 38,
+        "userRating": "4,1",
+        "userCount": 3137,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité,…",
+        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
           {
             "time": "10:00",
@@ -3583,8 +4059,12 @@
         "genres": "Drame • Romance",
         "rating": "2,9",
         "ratingNum": 2.9,
+        "pressRating": "1,6",
+        "pressCount": 7,
+        "userRating": "2,9",
+        "userCount": 606,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aur…",
+        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
           {
             "time": "10:15",
@@ -3620,8 +4100,12 @@
         "genres": "Drame • Comédie",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "4,5",
+        "pressCount": 38,
+        "userRating": "4,0",
+        "userCount": 1254,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que …",
+        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
           {
             "time": "10:15",
@@ -3647,8 +4131,12 @@
         "genres": "Epouvante-horreur • Thriller",
         "rating": "3,8",
         "ratingNum": 3.8,
+        "pressRating": "3,1",
+        "pressCount": 17,
+        "userRating": "3,8",
+        "userCount": 1081,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimenta…",
+        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
           {
             "time": "10:15",
@@ -3689,8 +4177,12 @@
         "genres": "Drame • Historique",
         "rating": "3,5",
         "ratingNum": 3.5,
+        "pressRating": "3,3",
+        "pressCount": 37,
+        "userRating": "3,5",
+        "userCount": 1248,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le…",
+        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
           {
             "time": "10:30",
@@ -3726,8 +4218,12 @@
         "genres": "Documentaire",
         "rating": "4,4",
         "ratingNum": 4.4,
+        "pressRating": "3,1",
+        "pressCount": 13,
+        "userRating": "4,4",
+        "userCount": 510,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide soc…",
+        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
           {
             "time": "10:30",
@@ -3758,8 +4254,12 @@
         "genres": "Thriller • Drame",
         "rating": "4,1",
         "ratingNum": 4.1,
+        "pressRating": "3,0",
+        "pressCount": 34,
+        "userRating": "4,1",
+        "userCount": 2159,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le fi…",
+        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
           {
             "time": "10:45",
@@ -3790,8 +4290,12 @@
         "genres": "Comédie dramatique",
         "rating": "4,0",
         "ratingNum": 4.0,
+        "pressRating": "3,8",
+        "pressCount": 36,
+        "userRating": "4,0",
+        "userCount": 631,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque …",
+        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
           {
             "time": "11:00",
@@ -3832,8 +4336,12 @@
         "genres": "Epouvante-horreur",
         "rating": "3,1",
         "ratingNum": 3.1,
+        "pressRating": "3,1",
+        "pressCount": 27,
+        "userRating": "3,1",
+        "userCount": 280,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La …",
+        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
           {
             "time": "11:00",
@@ -3872,8 +4380,12 @@
         "title": "The Irregular at Magic High School : La Succession des Yotsuba",
         "runtime": "1h 43min",
         "genres": "Animation",
-        "rating": "4,0",
-        "ratingNum": 4.0,
+        "rating": "—",
+        "ratingNum": 0.0,
+        "pressRating": null,
+        "pressCount": 0,
+        "userRating": null,
+        "userCount": 0,
         "poster": "https://fr.web.img4.acsta.net/img/8f/67/8f673152a7a36c7fbd84949dd05e8bf2.jpg",
         "synopsis": "Le deuxième long-métrage de la franchise \"The Irregular at Magic High School\".",
         "slots": [
