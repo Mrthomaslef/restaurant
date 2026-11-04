@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>Resto en Amoureux • Marie, Thomas &amp; Relais d'Émile</title>
-  <meta name="theme-color" content="#9D174D" />
+  <title>Resto M&amp;T</title>
+  <meta name="theme-color" content="#FCF8F2" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Resto M&amp;T" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg" />
@@ -14,29 +14,17 @@
   <style>
     :root {
       --bg: #FCF8F2;
-      --bg-card: #FFFFFF;
-      --bg-elevated: #F5EDE2;
-      --bg-subtle: #FBF4EB;
-      --border: #EAE0D5;
-      --border-strong: #DECFC0;
-      --text: #2A1F1B;
-      --text-muted: #78675B;
+      --card: #FFFFFF;
+      --subtle: #F7F0E6;
+      --border: #E8DEC8;
+      --text: #281E1A;
+      --muted: #7C6D61;
       --wine: #BE123C;
-      --wine-dark: #881337;
       --wine-soft: #FFF1F2;
       --gold: #D97706;
       --gold-soft: #FEF3C7;
-      --gold-border: #F59E0B;
-      --marie: #DB2777;
-      --marie-soft: #FDF2F7;
-      --thomas: #0284C7;
-      --thomas-soft: #F0F9FF;
-      --emile: #16A34A;
-      --emile-soft: #F0FDF4;
-      --danger: #DC2626;
-      --shadow-sm: 0 2px 10px rgba(88, 44, 28, 0.06);
-      --shadow-md: 0 10px 28px rgba(88, 44, 28, 0.10);
-      --shadow-gold: 0 10px 30px rgba(217, 119, 6, 0.22);
+      --green: #16A34A;
+      --green-soft: #DCFCE7;
       --safe-top: env(safe-area-inset-top, 0px);
       --safe-bottom: env(safe-area-inset-bottom, 0px);
     }
@@ -46,18 +34,13 @@
       margin: 0;
       padding: 0;
       background: var(--bg);
-      background-image:
-        radial-gradient(circle at 10% 6%, rgba(190, 18, 60, 0.08) 0%, transparent 38%),
-        radial-gradient(circle at 90% 10%, rgba(217, 119, 6, 0.11) 0%, transparent 42%),
-        radial-gradient(circle at 50% 92%, rgba(22, 163, 74, 0.06) 0%, transparent 45%);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Text", sans-serif;
       min-height: 100%;
       overscroll-behavior-y: contain;
-      overflow-x: hidden;
     }
     body {
-      padding-bottom: calc(92px + var(--safe-bottom));
+      padding-bottom: calc(32px + var(--safe-bottom));
     }
 
     /* PULL TO REFRESH */
@@ -67,52 +50,38 @@
       left: 50%;
       transform: translate(-50%, -70px);
       z-index: 999;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid var(--border-strong);
+      background: #FFF;
+      border: 1px solid var(--border);
       border-radius: 999px;
-      padding: 7px 15px;
+      padding: 6px 14px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
       font-size: 12px;
       font-weight: 800;
-      color: var(--wine-dark);
-      box-shadow: 0 8px 24px rgba(136, 19, 55, 0.15);
-      transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.2s;
+      color: var(--wine);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, opacity 0.2s;
       opacity: 0;
       pointer-events: none;
     }
-    #ptr-indicator.visible {
-      opacity: 1;
-    }
-    #ptr-arrow {
-      display: inline-block;
-      transition: transform 0.2s ease;
-      font-size: 14px;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-    .ptr-spinning {
-      animation: spin 0.7s linear infinite;
-    }
+    #ptr-indicator.visible { opacity: 1; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .ptr-spinning { display: inline-block; animation: spin 0.7s linear infinite; }
 
     /* HEADER */
-    .app-header {
+    .header {
       position: sticky;
       top: 0;
-      z-index: 60;
-      padding: calc(10px + var(--safe-top)) 14px 10px;
+      z-index: 40;
+      padding: calc(10px + var(--safe-top)) 16px 10px;
       background: rgba(252, 248, 242, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
-      box-shadow: 0 2px 12px rgba(88, 44, 28, 0.04);
     }
     .header-inner {
-      max-width: 780px;
+      max-width: 540px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -123,1416 +92,536 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      min-width: 0;
     }
-    .brand-logo {
-      width: 42px;
-      height: 42px;
-      border-radius: 13px;
-      overflow: hidden;
-      flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(190, 18, 60, 0.22);
-      border: 1.5px solid #FFF;
+    .brand img {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
     }
-    .brand-logo img { width: 100%; height: 100%; display: block; }
     .brand-title {
-      font-size: 16px;
-      font-weight: 800;
+      font-size: 17px;
+      font-weight: 900;
       letter-spacing: -0.02em;
-      line-height: 1.15;
-      color: var(--text);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
-    .brand-sub {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      margin-top: 2px;
-    }
-    .sync-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #16A34A;
-      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
-      flex-shrink: 0;
-    }
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-shrink: 0;
-    }
-    .btn-pill {
-      height: 35px;
+    .btn-add-gp {
+      height: 36px;
       padding: 0 12px;
       border-radius: 11px;
-      border: 1px solid var(--border-strong);
-      background: var(--bg-card);
+      border: 1px solid var(--border);
+      background: var(--card);
       color: var(--text);
-      font-size: 12px;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      cursor: pointer;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.12s, background 0.15s;
-    }
-    .btn-pill:active { transform: scale(0.96); }
-    .btn-pill.primary {
-      background: linear-gradient(135deg, #BE123C, #D97706);
-      color: #FFFFFF;
-      border: none;
-      box-shadow: 0 4px 12px rgba(190, 18, 60, 0.25);
-    }
-
-    /* MAIN CONTAINER */
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 12px 14px 24px;
-    }
-
-    /* HERO GOLDEN SPOTLIGHT */
-    .golden-hero {
-      position: relative;
-      overflow: hidden;
-      border-radius: 22px;
-      padding: 18px 16px;
-      background: linear-gradient(135deg, #881337 0%, #BE123C 48%, #B45309 100%);
-      color: #FFFFFF;
-      box-shadow: 0 14px 34px rgba(136, 19, 55, 0.26);
-      margin-bottom: 14px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-    .golden-hero::after {
-      content: "";
-      position: absolute;
-      right: -30px;
-      top: -30px;
-      width: 150px;
-      height: 150px;
-      background: radial-gradient(circle, rgba(253, 224, 71, 0.25) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .gh-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 8px;
-      flex-wrap: wrap;
-    }
-    .gh-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(254, 243, 199, 0.2);
-      border: 1px solid rgba(253, 224, 71, 0.45);
-      color: #FEF08A;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-    .gh-counter {
-      font-size: 11.5px;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 0.9);
-      background: rgba(0, 0, 0, 0.22);
-      padding: 4px 10px;
-      border-radius: 999px;
-    }
-    .gh-title {
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing: -0.02em;
-      margin: 0 0 4px;
-      line-height: 1.2;
-    }
-    .gh-sub {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.9);
-      margin: 0 0 12px;
-      line-height: 1.4;
-      font-weight: 600;
-    }
-    .gh-pills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 7px;
-      margin-bottom: 14px;
-    }
-    @media (max-width: 520px) {
-      .gh-pills { grid-template-columns: 1fr; }
-    }
-    .gh-pill {
-      background: rgba(255, 255, 255, 0.13);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 12px;
-      padding: 8px 10px;
-      font-size: 11.5px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .gh-pill-lbl {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: rgba(255, 255, 255, 0.75);
-      font-weight: 800;
-    }
-    .gh-pill-val {
-      font-weight: 800;
-      color: #FFFFFF;
-      font-size: 12px;
-    }
-    .gh-actions {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .btn-hero-book {
-      flex: 1;
-      min-width: 210px;
-      height: 44px;
-      border-radius: 14px;
-      border: none;
-      background: linear-gradient(135deg, #FEF08A 0%, #F59E0B 100%);
-      color: #451A03;
-      font-size: 14px;
-      font-weight: 900;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
-      transition: transform 0.12s;
-    }
-    .btn-hero-book:active { transform: scale(0.97); }
-    .btn-hero-sec {
-      height: 44px;
-      padding: 0 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255, 255, 255, 0.32);
-      background: rgba(255, 255, 255, 0.14);
-      color: #FFFFFF;
       font-size: 12.5px;
       font-weight: 800;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
     }
 
-    /* STATS SUMMARY STRIP */
-    .kpi-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin-bottom: 14px;
-    }
-    .kpi-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 10px 12px;
-      box-shadow: var(--shadow-sm);
-      cursor: pointer;
-      transition: transform 0.12s, border-color 0.15s;
-    }
-    .kpi-card:active { transform: scale(0.97); }
-    .kpi-card.active-filter {
-      border-color: var(--wine);
-      background: var(--wine-soft);
-      box-shadow: 0 0 0 1.5px var(--wine);
-    }
-    .kpi-num {
-      font-size: 20px;
-      font-weight: 900;
-      line-height: 1.1;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .kpi-lbl {
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--text-muted);
-      margin-top: 3px;
+    /* MAIN */
+    .container {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 14px 16px;
     }
 
-    /* FILTER CHIPS */
-    .filter-bar {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      padding-bottom: 6px;
-      margin-bottom: 12px;
-      scrollbar-width: none;
-    }
-    .filter-bar::-webkit-scrollbar { display: none; }
-    .f-chip {
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border-strong);
-      background: var(--bg-card);
-      color: var(--text-muted);
-      font-size: 12px;
-      font-weight: 800;
-      white-space: nowrap;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      box-shadow: var(--shadow-sm);
-    }
-    .f-chip.active {
-      background: var(--text);
-      color: #FFFFFF;
-      border-color: var(--text);
-    }
-    .f-chip.gold.active {
-      background: linear-gradient(135deg, #D97706, #B45309);
-      border-color: #B45309;
+    /* HERO PROCHAIN SOIR */
+    .hero {
+      background: linear-gradient(135deg, #9F1239 0%, #BE123C 55%, #D97706 100%);
       color: #FFF;
+      border-radius: 22px;
+      padding: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 26px rgba(190, 18, 60, 0.22);
     }
-
-    /* OPPORTUNITY CARDS */
-    .opp-list {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .opp-card {
-      background: var(--bg-card);
-      border: 1.5px solid var(--border);
-      border-radius: 20px;
-      padding: 14px;
-      box-shadow: var(--shadow-sm);
-      transition: transform 0.15s, box-shadow 0.15s;
-      position: relative;
-      overflow: hidden;
-    }
-    .opp-card.tier-gold {
-      border-color: #F59E0B;
-      background: linear-gradient(180deg, #FFFDF7 0%, #FFFFFF 100%);
-      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.12);
-    }
-    .opp-card.tier-gold::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: linear-gradient(180deg, #F59E0B, #BE123C);
-    }
-    .opp-card.tier-silver {
-      border-color: #CBD5E1;
-      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
-    }
-    .opp-card.tier-silver::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: linear-gradient(180deg, #0284C7, #DB2777);
-    }
-    .opp-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
-    .opp-date {
-      font-size: 16px;
-      font-weight: 900;
-      color: var(--text);
-      text-transform: capitalize;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-    .opp-slot-tag {
+    .hero-tag {
+      display: inline-block;
       font-size: 11px;
-      font-weight: 800;
-      padding: 3px 9px;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-    .opp-slot-tag.gold {
-      background: #FEF3C7;
-      color: #92400E;
-      border: 1px solid #FCD34D;
-    }
-    .opp-slot-tag.silver {
-      background: #FCE7F3;
-      color: #9D174D;
-      border: 1px solid #F9A8D4;
-    }
-    .opp-slot-tag.booked {
-      background: #DCFCE7;
-      color: #166534;
-      border: 1px solid #86EFAC;
-    }
-
-    .trio-status {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 7px;
-      margin-bottom: 11px;
-    }
-    @media (max-width: 520px) {
-      .trio-status { grid-template-columns: 1fr; }
-    }
-    .ts-box {
-      padding: 8px 10px;
-      border-radius: 12px;
-      font-size: 11.5px;
-      border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .ts-box.marie {
-      background: var(--marie-soft);
-      border-color: #FBCFE8;
-      color: #831843;
-    }
-    .ts-box.thomas {
-      background: var(--thomas-soft);
-      border-color: #BAE6FD;
-      color: #0C4A6E;
-    }
-    .ts-box.emile-ok {
-      background: var(--emile-soft);
-      border-color: #BBF7D0;
-      color: #14532D;
-    }
-    .ts-box.emile-ask {
-      background: #FFFBEB;
-      border-color: #FDE68A;
-      color: #92400E;
-    }
-    .ts-who {
-      font-size: 10px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.03em;
-      opacity: 0.85;
+      letter-spacing: 0.04em;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
     }
-    .ts-val {
-      font-weight: 800;
+    .hero-date {
+      font-size: 22px;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin: 0 0 6px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .h-pill {
       font-size: 12px;
-      line-height: 1.25;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 5px 10px;
+      border-radius: 9px;
+    }
+    .btn-main-book {
+      width: 100%;
+      height: 46px;
+      border-radius: 14px;
+      border: none;
+      background: #FEF08A;
+      color: #451A03;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    }
+    .btn-main-book:active { transform: scale(0.98); }
+
+    /* TABS SIMPLES */
+    .seg-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      background: var(--subtle);
+      padding: 4px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px;
+    }
+    .seg-btn {
+      height: 36px;
+      border: none;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 12.5px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .seg-btn.active {
+      background: var(--card);
+      color: var(--text);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
 
-    .opp-footer {
+    /* LISTE DES JOURS */
+    .slot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .slot-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 8px;
-      flex-wrap: wrap;
-      padding-top: 8px;
-      border-top: 1px dashed var(--border);
+      gap: 12px;
     }
-    .opp-reco {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-muted);
+    .slot-card.gold {
+      border-color: #F59E0B;
+      background: #FFFDF7;
     }
-    .opp-btns {
+    .slot-card.booked {
+      border-color: var(--green);
+      background: #F4FDF7;
+    }
+    .slot-left {
+      min-width: 0;
+      flex: 1;
+    }
+    .slot-date {
+      font-size: 15.5px;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin-bottom: 4px;
+    }
+    .slot-meta {
       display: flex;
-      gap: 6px;
       flex-wrap: wrap;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
     }
-    .btn-book-now {
-      height: 36px;
+    .tag {
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .tag.gold { background: var(--gold-soft); color: #92400E; }
+    .tag.free { background: var(--wine-soft); color: var(--wine); }
+    .tag.booked { background: var(--green-soft); color: #166534; }
+
+    .slot-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .btn-book {
+      height: 38px;
       padding: 0 13px;
       border-radius: 11px;
       border: none;
-      background: linear-gradient(135deg, #BE123C 0%, #D97706 100%);
-      color: #FFFFFF;
-      font-size: 12px;
+      background: var(--wine);
+      color: #FFF;
+      font-size: 12.5px;
       font-weight: 800;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      box-shadow: 0 4px 12px rgba(190, 18, 60, 0.22);
+      white-space: nowrap;
     }
-    .btn-ask-gp {
-      height: 36px;
-      padding: 0 11px;
+    .btn-gp {
+      height: 38px;
+      padding: 0 10px;
       border-radius: 11px;
       border: 1px solid #F59E0B;
       background: #FFFBEB;
       color: #92400E;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 800;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
     }
 
-    /* CALENDAR VIEW */
-    .cal-controls {
+    /* CALENDRIER COMPACT */
+    .cal-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+    .cal-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 7px 10px;
       margin-bottom: 10px;
-      box-shadow: var(--shadow-sm);
     }
-    .cal-nav-btn {
+    .cal-nav button {
       width: 34px;
       height: 34px;
       border-radius: 10px;
       border: 1px solid var(--border);
-      background: var(--bg-subtle);
-      color: var(--text);
-      font-size: 17px;
+      background: var(--subtle);
+      font-size: 16px;
       font-weight: 800;
       cursor: pointer;
     }
-    .cal-month-title {
-      font-size: 14.5px;
-      font-weight: 900;
-      text-transform: capitalize;
-    }
-    .months-strip {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      padding-bottom: 8px;
-      margin-bottom: 8px;
-      scrollbar-width: none;
-    }
-    .months-strip::-webkit-scrollbar { display: none; }
-    .m-pill {
-      padding: 6px 11px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--bg-card);
-      color: var(--text-muted);
-      font-size: 11.5px;
-      font-weight: 800;
-      text-transform: capitalize;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-    .m-pill.active {
-      background: var(--wine);
-      color: #FFF;
-      border-color: var(--wine);
-    }
-
-    .cal-legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-      padding: 0 2px;
-    }
-    .leg-item { display: inline-flex; align-items: center; gap: 5px; }
-    .leg-dot { width: 9px; height: 9px; border-radius: 50%; }
-
-    .cal-grid-head {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      text-align: center;
-      font-size: 10.5px;
-      font-weight: 800;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-    .cal-grid {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 4px;
-    }
-    .c-cell {
-      min-height: 68px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 4px 3px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      user-select: none;
-      position: relative;
-      transition: transform 0.1s;
-    }
-    .c-cell:active { transform: scale(0.95); }
-    .c-cell.other-month { opacity: 0.35; }
-    .c-cell.selected {
-      box-shadow: 0 0 0 2px var(--wine);
-      z-index: 2;
-    }
-    .c-cell.is-gold {
-      background: linear-gradient(145deg, #FEF3C7 0%, #FFFBEB 100%);
-      border: 1.5px solid #F59E0B;
-      box-shadow: 0 3px 10px rgba(217, 119, 6, 0.16);
-    }
-    .c-cell.is-silver {
-      background: linear-gradient(145deg, #FDF2F7 0%, #F0F9FF 100%);
-      border: 1.5px solid #F472B6;
-    }
-    .c-cell.is-busy {
-      background: #F5EFE8;
-      color: var(--text-muted);
-    }
-    .c-num {
-      font-size: 12px;
-      font-weight: 800;
-      line-height: 1;
-    }
-    .c-badge {
-      font-size: 8.5px;
-      font-weight: 800;
-      padding: 2px 4px;
-      border-radius: 5px;
-      text-align: center;
-      max-width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      line-height: 1.1;
-    }
-    .c-badge.gold { background: #D97706; color: #FFF; }
-    .c-badge.silver { background: #FCE7F3; color: #9D174D; }
-    .c-badge.garde { background: #FEE2E2; color: #991B1B; }
-    .c-badge.work { background: #E2E8F0; color: #475569; }
-    .c-badge.booked { background: #16A34A; color: #FFF; }
-
-    /* RESTAURANTS GRID */
-    .resto-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-    @media (max-width: 600px) {
-      .resto-grid { grid-template-columns: 1fr; }
-    }
-    .resto-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .resto-card.favorite {
-      border-color: #F59E0B;
-      background: linear-gradient(180deg, #FFFDF9 0%, #FFFFFF 100%);
-    }
-    .rc-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .rc-name {
-      font-size: 15.5px;
-      font-weight: 900;
-      color: var(--text);
-      margin: 0;
-    }
-    .rc-cuisine {
-      font-size: 11.5px;
-      font-weight: 700;
-      color: var(--wine);
-      margin-top: 2px;
-    }
-    .rc-platform {
-      font-size: 10px;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 999px;
-      background: var(--bg-elevated);
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-    .rc-meta {
-      font-size: 12px;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-    .rc-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 4px;
-    }
-    .rc-tag {
-      font-size: 10.5px;
-      font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 6px;
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-    }
-
-    /* GRANDPARENTS HUB */
-    .gp-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    @media (max-width: 600px) {
-      .gp-grid { grid-template-columns: 1fr; }
-    }
-    .gp-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: var(--shadow-sm);
-    }
-    .gp-title {
+    .cal-title {
       font-size: 15px;
       font-weight: 900;
-      margin: 0 0 3px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      text-transform: capitalize;
     }
-    .gp-sub {
-      font-size: 12px;
-      color: var(--text-muted);
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-    .gp-contact-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 8px 10px;
-      background: var(--bg-subtle);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      margin-bottom: 7px;
-    }
-    .gp-contact-name {
-      font-size: 12.5px;
-      font-weight: 800;
-    }
-    .gp-contact-btns {
-      display: flex;
-      gap: 5px;
-    }
-    .gp-mini-btn {
-      height: 30px;
-      padding: 0 9px;
-      border-radius: 8px;
-      border: 1px solid var(--border-strong);
-      background: #FFF;
-      color: var(--text);
-      font-size: 11px;
-      font-weight: 800;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
+    .cal-head, .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
       gap: 4px;
-      cursor: pointer;
+      text-align: center;
     }
-
-    /* BOTTOM NAV */
-    .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 80;
-      background: rgba(255, 255, 255, 0.94);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-top: 1px solid var(--border);
-      padding: 6px 10px calc(8px + var(--safe-bottom));
-      display: flex;
-      justify-content: space-around;
-      box-shadow: 0 -4px 18px rgba(88, 44, 28, 0.06);
-    }
-    .nav-btn {
-      border: none;
-      background: transparent;
-      color: var(--text-muted);
+    .cal-head div {
       font-size: 10.5px;
       font-weight: 800;
+      color: var(--muted);
+      padding-bottom: 4px;
+    }
+    .c-day {
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 3px;
-      padding: 5px 12px;
-      border-radius: 12px;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
       cursor: pointer;
-      position: relative;
+      background: var(--card);
     }
-    .nav-btn.active {
-      color: var(--wine);
+    .c-day.other { opacity: 0.3; }
+    .c-day.gold {
+      background: var(--gold-soft);
+      border-color: #F59E0B;
+      color: #92400E;
+    }
+    .c-day.free {
       background: var(--wine-soft);
+      border-color: #FDA4AF;
+      color: var(--wine);
     }
-    .nav-btn.active::before {
-      content: "";
-      position: absolute;
-      top: -6px;
-      width: 24px;
-      height: 3px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--wine), var(--gold));
+    .c-day.booked {
+      background: var(--green-soft);
+      border-color: var(--green);
+      color: #166534;
     }
-    .nav-badge {
-      position: absolute;
-      top: 1px;
-      right: 6px;
-      background: var(--gold);
-      color: #FFF;
+    .c-dot {
       font-size: 9px;
-      font-weight: 900;
-      padding: 1px 5px;
-      border-radius: 999px;
+      line-height: 1;
+      margin-top: 2px;
     }
 
-    /* MODALS */
+    /* MODAL */
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      z-index: 200;
-      background: rgba(35, 20, 15, 0.55);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
+      z-index: 100;
+      background: rgba(30, 20, 15, 0.5);
+      backdrop-filter: blur(4px);
       display: none;
       align-items: flex-end;
       justify-content: center;
     }
     .modal-backdrop.open { display: flex; }
-    .modal-sheet {
+    .modal {
       width: 100%;
-      max-width: 560px;
-      background: var(--bg-card);
-      border-top: 1px solid var(--border);
-      border-radius: 26px 26px 0 0;
-      padding: 18px 16px calc(22px + var(--safe-bottom));
-      max-height: 92vh;
-      overflow-y: auto;
-      box-shadow: 0 -12px 36px rgba(35, 20, 15, 0.22);
+      max-width: 500px;
+      background: var(--card);
+      border-radius: 24px 24px 0 0;
+      padding: 20px 18px calc(22px + var(--safe-bottom));
     }
-    .form-group { margin-bottom: 12px; }
-    .form-label {
-      display: block;
-      font-size: 11.5px;
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .modal-title {
+      font-size: 17px;
+      font-weight: 900;
+      margin: 0;
+    }
+    .close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--subtle);
       font-weight: 800;
-      color: var(--text-muted);
+      cursor: pointer;
+    }
+    .field { margin-bottom: 12px; }
+    .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--muted);
       margin-bottom: 5px;
     }
-    .form-input, .form-select, .form-textarea {
+    .field input, .field select {
       width: 100%;
-      padding: 10px 12px;
+      height: 42px;
+      padding: 0 12px;
       border-radius: 12px;
-      border: 1px solid var(--border-strong);
-      background: var(--bg-subtle);
-      color: var(--text);
+      border: 1px solid var(--border);
+      background: var(--subtle);
       font-size: 14px;
-      font-weight: 600;
-      font-family: inherit;
+      font-weight: 700;
+      color: var(--text);
     }
-    .form-row {
+    .row-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
-
-    /* AUTO BOOKING TERMINAL / STEPPER */
-    .agent-box {
-      background: #1C1917;
-      color: #F5F5F4;
-      border-radius: 16px;
-      padding: 14px;
-      margin: 12px 0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      border: 1px solid #44403C;
+    .btn-submit {
+      width: 100%;
+      height: 46px;
+      border-radius: 14px;
+      border: none;
+      background: linear-gradient(135deg, #BE123C, #D97706);
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      margin-top: 4px;
     }
-    .agent-step {
-      display: flex;
-      align-items: center;
+    .sub-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 8px;
-      padding: 5px 0;
-      color: #A8A29E;
-    }
-    .agent-step.done { color: #4ADE80; font-weight: 700; }
-    .agent-step.running { color: #FACC15; font-weight: 700; }
-    .payload-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
       margin-top: 8px;
-      padding-top: 8px;
-      border-top: 1px dashed #44403C;
     }
-    .p-chip {
-      background: #292524;
-      border: 1px solid #57534E;
-      color: #E7E5E4;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 11px;
+    .btn-sec {
+      height: 38px;
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      background: var(--subtle);
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <!-- PULL TO REFRESH INDICATOR -->
   <div id="ptr-indicator">
     <span id="ptr-arrow">↓</span>
-    <span id="ptr-text">Tirer pour actualiser</span>
+    <span id="ptr-text">Actualiser</span>
   </div>
 
-  <!-- HEADER -->
-  <header class="app-header">
+  <header class="header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-logo"><img src="assets/icon.svg" alt="Resto M&amp;T" /></div>
-        <div>
-          <div class="brand-title">Resto en Amoureux • M&amp;T</div>
-          <div class="brand-sub">
-            <span class="sync-dot"></span>
-            <span id="sync-status">Synchro Agenda Famille &amp; Cochin</span>
-          </div>
-        </div>
+        <img src="assets/icon.svg" alt="Resto M&amp;T" />
+        <div class="brand-title">Resto Marie &amp; Thomas</div>
       </div>
-      <div class="header-actions">
-        <button type="button" class="btn-pill" onclick="openAddGuardModal()">🏡 + Garde Émile</button>
-        <button type="button" class="btn-pill primary" onclick="openAutoBookModal()">🍷 Réserver Auto</button>
-      </div>
+      <button type="button" class="btn-add-gp" onclick="openGuardModal()">🏡 + Garde Émile</button>
     </div>
   </header>
 
   <main class="container">
-    <!-- ONGLET 1 : CRÉNEAUX & SOIRÉES EN AMOUREUX -->
-    <section id="tab-slots">
-      <div id="hero-spotlight"></div>
+    <!-- CARTE PROCHAIN CRÉNEAU -->
+    <div id="hero-box"></div>
 
-      <div class="kpi-row">
-        <div class="kpi-card" id="kpi-gold" onclick="setSlotFilter('gold')">
-          <div class="kpi-num" style="color:#B45309;">🌟 <span id="count-gold">0</span></div>
-          <div class="kpi-lbl">Jours d'Or (Émile gardé)</div>
-        </div>
-        <div class="kpi-card" id="kpi-silver" onclick="setSlotFilter('silver')">
-          <div class="kpi-num" style="color:#BE123C;">🥂 <span id="count-silver">0</span></div>
-          <div class="kpi-lbl">Tous les 2 libres</div>
-        </div>
-        <div class="kpi-card" id="kpi-booked" onclick="setSlotFilter('booked')">
-          <div class="kpi-num" style="color:#16A34A;">✅ <span id="count-booked">0</span></div>
-          <div class="kpi-lbl">Restos réservés</div>
-        </div>
-      </div>
+    <!-- 3 ONGLETS ULTRA SIMPLES -->
+    <div class="seg-bar">
+      <button type="button" class="seg-btn active" id="tab-gold" onclick="setTab('gold')">
+        🌟 Émile gardé (<span id="cnt-gold">0</span>)
+      </button>
+      <button type="button" class="seg-btn" id="tab-free" onclick="setTab('free')">
+        🥂 Tous les 2 libres
+      </button>
+      <button type="button" class="seg-btn" id="tab-cal" onclick="setTab('cal')">
+        📅 Calendrier
+      </button>
+    </div>
 
-      <div class="filter-bar">
-        <button type="button" class="f-chip gold active" id="fchip-all-good" onclick="setSlotFilter('all-good')">✨ Opportunités Resto</button>
-        <button type="button" class="f-chip" id="fchip-gold" onclick="setSlotFilter('gold')">🌟 Jours d'Or (Grands-Parents OK)</button>
-        <button type="button" class="f-chip" id="fchip-silver" onclick="setSlotFilter('silver')">💡 À proposer aux Grands-Parents</button>
-        <button type="button" class="f-chip" id="fchip-thu-fri" onclick="setSlotFilter('thu-fri')">🍸 Jeudis &amp; Vendredis</button>
-        <button type="button" class="f-chip" id="fchip-weekend" onclick="setSlotFilter('weekend')">☀️ Week-ends</button>
-        <button type="button" class="f-chip" id="fchip-booked" onclick="setSlotFilter('booked')">✅ Réservations</button>
-      </div>
-
-      <div class="opp-list" id="opportunities-list"></div>
-    </section>
-
-    <!-- ONGLET 2 : CALENDRIER CROISÉ -->
-    <section id="tab-calendar" style="display:none;">
-      <div class="months-strip" id="cal-months-strip"></div>
-
-      <div class="cal-controls">
-        <button type="button" class="cal-nav-btn" onclick="changeCalMonth(-1)">‹</button>
-        <div class="cal-month-title" id="cal-month-label">Novembre 2026</div>
-        <button type="button" class="cal-nav-btn" onclick="changeCalMonth(1)">›</button>
-      </div>
-
-      <div class="cal-legend">
-        <span class="leg-item"><span class="leg-dot" style="background:#D97706;"></span>🌟 Jour d'Or (2 libres + Grands-Parents)</span>
-        <span class="leg-item"><span class="leg-dot" style="background:#EC4899;"></span>🥂 Marie &amp; Thomas libres</span>
-        <span class="leg-item"><span class="leg-dot" style="background:#DC2626;"></span>🏥 Garde / Indispo</span>
-        <span class="leg-item"><span class="leg-dot" style="background:#16A34A;"></span>✅ Resto réservé</span>
-      </div>
-
-      <div class="cal-grid-head">
-        <div>Lun</div><div>Mar</div><div>Mer</div><div>Jeu</div><div>Ven</div><div>Sam</div><div>Dim</div>
-      </div>
-      <div class="cal-grid" id="cal-grid-cells"></div>
-
-      <div id="cal-selected-day-detail" style="margin-top:14px;"></div>
-    </section>
-
-    <!-- ONGLET 3 : RESTAURANTS & RÉSERVATION AUTOMATIQUE -->
-    <section id="tab-restaurants" style="display:none;">
-      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap;">
-        <div>
-          <h2 style="font-size:17px; font-weight:900; margin:0;">🍽️ Tables Favorites &amp; Réservation Auto</h2>
-          <p style="font-size:12px; color:var(--text-muted); margin:2px 0 0; font-weight:600;">
-            Autour du 7ter rue du Colonel Oudot (Paris 12e), Bastille, Saint-Mandé &amp; Vincennes
-          </p>
-        </div>
-        <button type="button" class="btn-pill primary" onclick="openAddRestoModal()">+ Ajouter un Resto</button>
-      </div>
-
-      <div class="resto-grid" id="restaurants-list"></div>
-    </section>
-
-    <!-- ONGLET 4 : GRANDS-PARENTS & RELAIS ÉMILE -->
-    <section id="tab-grandparents" style="display:none;">
-      <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap;">
-        <div>
-          <h2 style="font-size:17px; font-weight:900; margin:0;">👵👴 Grands-Parents &amp; Relais d'Émile</h2>
-          <p style="font-size:12px; color:var(--text-muted); margin:2px 0 0; font-weight:600;">
-            Déclarez une garde ou envoyez un SMS pré-rempli en 1 clic sur un créneau où vous êtes libres tous les deux.
-          </p>
-        </div>
-        <button type="button" class="btn-pill primary" onclick="openAddGuardModal()">+ Déclarer une Garde</button>
-      </div>
-
-      <div class="gp-grid">
-        <div class="gp-card">
-          <h3 class="gp-title">🏡 Grands-Parents Lefèvre (Fontenay)</h3>
-          <div class="gp-sub">Maman &amp; Papa de Thomas (Dr Nicolas Lefèvre)</div>
-          <div class="gp-contact-row">
-            <div>
-              <div class="gp-contact-name">👩 Maman de Thomas (Mamie)</div>
-              <div style="font-size:11px; color:var(--text-muted);">06 62 37 36 45 • Garde souvent Émile jeudi/vendredi</div>
-            </div>
-            <div class="gp-contact-btns">
-              <a class="gp-mini-btn" href="tel:+33662373645">📞</a>
-              <button type="button" class="gp-mini-btn" onclick="sendQuickSmsToGp('maman_thomas')">💬 SMS</button>
-            </div>
-          </div>
-          <div class="gp-contact-row" style="margin-bottom:0;">
-            <div>
-              <div class="gp-contact-name">👨 Papa de Thomas (Nicolas)</div>
-              <div style="font-size:11px; color:var(--text-muted);">06 60 81 99 18 • Fontenay-sous-Bois</div>
-            </div>
-            <div class="gp-contact-btns">
-              <a class="gp-mini-btn" href="tel:+33660819918">📞</a>
-              <button type="button" class="gp-mini-btn" onclick="sendQuickSmsToGp('papa_thomas')">💬 SMS</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="gp-card">
-          <h3 class="gp-title">🌸 Grands-Parents Parizot</h3>
-          <div class="gp-sub">Maman &amp; Papa de Marie (Vincent Parizot)</div>
-          <div class="gp-contact-row">
-            <div>
-              <div class="gp-contact-name">👨 Vincent Parizot (Papa de Marie)</div>
-              <div style="font-size:11px; color:var(--text-muted);">06 73 85 25 40 • Garde dodo / week-end</div>
-            </div>
-            <div class="gp-contact-btns">
-              <a class="gp-mini-btn" href="tel:+33673852540">📞</a>
-              <button type="button" class="gp-mini-btn" onclick="sendQuickSmsToGp('papa_marie')">💬 SMS</button>
-            </div>
-          </div>
-          <div class="gp-contact-row" style="margin-bottom:0;">
-            <div>
-              <div class="gp-contact-name">👩 Maman de Marie</div>
-              <div style="font-size:11px; color:var(--text-muted);">Garde Émile en soirée &amp; relais</div>
-            </div>
-            <div class="gp-contact-btns">
-              <button type="button" class="gp-mini-btn" onclick="openAddGuardModal('Maman de Marie')">🏡 Noter garde</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3 style="font-size:15px; font-weight:900; margin:16px 0 10px;">📅 Prochaines gardes Grands-Parents enregistrées</h3>
-      <div id="gp-upcoming-list" class="opp-list"></div>
-    </section>
+    <!-- CONTENU -->
+    <div id="main-list" class="slot-list"></div>
+    <div id="cal-view" style="display:none;"></div>
   </main>
 
-  <!-- NAVIGATION BASSE -->
-  <nav class="bottom-nav">
-    <button type="button" class="nav-btn active" id="nav-slots" onclick="switchTab('slots')">
-      <span style="font-size:18px;">🌟</span>
-      <span>Créneaux</span>
-      <span class="nav-badge" id="badge-gold-nav">0</span>
-    </button>
-    <button type="button" class="nav-btn" id="nav-calendar" onclick="switchTab('calendar')">
-      <span style="font-size:18px;">📅</span>
-      <span>Calendrier</span>
-    </button>
-    <button type="button" class="nav-btn" id="nav-restaurants" onclick="switchTab('restaurants')">
-      <span style="font-size:18px;">🍷</span>
-      <span>Restaurants</span>
-    </button>
-    <button type="button" class="nav-btn" id="nav-grandparents" onclick="switchTab('grandparents')">
-      <span style="font-size:18px;">👵</span>
-      <span>Grands-Parents</span>
-    </button>
-  </nav>
-
-  <!-- MODAL 1 : ASSISTANT DE RÉSERVATION AUTOMATIQUE -->
-  <div class="modal-backdrop" id="modal-autobook">
-    <div class="modal-sheet">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-        <h3 style="font-size:17px; font-weight:900; margin:0;">🤖 Réservation Automatique Restaurant</h3>
-        <button type="button" class="btn-pill" onclick="closeAutoBookModal()">✕</button>
+  <!-- MODAL RÉSERVATION AUTO -->
+  <div class="modal-backdrop" id="modal-book">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 class="modal-title">🍷 Réservation Automatique</h3>
+        <button type="button" class="close-btn" onclick="closeBookModal()">✕</button>
       </div>
 
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Date du restaurant</label>
-          <input type="date" class="form-input" id="ab-date" onchange="onAutoBookDateChange()" />
+      <div id="book-day-badge" style="margin-bottom:12px;"></div>
+
+      <div class="field">
+        <label>Restaurant</label>
+        <select id="bk-resto"></select>
+      </div>
+
+      <div class="row-2">
+        <div class="field">
+          <label>Date</label>
+          <input type="date" id="bk-date" onchange="updateBookModalBadge()" />
         </div>
-        <div class="form-group">
-          <label class="form-label">Service &amp; Horaire</label>
-          <select class="form-select" id="ab-time">
-            <option value="20:00">🌙 Dîner • 20h00</option>
-            <option value="20:30" selected>🌙 Dîner • 20h30</option>
-            <option value="19:30">🌙 Dîner tôt • 19h30</option>
-            <option value="21:00">🌙 Dîner • 21h00</option>
-            <option value="12:30">☀️ Déjeuner • 12h30</option>
-            <option value="13:00">☀️ Déjeuner • 13h00</option>
+        <div class="field">
+          <label>Heure (2 pers.)</label>
+          <select id="bk-time">
+            <option value="20:00">20h00</option>
+            <option value="20:30" selected>20h30</option>
+            <option value="19:30">19h30</option>
+            <option value="12:30">12h30 (Déjeuner)</option>
           </select>
         </div>
       </div>
 
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Restaurant</label>
-          <select class="form-select" id="ab-resto" onchange="updateAutoBookPreview()"></select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Convives</label>
-          <select class="form-select" id="ab-guests" onchange="updateAutoBookPreview()">
-            <option value="2" selected>2 personnes (Marie &amp; Thomas)</option>
-            <option value="4">4 personnes (Double couple)</option>
-          </select>
-        </div>
-      </div>
+      <button type="button" class="btn-submit" onclick="launchAutoBooking()">
+        🚀 Réserver automatiquement
+      </button>
 
-      <div id="ab-day-status-banner" style="margin-bottom:10px;"></div>
-
-      <div class="agent-box" id="ab-agent-box">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-          <strong style="color:#FDE047;">⚡ Agent Auto-Réservation M&amp;T</strong>
-          <span id="ab-platform-badge" style="font-size:10.5px; background:#3F3F46; padding:2px 7px; border-radius:99px;">Zenchef / TheFork</span>
-        </div>
-        <div class="agent-step done" id="step-1">✓ 1. Vérification planning Cochin (Thomas) &amp; Trousseau (Marie)</div>
-        <div class="agent-step done" id="step-2">✓ 2. Vérification garde d'Émile (Grands-Parents / Relais)</div>
-        <div class="agent-step" id="step-3">○ 3. Pré-remplissage automatique identité &amp; convives (2 pers.)</div>
-        <div class="agent-step" id="step-4">○ 4. Ouverture directe du portail de réservation &amp; inscription Agenda</div>
-        <div class="payload-chips">
-          <span class="p-chip">👤 Thomas Lefèvre &amp; Marie Parizot</span>
-          <span class="p-chip">📞 06 07 68 84 99</span>
-          <span class="p-chip">✉️ thomaslefevre18@live.fr</span>
-          <span class="p-chip" id="ab-Request-note">💬 Table calme en amoureux</span>
-        </div>
-      </div>
-
-      <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
-        <button type="button" class="btn-hero-book" style="width:100%;" onclick="triggerAutomaticReservation()">
-          🚀 Lancer la Réservation Automatique Maintenant
-        </button>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
-          <button type="button" class="btn-pill" style="justify-content:center; height:40px;" onclick="downloadIcsForCurrentBooking()">
-            📅 Ajouter à Apple Calendar (.ics)
-          </button>
-          <button type="button" class="btn-pill" style="justify-content:center; height:40px;" onclick="shareBookingSmsToMarie()">
-            💌 Envoyer à Marie (iMessage)
-          </button>
-        </div>
+      <div class="sub-actions">
+        <button type="button" class="btn-sec" onclick="sendSmsMarie()">💌 SMS Marie</button>
+        <button type="button" class="btn-sec" onclick="downloadIcs()">📅 Ajouter Calendrier</button>
       </div>
     </div>
   </div>
 
-  <!-- MODAL 2 : AJOUTER UNE GARDE GRANDS-PARENTS -->
+  <!-- MODAL AJOUT GARDE GRANDS-PARENTS -->
   <div class="modal-backdrop" id="modal-guard">
-    <div class="modal-sheet">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-        <h3 style="font-size:17px; font-weight:900; margin:0;">🏡 Noter une Garde d'Émile (Grands-Parents)</h3>
-        <button type="button" class="btn-pill" onclick="closeAddGuardModal()">✕</button>
+    <div class="modal">
+      <div class="modal-head">
+        <h3 class="modal-title">🏡 Émile gardé par les Grands-Parents</h3>
+        <button type="button" class="close-btn" onclick="closeGuardModal()">✕</button>
       </div>
-      <form onsubmit="submitNewGuard(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Date</label>
-            <input type="date" class="form-input" id="gd-date" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Créneau de garde</label>
-            <select class="form-select" id="gd-slot">
-              <option value="Soirée & Nuit (dès 18h30)">🌙 Soirée &amp; Nuit (dès 18h30)</option>
-              <option value="Journée entière">☀️ Journée entière</option>
-              <option value="Week-end complet">🏡 Week-end complet</option>
-              <option value="Après-midi & Soirée">🌤️ Après-midi &amp; Soirée</option>
-            </select>
-          </div>
+      <div class="row-2">
+        <div class="field">
+          <label>Date</label>
+          <input type="date" id="gd-date" />
         </div>
-        <div class="form-group">
-          <label class="form-label">Qui garde Émile ?</label>
-          <select class="form-select" id="gd-who">
-            <option value="Maman & Papa de Thomas (Fontenay)">🏡 Maman &amp; Papa de Thomas (Fontenay)</option>
-            <option value="Maman de Thomas">👩 Maman de Thomas (Mamie)</option>
-            <option value="Maman de Marie">🌸 Maman de Marie</option>
-            <option value="Vincent Parizot (Papa de Marie)">👨 Vincent Parizot (Papa de Marie)</option>
-            <option value="Grands-Parents">👵👴 Grands-Parents</option>
+        <div class="field">
+          <label>Créneau</label>
+          <select id="gd-slot">
+            <option value="Soirée & Nuit">🌙 Soirée &amp; Nuit</option>
+            <option value="Journée entière">☀️ Journée entière</option>
+            <option value="Week-end">🏡 Week-end</option>
           </select>
         </div>
-        <div class="form-group">
-          <label class="form-label">Notes (ex: dodo chez Mamie, repas fourni...)</label>
-          <input type="text" class="form-input" id="gd-notes" placeholder="Ex: Émile dort à Fontenay → soirée resto libre !" />
-        </div>
-        <button type="button" class="btn-hero-book" style="width:100%;" onclick="submitNewGuard(event)">
-          ✨ Enregistrer &amp; Activer le Jour d'Or
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- MODAL 3 : AJOUTER UN RESTAURANT -->
-  <div class="modal-backdrop" id="modal-resto">
-    <div class="modal-sheet">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-        <h3 style="font-size:17px; font-weight:900; margin:0;">🍽️ Ajouter un Restaurant Favori</h3>
-        <button type="button" class="btn-pill" onclick="closeAddRestoModal()">✕</button>
       </div>
-      <form onsubmit="submitNewResto(event)">
-        <div class="form-group">
-          <label class="form-label">Nom du restaurant</label>
-          <input type="text" class="form-input" id="nr-name" placeholder="Ex: Septime, Le Train Bleu..." required />
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Cuisine / Style</label>
-            <input type="text" class="form-input" id="nr-cuisine" placeholder="Ex: Bistronomique, Italien..." required />
-          </div>
-          <div class="form-group">
-            <label class="form-label">Quartier / Ville</label>
-            <input type="text" class="form-input" id="nr-area" placeholder="Ex: Paris 12e, Vincennes..." required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Plateforme de réservation</label>
-            <select class="form-select" id="nr-platform">
-              <option value="Zenchef">Zenchef</option>
-              <option value="TheFork">TheFork</option>
-              <option value="SevenRooms">SevenRooms</option>
-              <option value="Google Reserve">Google Reserve</option>
-              <option value="Site Direct">Site Direct</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Téléphone</label>
-            <input type="tel" class="form-input" id="nr-phone" placeholder="01 43 ..." />
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">URL de réservation en ligne (optionnel)</label>
-          <input type="url" class="form-input" id="nr-url" placeholder="https://..." />
-        </div>
-        <button type="submit" class="btn-pill primary" style="width:100%; height:42px; justify-content:center;">
-          Enregistrer le restaurant
-        </button>
-      </form>
+      <div class="field">
+        <label>Grands-Parents</label>
+        <select id="gd-who">
+          <option value="Maman & Papa de Thomas (Fontenay)">🏡 Parents de Thomas (Fontenay)</option>
+          <option value="Maman de Marie">🌸 Maman de Marie</option>
+          <option value="Papa de Marie (Vincent)">👨 Papa de Marie (Vincent)</option>
+        </select>
+      </div>
+      <button type="button" class="btn-submit" onclick="saveGuard()">
+        ✨ Valider la garde d'Émile
+      </button>
     </div>
   </div>
 
   <script>
-    /* =========================================================================
-       DONNÉES RÉELLES CROISÉES DEPUIS VOS PROJETS (AGENDA FAMILLE & COCHIN RI)
-       ========================================================================= */
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxLGqUevVWi36mNQ7WNoY2uhRsYLdsG_gQcscMPkP1GcQEt0LgdhGIuzYL2SM-uTcPq/exec";
     const STORAGE_KEY_EVENTS = "resto_mt_family_events_v1";
     const STORAGE_KEY_BOOKINGS = "resto_mt_bookings_v1";
-    const STORAGE_KEY_RESTOS = "resto_mt_restaurants_v1";
 
-    const USER_PROFILE = {
-      thomasName: "Thomas Lefèvre",
-      marieName: "Marie Parizot",
-      childName: "Émile",
-      email: "thomaslefevre18@live.fr",
-      phoneMarie: "+33607688499",
-      address: "7 ter rue du Colonel Oudot, 75012 Paris",
-      gpContacts: {
-        maman_thomas: { name: "Maman de Thomas", phone: "+33662373645" },
-        papa_thomas: { name: "Papa de Thomas (Nicolas)", phone: "+33660819918" },
-        papa_marie: { name: "Vincent Parizot", phone: "+33673852540" }
-      }
-    };
-
-    const DEFAULT_RESTAURANTS = [
-      {
-        id: "resto-lours",
-        name: "L'Ours (Jacky Ribault)",
-        cuisine: "Gastronomique étoilé ★ • Cuisine d'auteur",
-        area: "Vincennes (10 min de Picpus / 12e)",
-        address: "10 rue de l'Église, 94300 Vincennes",
-        phone: "+33146812580",
-        platform: "Zenchef",
-        bestFor: "Soirée d'exception (Jour d'Or)",
-        bookingUrl: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ours+Vincennes+reservation",
-        favorite: true
-      },
-      {
-        id: "resto-virtus",
-        name: "Virtus ★",
-        cuisine: "Gastronomique contemporain & Marin",
-        area: "Paris 12e (Aligre / Ledru-Rollin)",
-        address: "29 rue de Cotte, 75012 Paris",
-        phone: "+33143454719",
-        platform: "Zenchef",
-        bestFor: "Dîner romantique Paris 12e",
-        bookingUrl: "https://www.google.com/maps/search/?api=1&query=Restaurant+Virtus+29+rue+de+Cotte+75012+Paris",
-        favorite: true
-      },
-      {
-        id: "resto-septime",
-        name: "Septime ★",
-        cuisine: "Bistronomie contemporaine de saison",
-        area: "Paris 11e (Charonne / Bastille)",
-        address: "80 rue de Charonne, 75011 Paris",
-        phone: "+33143673829",
-        platform: "SevenRooms",
-        bestFor: "Déjeuner du Vendredi ou Dîner",
-        bookingUrl: "https://www.septime-charonne.fr/",
-        favorite: true
-      },
-      {
-        id: "resto-amarrages",
-        name: "Les Amarrages / Bistrot Daumesnil",
-        cuisine: "Bistrot chic & Cave à vins",
-        area: "Paris 12e (Bel-Air / Daumesnil - à 5 min)",
-        address: "Avenue Daumesnil, 75012 Paris",
-        phone: "+33143438214",
-        platform: "TheFork",
-        bestFor: "Dîner improvisé à côté de la maison",
-        bookingUrl: "https://www.thefork.fr/search?cityId=415144&what=Bistrot+Paris+12",
-        favorite: true
-      },
-      {
-        id: "resto-passerini",
-        name: "Ristorante Passerini",
-        cuisine: "Haute cuisine italienne & Pâtes fraîches",
-        area: "Paris 12e (Marché d'Aligre)",
-        address: "65 rue Traversière, 75012 Paris",
-        phone: "+33143422756",
-        platform: "Zenchef",
-        bestFor: "Déjeuner en amoureux ou Dîner",
-        bookingUrl: "https://www.passerini.paris/",
-        favorite: true
-      },
-      {
-        id: "resto-train-bleu",
-        name: "Le Train Bleu",
-        cuisine: "Brasserie Historique & Cadre somptueux",
-        area: "Paris 12e (Gare de Lyon)",
-        address: "Place Louis-Armand, 75012 Paris",
-        phone: "+33143430906",
-        platform: "SevenRooms",
-        bestFor: "Grande occasion à 8 min en G7",
-        bookingUrl: "https://www.le-train-bleu.com/fr/reservation/",
-        favorite: false
-      }
+    const RESTAURANTS = [
+      { id: "lours", name: "L'Ours ★ (Vincennes)", url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ours+Vincennes+reservation" },
+      { id: "virtus", name: "Virtus ★ (Paris 12e)", url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Virtus+29+rue+de+Cotte+75012+Paris" },
+      { id: "passerini", name: "Passerini (Paris 12e)", url: "https://www.passerini.paris/" },
+      { id: "septime", name: "Septime ★ (Paris 11e)", url: "https://www.septime-charonne.fr/" },
+      { id: "train-bleu", name: "Le Train Bleu (Paris 12e)", url: "https://www.le-train-bleu.com/fr/reservation/" },
+      { id: "thefork", name: "TheFork (Autour du 12e)", url: "https://www.thefork.fr/search?cityId=415144" }
     ];
 
-    // Événements réels extraits de /Users/thomaslefevre/Documents/agenda-famille/family_data.json
-    // + /Users/thomaslefevre/Documents/Agendainterventionnel/personal_data.json & iMessages
     const INITIAL_EVENTS = [
-      // NOVEMBRE 2026
-      { id: "ev-2026-11-02-marie-garde", isoDate: "2026-11-02", person: "marie", category: "garde", title: "Demi-garde Marie (jusqu'à 23h00)", horaire: "18h30 – 23h00", lieu: "Hôpital Trousseau", notes: "Thomas gère la soirée." },
-      { id: "ev-2026-11-03-famille-mamie-marie", isoDate: "2026-11-03", person: "famille", category: "relais", title: "Émile gardé chez la Maman de Marie", horaire: "Soirée", lieu: "Chez Mamie (Maman de Marie)", notes: "iMessage Marie : « boutch est chez ma mère »." },
-      { id: "ev-2026-11-05-thomas-free", isoDate: "2026-11-05", person: "thomas", category: "free", title: "Jeudi libre (Repos Thomas)", horaire: "Journée", lieu: "Domicile", notes: "Thomas disponible toute la journée." },
-      { id: "ev-2026-11-07-marie-garde", isoDate: "2026-11-07", person: "marie", category: "garde", title: "Garde Marie (09h00 – 21h00)", horaire: "09h00 – 21h00", lieu: "Urgences Trousseau", notes: "Marie de garde samedi toute la journée." },
-      { id: "ev-2026-11-11-ferie", isoDate: "2026-11-11", person: "mabrouka", category: "nanny_unavail", title: "Armistice (Jour férié — Repos)", horaire: "Journée entière", lieu: "En famille", notes: "Jour férié." },
-      { id: "ev-2026-11-12-thomas-liberal", isoDate: "2026-11-12", person: "thomas", category: "liberal", title: "Journée Libéral (Paris 5e)", horaire: "08h30 – 18h30", lieu: "Paris 5e", notes: "Fin à 18h30, libre en soirée." },
-      { id: "ev-2026-11-12-famille-mamie", isoDate: "2026-11-12", person: "famille", category: "relais", title: "Relais Émile : Maman de Thomas (dès jeudi soir)", horaire: "Dès 18h30 + Nuit", lieu: "Fontenay (Grands-Parents)", notes: "La maman de Thomas prend Émile à partir du jeudi 12/11 au soir et le vendredi 13/11." },
-      { id: "ev-2026-11-13-famille-mamie", isoDate: "2026-11-13", person: "famille", category: "relais", title: "Relais Émile : Vendredi avec la Maman de Thomas", horaire: "Journée + Soirée", lieu: "Fontenay (Grands-Parents)", notes: "Vendredi 13/11 avec la maman de Thomas." },
-      { id: "ev-2026-11-17-marie-garde", isoDate: "2026-11-17", person: "marie", category: "garde", title: "Garde complète Marie (24h)", horaire: "08h30 – Lendemain", lieu: "Hôpital Trousseau", notes: "Marie en garde 24h." },
-      { id: "ev-2026-11-19-thomas-garde", isoDate: "2026-11-19", person: "thomas", category: "garde", title: "Garde de nuit Thomas (Cochin) — Journée libre avant", horaire: "18h30 – 08h30", lieu: "Hôpital Cochin", notes: "Thomas libre en journée puis de garde la nuit." },
-      { id: "ev-2026-11-21-marie-work", isoDate: "2026-11-21", person: "marie", category: "garde", title: "Formation étudiants Marie (dès 07h30)", horaire: "07h30 – 17h30", lieu: "Faculté / Hôpital", notes: "Dispo le samedi soir." },
-      { id: "ev-2026-11-26-thomas-formation", isoDate: "2026-11-26", person: "thomas", category: "formation", title: "Formation Thomas (Paris)", horaire: "09h00 – 17h30", lieu: "Paris", notes: "Libre après 17h30." },
-      { id: "ev-2026-11-28-thomas-garde", isoDate: "2026-11-28", person: "thomas", category: "garde", title: "Garde 24h Thomas (Samedi)", horaire: "08h30 – Dim 08h30", lieu: "Hôpital Cochin", notes: "Thomas de garde 24h samedi." },
-      // DÉCEMBRE 2026
-      { id: "ev-2026-12-02-thomas-boneclub", isoDate: "2026-12-02", person: "thomas", category: "formation", title: "Réunion soir Thomas (Bone Club 18h00 – 20h00)", horaire: "18h00 – 20h00", lieu: "Cochin", notes: "Fin à 20h00." },
-      { id: "ev-2026-12-03-thomas-formation", isoDate: "2026-12-03", person: "thomas", category: "formation", title: "Déplacement Thomas (Valence — Jour 1)", horaire: "Journée + Soir", lieu: "Valence", notes: "Hors Paris." },
-      { id: "ev-2026-12-04-thomas-formation", isoDate: "2026-12-04", person: "thomas", category: "formation", title: "Déplacement Thomas (Jour 2 / Retour)", horaire: "Journée", lieu: "Valence / Retour Paris", notes: "Retour fin de journée." },
-      { id: "ev-2026-12-05-marie-astreinte", isoDate: "2026-12-05", person: "marie", category: "garde", title: "Astreinte Marie (Samedi)", horaire: "Journée", lieu: "Hôpital Trousseau", notes: "iMessage Marie du 04/11 : astreinte 5 et 6 décembre." },
-      { id: "ev-2026-12-06-marie-astreinte", isoDate: "2026-12-06", person: "marie", category: "garde", title: "Astreinte Marie (Dimanche)", horaire: "Journée", lieu: "Hôpital Trousseau", notes: "iMessage Marie du 04/11 : astreinte 5 et 6 décembre." },
-      { id: "ev-2026-12-11-famille-mamie", isoDate: "2026-12-11", person: "famille", category: "relais", title: "Relais Émile : Vendredi avec la Maman de Thomas", horaire: "Journée + Soirée", lieu: "Fontenay (Grands-Parents)", notes: "Vendredi 11/12 avec la maman de Thomas." },
-      { id: "ev-2026-12-12-thomas-formation", isoDate: "2026-12-12", person: "thomas", category: "formation", title: "Formation Thomas — 20e J.A.E Échographie (SIMS)", horaire: "08h30 – 17h30", lieu: "Salons de l'Aveyron (Paris 12e)", notes: "Finit à 17h30 à Bercy (Paris 12e), libre le soir !" },
-      { id: "ev-2026-12-17-marie-garde", isoDate: "2026-12-17", person: "marie", category: "garde", title: "Garde complète Marie (24h)", horaire: "08h30 – Lendemain", lieu: "Hôpital Trousseau", notes: "Marie en garde 24h jeudi 17/12." },
-      { id: "ev-2026-12-21-thomas-garde", isoDate: "2026-12-21", person: "thomas", category: "garde", title: "Garde de nuit Thomas (Cochin)", horaire: "18h30 – 08h30", lieu: "Hôpital Cochin", notes: "Garde de nuit lundi 21/12." },
-      { id: "ev-2026-12-28-thomas-conges", isoDate: "2026-12-28", person: "thomas", category: "free", title: "Congés Fin d'Année Thomas (28/12 au 03/01)", horaire: "Semaine complète", lieu: "En famille", notes: "Validé par Anne-Marie Fortin : semaine complète de congés du 28/12 au 03/01." },
-      { id: "ev-2026-12-29-thomas-conges", isoDate: "2026-12-29", person: "thomas", category: "free", title: "Congés Fin d'Année Thomas", horaire: "Journée entière", lieu: "En famille", notes: "Congés validés." },
-      { id: "ev-2026-12-30-thomas-conges", isoDate: "2026-12-30", person: "thomas", category: "free", title: "Congés Fin d'Année Thomas", horaire: "Journée entière", lieu: "En famille", notes: "Congés validés + Émile avec les grands-parents pour les fêtes." },
-      { id: "ev-2026-12-30-famille-gp", isoDate: "2026-12-30", person: "famille", category: "relais", title: "Relais Émile : Grands-Parents (Vacances de Noël)", horaire: "Journée + Soirée", lieu: "En famille", notes: "Grands-parents présents pendant les vacances de fin d'année." },
-      { id: "ev-2026-12-31-thomas-conges", isoDate: "2026-12-31", person: "thomas", category: "free", title: "Congés Fin d'Année Thomas", horaire: "Journée entière", lieu: "En famille", notes: "Réveillon." },
-      // JANVIER - MAI 2027
-      { id: "ev-2027-01-01-thomas-conges", isoDate: "2027-01-01", person: "thomas", category: "free", title: "Jour de l'An (Congés Thomas)", horaire: "Journée entière", lieu: "En famille", notes: "Férié / Congés." },
-      { id: "ev-2027-01-02-famille-gp", isoDate: "2027-01-02", person: "famille", category: "relais", title: "Relais Émile : Samedi post-Nouvel An chez les Grands-Parents", horaire: "Journée + Soirée", lieu: "Grands-Parents", notes: "Week-end de congés fin d'année." },
-      { id: "ev-2027-01-20-thomas-boneclub", isoDate: "2027-01-20", person: "thomas", category: "formation", title: "Réunion soir Thomas (Bone Club 18h00 – 20h00)", horaire: "18h00 – 20h00", lieu: "Cochin", notes: "Fin à 20h00." },
-      { id: "ev-2027-02-06-thomas-garde", isoDate: "2027-02-06", person: "thomas", category: "garde", title: "Garde 24h Thomas (Samedi)", horaire: "08h30 – Dim 08h30", lieu: "Hôpital Cochin", notes: "Garde samedi 6 février 2027." },
-      { id: "ev-2027-02-25-thomas-garde", isoDate: "2027-02-25", person: "thomas", category: "garde", title: "Garde de nuit Thomas (Cochin)", horaire: "18h30 – 08h30", lieu: "Hôpital Cochin", notes: "Garde jeudi 25 février 2027." },
-      { id: "ev-2027-02-26-thomas-seminaire", isoDate: "2027-02-26", person: "thomas", category: "formation", title: "Séminaire Cochin Pied/Cheville (26–27 février)", horaire: "08h30 – 18h00", lieu: "Institut Imagine", notes: "Journée de séminaire." },
-      { id: "ev-2027-04-14-thomas-garde", isoDate: "2027-04-14", person: "thomas", category: "garde", title: "Garde de nuit Thomas (Cochin)", horaire: "18h30 – 08h30", lieu: "Hôpital Cochin", notes: "Garde mercredi 14 avril 2027." },
-      { id: "ev-2027-05-14-famille-ajaccio", isoDate: "2027-05-14", person: "famille", category: "relais", title: "Week-end Famille Ajaccio avec Grands-Parents (Dr Nicolas Lefèvre)", horaire: "Séjour 13–17 mai", lieu: "Ajaccio (Corse)", notes: "Séjour en Corse avec les grands-parents." },
-      { id: "ev-2027-05-15-famille-ajaccio", isoDate: "2027-05-15", person: "famille", category: "relais", title: "Samedi à Ajaccio avec les Grands-Parents", horaire: "Journée + Soirée", lieu: "Ajaccio (Corse)", notes: "Grands-parents sur place pour garder Émile le soir !" },
-      { id: "ev-2027-05-16-famille-ajaccio", isoDate: "2027-05-16", person: "famille", category: "relais", title: "Dimanche à Ajaccio avec les Grands-Parents", horaire: "Journée + Soirée", lieu: "Ajaccio (Corse)", notes: "Séjour en famille à Ajaccio." }
+      { id: "ev-2026-11-02-marie-garde", isoDate: "2026-11-02", person: "marie", category: "garde", title: "Demi-garde Marie (23h)", horaire: "18h30 – 23h00" },
+      { id: "ev-2026-11-05-thomas-free", isoDate: "2026-11-05", person: "thomas", category: "free", title: "Jeudi libre Thomas", horaire: "Journée" },
+      { id: "ev-2026-11-07-marie-garde", isoDate: "2026-11-07", person: "marie", category: "garde", title: "Garde Marie (09h–21h)", horaire: "09h00 – 21h00" },
+      { id: "ev-2026-11-11-ferie", isoDate: "2026-11-11", person: "mabrouka", category: "nanny_unavail", title: "Jour férié", horaire: "Journée" },
+      { id: "ev-2026-11-12-famille-mamie", isoDate: "2026-11-12", person: "famille", category: "relais", title: "Maman de Thomas (dès jeudi soir)", horaire: "Soirée + Nuit" },
+      { id: "ev-2026-11-13-famille-mamie", isoDate: "2026-11-13", person: "famille", category: "relais", title: "Maman de Thomas", horaire: "Journée + Soirée" },
+      { id: "ev-2026-11-17-marie-garde", isoDate: "2026-11-17", person: "marie", category: "garde", title: "Garde 24h Marie", horaire: "24h" },
+      { id: "ev-2026-11-19-thomas-garde", isoDate: "2026-11-19", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
+      { id: "ev-2026-11-28-thomas-garde", isoDate: "2026-11-28", person: "thomas", category: "garde", title: "Garde 24h Thomas", horaire: "24h" },
+      { id: "ev-2026-12-03-thomas-formation", isoDate: "2026-12-03", person: "thomas", category: "formation", title: "Déplacement Valence", horaire: "Journée + Soir" },
+      { id: "ev-2026-12-05-marie-astreinte", isoDate: "2026-12-05", person: "marie", category: "garde", title: "Astreinte Marie", horaire: "Journée" },
+      { id: "ev-2026-12-06-marie-astreinte", isoDate: "2026-12-06", person: "marie", category: "garde", title: "Astreinte Marie", horaire: "Journée" },
+      { id: "ev-2026-12-11-famille-mamie", isoDate: "2026-12-11", person: "famille", category: "relais", title: "Maman de Thomas", horaire: "Vendredi" },
+      { id: "ev-2026-12-17-marie-garde", isoDate: "2026-12-17", person: "marie", category: "garde", title: "Garde 24h Marie", horaire: "24h" },
+      { id: "ev-2026-12-21-thomas-garde", isoDate: "2026-12-21", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
+      { id: "ev-2026-12-28-thomas-conges", isoDate: "2026-12-28", person: "thomas", category: "free", title: "Congés Noël Thomas", horaire: "Semaine" },
+      { id: "ev-2026-12-30-famille-gp", isoDate: "2026-12-30", person: "famille", category: "relais", title: "Grands-Parents (Vacances Noël)", horaire: "Soirée" },
+      { id: "ev-2027-01-02-famille-gp", isoDate: "2027-01-02", person: "famille", category: "relais", title: "Grands-Parents (Nouvel An)", horaire: "Week-end" },
+      { id: "ev-2027-02-06-thomas-garde", isoDate: "2027-02-06", person: "thomas", category: "garde", title: "Garde 24h Thomas", horaire: "24h" },
+      { id: "ev-2027-02-25-thomas-garde", isoDate: "2027-02-25", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
+      { id: "ev-2027-04-14-thomas-garde", isoDate: "2027-04-14", person: "thomas", category: "garde", title: "Garde nuit Thomas", horaire: "18h30 – 08h30" },
+      { id: "ev-2027-05-14-famille-ajaccio", isoDate: "2027-05-14", person: "famille", category: "relais", title: "Grands-Parents (Ajaccio)", horaire: "Séjour Corse" },
+      { id: "ev-2027-05-15-famille-ajaccio", isoDate: "2027-05-15", person: "famille", category: "relais", title: "Grands-Parents (Ajaccio)", horaire: "Séjour Corse" }
     ];
 
     let events = [];
     let bookings = [];
-    let restaurants = [];
-    let currentTab = "slots";
-    let slotFilter = "all-good";
-    let calMonthDate = new Date(2026, 10, 1, 12, 0, 0); // Novembre 2026
-    let selectedCalIso = "2026-11-12";
+    let activeTab = "gold";
+    let calMonth = new Date(2026, 10, 1, 12, 0, 0);
 
-    /* --- UTILITAIRES --- */
     function esc(s) {
-      return String(s == null ? "" : s)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
+      return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 
     function dateToIso(d) {
-      const y = d.getFullYear();
-      const m = String(d.getMonth() + 1).padStart(2, "0");
-      const day = String(d.getDate()).padStart(2, "0");
-      return `${y}-${m}-${day}`;
+      return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
     }
 
     function isoToDate(iso) {
@@ -1540,1080 +629,376 @@
       return new Date(y, (m || 1) - 1, d || 1, 12, 0, 0);
     }
 
-    function formatFrDateFull(iso) {
-      const d = isoToDate(iso);
-      return d.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+    function formatDateFr(iso) {
+      return isoToDate(iso).toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
     }
 
-    function formatFrDateShort(iso) {
+    function getDayStatus(iso) {
       const d = isoToDate(iso);
-      return d.toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short" });
-    }
-
-    /* --- MOTEUR D'ANALYSE DES DISPONIBILITÉS (MARIE + THOMAS + GRANDS-PARENTS) --- */
-    function analyzeDayForResto(iso) {
-      const d = isoToDate(iso);
-      const dow = d.getDay(); // 0=Dim, 1=Lun, ..., 4=Jeu, 5=Ven, 6=Sam
+      const dow = d.getDay();
       const isWeekend = (dow === 0 || dow === 6);
-      const dayEvs = events.filter(e => e.isoDate === iso);
+      const isThuFree = (dow === 4 && iso < "2027-01-07");
+      const isHolidayWeek = (iso >= "2026-12-28" && iso <= "2027-01-03");
 
-      // Règle explicite issue d'iMessage Marie (03/11 20h00) : "Je ne suis plus de garde jusqu'à 23h le 23/12"
-      const marieEvs = dayEvs.filter(e => e.person === "marie" && !(e.isoDate === "2026-12-23" && e.category === "garde"));
-      const thomasEvs = dayEvs.filter(e => e.person === "thomas");
-      const gpEvs = dayEvs.filter(e => e.person === "famille" && e.category === "relais");
+      const dayEvs = events.filter(e => e.isoDate === iso);
+      const marieBusy = dayEvs.some(e => e.person === "marie" && e.category === "garde" && iso !== "2026-12-23" && iso !== "2026-11-21");
+      const thomasBusy = dayEvs.some(e => e.person === "thomas" && (e.category === "garde" || /valence/i.test(e.title || "")));
+      const gpEv = dayEvs.find(e => e.person === "famille" && e.category === "relais" && !/^🍷/.test(e.title || ""));
       const booking = bookings.find(b => b.isoDate === iso);
 
-      // 1. Statut de Thomas
-      const thomasGarde = thomasEvs.find(e => e.category === "garde");
-      const thomasOut = thomasEvs.find(e => /valence|hors paris/i.test(e.title + " " + (e.lieu || "")));
-      const thomasFreeEv = thomasEvs.find(e => e.category === "free");
-      const thomasLiberal = thomasEvs.find(e => e.category === "liberal") || (dow === 4 && iso >= "2027-01-07");
-      const isThursdayOff = (dow === 4 && iso < "2027-01-07" && !thomasLiberal);
+      const bothFree = !marieBusy && !thomasBusy;
+      const isOffWorkDay = isWeekend || isThuFree || isHolidayWeek || dow === 5;
 
-      let thomasDayFree = false;
-      let thomasEveningFree = true;
-      let thomasLabel = "";
-
-      if (thomasGarde) {
-        if (/18h30|nuit/i.test(thomasGarde.horaire + " " + thomasGarde.title)) {
-          thomasDayFree = /journée libre/i.test(thomasGarde.title);
-          thomasEveningFree = false;
-          thomasLabel = "🚨 Garde de nuit Cochin (18h30–08h30)";
-        } else {
-          thomasDayFree = false;
-          thomasEveningFree = false;
-          thomasLabel = "🚨 Garde 24h Cochin";
-        }
-      } else if (thomasOut) {
-        thomasDayFree = false;
-        thomasEveningFree = false;
-        thomasLabel = `✈️ ${thomasOut.title}`;
-      } else if (thomasFreeEv) {
-        thomasDayFree = true;
-        thomasEveningFree = true;
-        thomasLabel = `✨ ${thomasFreeEv.title} (Repos complet)`;
-      } else if (isWeekend) {
-        const form = thomasEvs.find(e => e.category === "formation");
-        if (form) {
-          thomasDayFree = false;
-          thomasEveningFree = true;
-          thomasLabel = `📚 Journée : ${form.title} • Soirée libre dès 17h30`;
-        } else {
-          thomasDayFree = true;
-          thomasEveningFree = true;
-          thomasLabel = "☀️ Week-end libre (Pas de garde)";
-        }
-      } else if (isThursdayOff) {
-        thomasDayFree = true;
-        thomasEveningFree = true;
-        thomasLabel = "✨ Jeudi libre (Hors Cochin toute la journée & soir)";
-      } else if (thomasLiberal) {
-        thomasDayFree = false;
-        thomasEveningFree = true;
-        thomasLabel = "💼 Libéral Paris 5e (fin 18h30) • Soirée libre";
-      } else if (dow === 5) {
-        thomasDayFree = false;
-        thomasEveningFree = true;
-        thomasLabel = "🥼 Cochin (fin 18h00 le vendredi) • Soirée libre";
-      } else {
-        const boneClub = thomasEvs.find(e => /20h00|bone/i.test(e.title + " " + (e.horaire || "")));
-        thomasDayFree = false;
-        thomasEveningFree = !boneClub;
-        thomasLabel = boneClub ? "🥼 Cochin + Réunion soir jusqu'à 20h00" : "🥼 Cochin (fin 18h30) • Soirée libre";
-      }
-
-      // 2. Statut de Marie
-      const marieGarde = marieEvs.find(e => e.category === "garde");
-      let marieDayFree = isWeekend;
-      let marieEveningFree = true;
-      let marieLabel = isWeekend ? "☀️ Week-end libre (Pas de garde)" : "🌸 Journée habituelle • Soirée libre dès 18h30";
-
-      if (marieGarde) {
-        const h = (marieGarde.horaire || "") + " " + (marieGarde.title || "");
-        if (/24h|complète|lendemain/i.test(h)) {
-          marieDayFree = false;
-          marieEveningFree = false;
-          marieLabel = "🚨 Garde 24h Trousseau";
-        } else if (/23h/i.test(h)) {
-          marieDayFree = false;
-          marieEveningFree = false;
-          marieLabel = "🚨 Demi-garde Trousseau (jusqu'à 23h00)";
-        } else if (/21h/i.test(h)) {
-          marieDayFree = false;
-          marieEveningFree = false;
-          marieLabel = "🚨 Garde Urgences Trousseau (09h–21h)";
-        } else if (/07h30|formation/i.test(h)) {
-          marieDayFree = false;
-          marieEveningFree = true;
-          marieLabel = "📚 Formation étudiants (journée) • Soirée libre";
-        } else if (/astreinte/i.test(h)) {
-          marieDayFree = false;
-          marieEveningFree = false;
-          marieLabel = "📟 Astreinte Marie (Trousseau)";
-        } else {
-          marieDayFree = false;
-          marieEveningFree = false;
-          marieLabel = `🚨 ${marieGarde.title}`;
-        }
-      } else if (iso >= "2026-12-28" && iso <= "2027-01-03") {
-        // Semaine des fêtes
-        marieEveningFree = true;
-      }
-
-      // Vérifier si veille de garde 24h de Marie ou Thomas (lendemain = iso + 1)
-      // Si l'un est de garde 24h la veille, il rentre à 08h30 du matin
-      const prevDate = new Date(d.getFullYear(), d.getMonth(), d.getDate() - 1, 12, 0, 0);
-      const prevIso = dateToIso(prevDate);
-      const prevMarie24 = events.some(e => e.isoDate === prevIso && e.person === "marie" && /24h|complète|lendemain/i.test(e.title + " " + e.horaire));
-      if (prevMarie24) {
-        marieDayFree = true;
-        marieLabel = "✨ Repos de garde (post-garde 24h de la veille) • Libre";
-      }
-
-      // 3. Garde d'Émile par les Grands-Parents
-      const hasGrandparents = gpEvs.length > 0;
-      const gpEvent = gpEvs[0] || null;
-      const gpLabel = hasGrandparents
-        ? `🏡 ${gpEvent.title}${gpEvent.horaire ? " (" + gpEvent.horaire + ")" : ""}`
-        : (isWeekend ? "👶 Avec vous (Proposer aux Grands-Parents ?)" : "👶 Mabrouka (08h30–18h30) • Soirée à confier aux Grands-Parents");
-
-      // 4. Synthèse & Score Resto
-      const bothFreeFullDay = thomasDayFree && marieDayFree;
-      const bothFreeEvening = thomasEveningFree && marieEveningFree;
-
-      let tier = "busy"; // "gold" | "silver" | "busy"
-      let slotSummary = "";
-      let recommendedTime = "20:30";
-
-      if (hasGrandparents && (bothFreeEvening || bothFreeFullDay)) {
-        tier = "gold";
-        if (bothFreeFullDay) {
-          slotSummary = "🌟 Jour & Soirée d'Or • Tous les 2 en repos + Émile gardé";
-          recommendedTime = "20:00";
-        } else {
-          slotSummary = "🌟 Soirée d'Or • Tous les 2 libres dès 18h30 + Émile chez les Grands-Parents";
-          recommendedTime = "20:30";
-        }
-      } else if (bothFreeFullDay) {
-        tier = "silver";
-        slotSummary = "☀️ Journée & Soirée libres tous les 2 (sans garde)";
-        recommendedTime = "20:00";
-      } else if (bothFreeEvening && (dow === 4 || dow === 5)) {
-        tier = "silver";
-        slotSummary = dow === 4
-          ? "🍸 Jeudi soir libre tous les 2 (Thomas hors Cochin)"
-          : "🥂 Vendredi soir libre tous les 2 (Week-end sans garde)";
-        recommendedTime = "20:30";
-      } else if (bothFreeEvening) {
-        tier = "normal-free";
-        slotSummary = "🌙 Soirée libre tous les 2 après 18h30";
-      } else {
-        tier = "busy";
-        slotSummary = "🏥 Indisponible (Garde ou déplacement)";
-      }
+      let reasonFree = isWeekend
+        ? "Week-end sans garde"
+        : isHolidayWeek
+          ? "Congés de fin d'année"
+          : isThuFree
+            ? "Jeudi repos Thomas"
+            : "Soirée libre dès 18h30";
 
       return {
         iso,
-        date: d,
         dow,
-        isWeekend,
-        tier,
-        bothFreeFullDay,
-        bothFreeEvening,
-        hasGrandparents,
-        gpEvent,
-        gpLabel,
-        thomasLabel,
-        marieLabel,
-        slotSummary,
-        recommendedTime,
+        bothFree,
+        isOffWorkDay,
+        hasGp: Boolean(gpEv),
+        gpWho: gpEv ? gpEv.title.replace(/^Relais Émile\s*:\s*/i, "") : "",
+        reasonFree,
         booking
       };
     }
 
-    function getAllAnalyzedDays() {
-      const start = new Date(2026, 10, 3, 12, 0, 0); // 3 Nov 2026
-      const end = new Date(2027, 4, 20, 12, 0, 0);   // 20 Mai 2027
+    function getUpcomingDays() {
       const out = [];
-      const cur = new Date(start.getTime());
+      const cur = new Date(2026, 10, 4, 12, 0, 0);
+      const end = new Date(2027, 4, 20, 12, 0, 0);
       while (cur <= end) {
-        out.push(analyzeDayForResto(dateToIso(cur)));
+        out.push(getDayStatus(dateToIso(cur)));
         cur.setDate(cur.getDate() + 1);
       }
       return out;
     }
 
-    /* --- RENDU PRINCIPAL --- */
-    function renderAll() {
-      const allDays = getAllAnalyzedDays();
-      const todayIso = "2026-11-04"; // Date courante
-      const upcomingDays = allDays.filter(d => d.iso >= todayIso);
-
-      const goldDays = upcomingDays.filter(d => d.tier === "gold");
-      const silverDays = upcomingDays.filter(d => d.tier === "silver");
-
-      document.getElementById("count-gold").textContent = String(goldDays.length);
-      document.getElementById("count-silver").textContent = String(silverDays.length);
-      document.getElementById("count-booked").textContent = String(bookings.length);
-      document.getElementById("badge-gold-nav").textContent = String(goldDays.length);
-
-      renderHeroSpotlight(goldDays, silverDays);
-      renderOpportunitiesList(upcomingDays);
-      renderCalendarSection();
-      renderRestaurantsSection();
-      renderGrandparentsSection(allDays);
-    }
-
-    function renderHeroSpotlight(goldDays, silverDays) {
-      const box = document.getElementById("hero-spotlight");
-      if (!box) return;
-      const nextGold = goldDays[0] || silverDays[0];
-      if (!nextGold) {
-        box.innerHTML = "";
-        return;
-      }
-
-      const defaultResto = restaurants[0] || DEFAULT_RESTAURANTS[0];
-      box.innerHTML = `
-        <div class="golden-hero">
-          <div class="gh-top">
-            <span class="gh-badge">✨ Prochain Créneau Idéal Détecté</span>
-            <span class="gh-counter">🌟 ${goldDays.length} créneaux Grands-Parents à venir</span>
-          </div>
-          <h1 class="gh-title">${esc(formatFrDateFull(nextGold.iso))}</h1>
-          <p class="gh-sub">${esc(nextGold.slotSummary)}</p>
-          <div class="gh-pills">
-            <div class="gh-pill">
-              <span class="gh-pill-lbl">🌸 Marie Parizot</span>
-              <span class="gh-pill-val">${esc(nextGold.marieLabel)}</span>
-            </div>
-            <div class="gh-pill">
-              <span class="gh-pill-lbl">🩵 Thomas Lefèvre</span>
-              <span class="gh-pill-val">${esc(nextGold.thomasLabel)}</span>
-            </div>
-            <div class="gh-pill">
-              <span class="gh-pill-lbl">👶 Garde d'Émile</span>
-              <span class="gh-pill-val">${esc(nextGold.gpLabel)}</span>
-            </div>
-          </div>
-          <div class="gh-actions">
-            <button type="button" class="btn-hero-book" onclick="openAutoBookModal('${nextGold.iso}', '${defaultResto.id}', '${nextGold.recommendedTime}')">
-              🍷 Lancer la Réservation Auto (${esc(nextGold.recommendedTime)})
-            </button>
-            <button type="button" class="btn-hero-sec" onclick="jumpToCalDay('${nextGold.iso}')">
-              📅 Voir dans l'agenda
-            </button>
-          </div>
-        </div>
-      `;
-    }
-
-    function setSlotFilter(f) {
-      slotFilter = f;
-      ["all-good", "gold", "silver", "thu-fri", "weekend", "booked"].forEach(k => {
-        const el = document.getElementById("fchip-" + k);
-        if (el) el.classList.toggle("active", k === f);
+    function setTab(t) {
+      activeTab = t;
+      ["gold", "free", "cal"].forEach(k => {
+        document.getElementById("tab-" + k).classList.toggle("active", k === t);
       });
-      ["gold", "silver", "booked"].forEach(k => {
-        const kpi = document.getElementById("kpi-" + k);
-        if (kpi) kpi.classList.toggle("active-filter", k === f);
-      });
-      renderAll();
+      document.getElementById("main-list").style.display = t === "cal" ? "none" : "flex";
+      document.getElementById("cal-view").style.display = t === "cal" ? "block" : "none";
+      render();
     }
 
-    function renderOpportunitiesList(upcomingDays) {
-      const container = document.getElementById("opportunities-list");
-      if (!container) return;
+    function render() {
+      const days = getUpcomingDays();
+      const goldDays = days.filter(d => d.bothFree && d.hasGp);
+      const freeDays = days.filter(d => d.bothFree && !d.hasGp && (d.dow === 4 || d.dow === 5 || d.dow === 6 || d.dow === 0)).slice(0, 16);
 
-      let filtered = [];
-      if (slotFilter === "gold") {
-        filtered = upcomingDays.filter(d => d.tier === "gold");
-      } else if (slotFilter === "silver") {
-        filtered = upcomingDays.filter(d => d.tier === "silver");
-      } else if (slotFilter === "thu-fri") {
-        filtered = upcomingDays.filter(d => (d.tier === "gold" || d.tier === "silver") && (d.dow === 4 || d.dow === 5));
-      } else if (slotFilter === "weekend") {
-        filtered = upcomingDays.filter(d => (d.tier === "gold" || d.tier === "silver") && d.isWeekend);
-      } else if (slotFilter === "booked") {
-        filtered = upcomingDays.filter(d => Boolean(d.booking));
-      } else {
-        // all-good : Tous les Gold + les 14 prochains Silver
-        const golds = upcomingDays.filter(d => d.tier === "gold" || d.booking);
-        const silvers = upcomingDays.filter(d => d.tier === "silver" && !d.booking).slice(0, 12);
-        const map = {};
-        [...golds, ...silvers].forEach(d => { map[d.iso] = d; });
-        filtered = Object.values(map).sort((a, b) => a.iso.localeCompare(b.iso));
-      }
+      document.getElementById("cnt-gold").textContent = String(goldDays.length);
 
-      if (filtered.length === 0) {
-        container.innerHTML = `
-          <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:18px; padding:26px; text-align:center; color:var(--text-muted); font-weight:700;">
-            Aucun créneau dans ce filtre pour le moment. Cliquez sur <strong>🏡 + Garde Émile</strong> ou choisissez un autre filtre.
+      // 1. Hero : Prochain Jour d'Or
+      const next = goldDays[0] || freeDays[0];
+      const heroBox = document.getElementById("hero-box");
+      if (next) {
+        heroBox.innerHTML = `
+          <div class="hero">
+            <div class="hero-tag">🌟 Prochaine soirée idéale</div>
+            <h1 class="hero-date">${esc(formatDateFr(next.iso))}</h1>
+            <div class="hero-badges">
+              <span class="h-pill">✅ Marie &amp; Thomas libres (${esc(next.reasonFree)})</span>
+              <span class="h-pill">👵 Émile : ${esc(next.hasGp ? next.gpWho : "À confier aux grands-parents")}</span>
+            </div>
+            <button type="button" class="btn-main-book" onclick="openBookModal('${next.iso}')">
+              🍷 Réserver un restaurant automatiquement
+            </button>
           </div>
         `;
+      }
+
+      // 2. Liste selon l'onglet actif
+      if (activeTab === "cal") {
+        renderCalendar();
         return;
       }
 
-      container.innerHTML = filtered.map((d, idx) => {
-        const recResto = restaurants[idx % restaurants.length] || DEFAULT_RESTAURANTS[0];
-        const isGold = d.tier === "gold";
-        const cardCls = isGold ? "opp-card tier-gold" : "opp-card tier-silver";
-        const tagHtml = d.booking
-          ? `<span class="opp-slot-tag booked">✅ Réservé : ${esc(d.booking.restoName)} (${esc(d.booking.time)})</span>`
-          : isGold
-            ? `<span class="opp-slot-tag gold">🌟 JOUR D'OR • Émile gardé</span>`
-            : `<span class="opp-slot-tag silver">🥂 Marie &amp; Thomas libres</span>`;
+      const list = activeTab === "gold" ? goldDays : freeDays;
+      const listEl = document.getElementById("main-list");
 
+      if (list.length === 0) {
+        listEl.innerHTML = `<div style="text-align:center; padding:24px; color:var(--muted); font-weight:700;">Aucun créneau. Ajoutez une garde d'Émile en haut à droite.</div>`;
+        return;
+      }
+
+      listEl.innerHTML = list.map(d => {
+        const cls = d.booking ? "slot-card booked" : (d.hasGp ? "slot-card gold" : "slot-card");
         return `
-          <div class="${cardCls}">
-            <div class="opp-head">
-              <div class="opp-date">
-                <span>${esc(formatFrDateFull(d.iso))}</span>
-              </div>
-              ${tagHtml}
-            </div>
-
-            <div class="trio-status">
-              <div class="ts-box marie">
-                <span class="ts-who">🌸 Marie Parizot</span>
-                <span class="ts-val">${esc(d.marieLabel)}</span>
-              </div>
-              <div class="ts-box thomas">
-                <span class="ts-who">🩵 Thomas Lefèvre</span>
-                <span class="ts-val">${esc(d.thomasLabel)}</span>
-              </div>
-              <div class="ts-box ${d.hasGrandparents ? "emile-ok" : "emile-ask"}">
-                <span class="ts-who">👶 Émile (Boutch)</span>
-                <span class="ts-val">${esc(d.gpLabel)}</span>
+          <div class="${cls}">
+            <div class="slot-left">
+              <div class="slot-date">${esc(formatDateFr(d.iso))}</div>
+              <div class="slot-meta">
+                ${d.booking
+                  ? `<span class="tag booked">✅ Réservé : ${esc(d.booking.restoName)} (${esc(d.booking.time)})</span>`
+                  : d.hasGp
+                    ? `<span class="tag gold">👵 ${esc(d.gpWho)}</span>`
+                    : `<span class="tag free">🥂 ${esc(d.reasonFree)}</span>`
+                }
               </div>
             </div>
-
-            <div class="opp-footer">
-              <div class="opp-reco">
-                🍽️ Suggestion : <strong>${esc(recResto.name)}</strong> (${esc(recResto.area)}) • ${esc(d.recommendedTime)}
-              </div>
-              <div class="opp-btns">
-                ${!d.hasGrandparents ? `
-                  <button type="button" class="btn-ask-gp" onclick="askGrandparentsForDate('${d.iso}')">
-                    💬 Demander aux Grands-Parents
-                  </button>
-                  <button type="button" class="btn-pill" style="height:36px;" onclick="openAddGuardModal('', '${d.iso}')">
-                    🏡 Confirmer garde
-                  </button>
-                ` : ""}
-                <button type="button" class="btn-book-now" onclick="openAutoBookModal('${d.iso}', '${recResto.id}', '${d.recommendedTime}')">
-                  🍷 Réserver Auto
-                </button>
-              </div>
+            <div class="slot-actions">
+              ${!d.hasGp ? `<button type="button" class="btn-gp" onclick="openGuardModal('${d.iso}')" title="Noter que les grands-parents gardent Émile">👵 Garde</button>` : ""}
+              <button type="button" class="btn-book" onclick="openBookModal('${d.iso}')">
+                🍷 Réserver
+              </button>
             </div>
           </div>
         `;
       }).join("");
     }
 
-    /* --- ONGLET CALENDRIER CROISÉ --- */
-    function renderCalendarSection() {
-      const strip = document.getElementById("cal-months-strip");
-      const label = document.getElementById("cal-month-label");
-      const grid = document.getElementById("cal-grid-cells");
-      if (!grid) return;
+    function renderCalendar() {
+      const box = document.getElementById("cal-view");
+      const y = calMonth.getFullYear();
+      const m = calMonth.getMonth();
+      const title = calMonth.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
 
-      const months = [
-        [2026, 10], [2026, 11],
-        [2027, 0], [2027, 1], [2027, 2], [2027, 3], [2027, 4]
-      ];
-      const curY = calMonthDate.getFullYear();
-      const curM = calMonthDate.getMonth();
+      const first = new Date(y, m, 1, 12, 0, 0);
+      const count = new Date(y, m + 1, 0).getDate();
+      const offset = (first.getDay() + 6) % 7;
+      const total = Math.ceil((offset + count) / 7) * 7;
+      const start = new Date(y, m, 1 - offset, 12, 0, 0);
 
-      if (strip) {
-        strip.innerHTML = months.map(([y, m]) => {
-          const dt = new Date(y, m, 1, 12, 0, 0);
-          const txt = dt.toLocaleDateString("fr-FR", { month: "short", year: "2-digit" }).replace(".", "");
-          const act = (y === curY && m === curM) ? "active" : "";
-          return `<button type="button" class="m-pill ${act}" onclick="setCalMonth(${y}, ${m})">${esc(txt)}</button>`;
-        }).join("");
-      }
+      let cells = "";
+      for (let i = 0; i < total; i++) {
+        const dt = new Date(start.getFullYear(), start.getMonth(), start.getDate() + i, 12, 0, 0);
+        const iso = dateToIso(dt);
+        const st = getDayStatus(iso);
+        let cls = "c-day";
+        let icon = "";
+        if (dt.getMonth() !== m) cls += " other";
+        if (st.booking) { cls += " booked"; icon = "🍷"; }
+        else if (st.bothFree && st.hasGp) { cls += " gold"; icon = "🌟"; }
+        else if (st.bothFree && (st.dow === 4 || st.dow === 5 || st.dow === 6 || st.dow === 0)) { cls += " free"; icon = "🥂"; }
 
-      if (label) {
-        label.textContent = calMonthDate.toLocaleDateString("fr-FR", { month: "long", year: "numeric" });
-      }
-
-      const firstDay = new Date(curY, curM, 1, 12, 0, 0);
-      const daysInMonth = new Date(curY, curM + 1, 0).getDate();
-      const startOffset = (firstDay.getDay() + 6) % 7;
-      const totalCells = Math.ceil((startOffset + daysInMonth) / 7) * 7;
-      const gridStart = new Date(curY, curM, 1 - startOffset, 12, 0, 0);
-
-      let cellsHtml = "";
-      for (let i = 0; i < totalCells; i++) {
-        const cDate = new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + i, 12, 0, 0);
-        const iso = dateToIso(cDate);
-        const isOther = cDate.getMonth() !== curM;
-        const info = analyzeDayForResto(iso);
-
-        let cellCls = "c-cell";
-        if (isOther) cellCls += " other-month";
-        if (iso === selectedCalIso) cellCls += " selected";
-
-        let badgeCls = "work";
-        let badgeTxt = info.isWeekend ? "WE" : "Cochin";
-
-        if (info.booking) {
-          cellCls += " is-gold";
-          badgeCls = "booked";
-          badgeTxt = "🍷 Réservé";
-        } else if (info.tier === "gold") {
-          cellCls += " is-gold";
-          badgeCls = "gold";
-          badgeTxt = "🌟 OR";
-        } else if (info.tier === "silver") {
-          cellCls += " is-silver";
-          badgeCls = "silver";
-          badgeTxt = info.isWeekend ? "🥂 WE Libre" : (info.dow === 4 ? "🍸 Jeu Libre" : "🥂 Ven Soir");
-        } else if (info.tier === "busy") {
-          cellCls += " is-busy";
-          badgeCls = "garde";
-          badgeTxt = "🚨 Garde";
-        }
-
-        cellsHtml += `
-          <div class="${cellCls}" onclick="selectCalDay('${iso}')">
-            <span class="c-num">${cDate.getDate()}</span>
-            <span class="c-badge ${badgeCls}">${esc(badgeTxt)}</span>
+        cells += `
+          <div class="${cls}" onclick="openBookModal('${iso}')">
+            <span>${dt.getDate()}</span>
+            ${icon ? `<span class="c-dot">${icon}</span>` : ""}
           </div>
         `;
       }
-      grid.innerHTML = cellsHtml;
-      renderSelectedCalDayDetail(selectedCalIso);
-    }
-
-    function setCalMonth(y, m) {
-      calMonthDate = new Date(y, m, 1, 12, 0, 0);
-      renderCalendarSection();
-    }
-
-    function changeCalMonth(delta) {
-      calMonthDate = new Date(calMonthDate.getFullYear(), calMonthDate.getMonth() + delta, 1, 12, 0, 0);
-      renderCalendarSection();
-    }
-
-    function selectCalDay(iso) {
-      selectedCalIso = iso;
-      renderCalendarSection();
-    }
-
-    function jumpToCalDay(iso) {
-      selectedCalIso = iso;
-      const d = isoToDate(iso);
-      calMonthDate = new Date(d.getFullYear(), d.getMonth(), 1, 12, 0, 0);
-      switchTab("calendar");
-    }
-
-    function renderSelectedCalDayDetail(iso) {
-      const box = document.getElementById("cal-selected-day-detail");
-      if (!box) return;
-      const d = analyzeDayForResto(iso);
-      const recResto = restaurants[0] || DEFAULT_RESTAURANTS[0];
 
       box.innerHTML = `
-        <div class="opp-card ${d.tier === "gold" ? "tier-gold" : (d.tier === "silver" ? "tier-silver" : "")}">
-          <div class="opp-head">
-            <div class="opp-date">📅 ${esc(formatFrDateFull(iso))}</div>
-            <span class="opp-slot-tag ${d.tier === "gold" ? "gold" : "silver"}">${esc(d.slotSummary)}</span>
+        <div class="cal-box">
+          <div class="cal-nav">
+            <button type="button" onclick="shiftMonth(-1)">‹</button>
+            <div class="cal-title">${esc(title)}</div>
+            <button type="button" onclick="shiftMonth(1)">›</button>
           </div>
-          <div class="trio-status">
-            <div class="ts-box marie">
-              <span class="ts-who">🌸 Marie</span>
-              <span class="ts-val">${esc(d.marieLabel)}</span>
-            </div>
-            <div class="ts-box thomas">
-              <span class="ts-who">🩵 Thomas</span>
-              <span class="ts-val">${esc(d.thomasLabel)}</span>
-            </div>
-            <div class="ts-box ${d.hasGrandparents ? "emile-ok" : "emile-ask"}">
-              <span class="ts-who">👶 Émile</span>
-              <span class="ts-val">${esc(d.gpLabel)}</span>
-            </div>
+          <div class="cal-head">
+            <div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div>
           </div>
-          <div class="opp-footer">
-            <div class="opp-reco">
-              ${d.bothFreeEvening ? "✨ Créneau compatible pour un restaurant en amoureux" : "⚠️ Soirée occupée par une garde ou un déplacement"}
-            </div>
-            <div class="opp-btns">
-              ${!d.hasGrandparents ? `
-                <button type="button" class="btn-ask-gp" onclick="openAddGuardModal('', '${iso}')">
-                  🏡 + Garde Grands-Parents ce jour
-                </button>
-              ` : ""}
-              <button type="button" class="btn-book-now" onclick="openAutoBookModal('${iso}', '${recResto.id}', '${d.recommendedTime}')">
-                🍷 Réserver un Resto ce jour
-              </button>
-            </div>
+          <div class="cal-grid">${cells}</div>
+          <div style="margin-top:10px; font-size:11.5px; color:var(--muted); font-weight:700; text-align:center;">
+            🌟 Émile gardé + libres &nbsp;•&nbsp; 🥂 Libres tous les 2 &nbsp;•&nbsp; Touchez un jour pour réserver
           </div>
         </div>
       `;
     }
 
-    /* --- ONGLET RESTAURANTS --- */
-    function renderRestaurantsSection() {
-      const list = document.getElementById("restaurants-list");
-      if (!list) return;
-      const nextGold = getAllAnalyzedDays().find(d => d.iso >= "2026-11-04" && d.tier === "gold");
-      const defaultIso = nextGold ? nextGold.iso : "2026-11-12";
-
-      list.innerHTML = restaurants.map(r => `
-        <div class="resto-card ${r.favorite ? "favorite" : ""}">
-          <div>
-            <div class="rc-top">
-              <div>
-                <h3 class="rc-name">${esc(r.name)}</h3>
-                <div class="rc-cuisine">${esc(r.cuisine)}</div>
-              </div>
-              <span class="rc-platform">${esc(r.platform)}</span>
-            </div>
-            <div class="rc-meta" style="margin-top:6px;">
-              📍 ${esc(r.area)}<br/>
-              ${r.address ? `<span style="font-size:11px;">${esc(r.address)}</span>` : ""}
-            </div>
-            <div class="rc-tags">
-              <span class="rc-tag">✨ ${esc(r.bestFor || "Soirée en amoureux")}</span>
-              <span class="rc-tag">👥 2 couverts pré-configurés</span>
-            </div>
-          </div>
-          <div style="display:flex; gap:6px; flex-wrap:wrap; padding-top:8px; border-top:1px dashed var(--border);">
-            <button type="button" class="btn-book-now" style="flex:1; justify-content:center;" onclick="openAutoBookModal('${defaultIso}', '${r.id}', '20:30')">
-              🤖 Réserver Auto (${esc(formatFrDateShort(defaultIso))})
-            </button>
-            ${r.phone ? `<a class="btn-pill" href="tel:${esc(r.phone)}" style="text-decoration:none;">📞</a>` : ""}
-          </div>
-        </div>
-      `).join("");
+    function shiftMonth(d) {
+      calMonth = new Date(calMonth.getFullYear(), calMonth.getMonth() + d, 1, 12, 0, 0);
+      renderCalendar();
     }
 
-    /* --- ONGLET GRANDS-PARENTS --- */
-    function renderGrandparentsSection(allDays) {
-      const box = document.getElementById("gp-upcoming-list");
-      if (!box) return;
-      const gpDays = allDays.filter(d => d.hasGrandparents && d.iso >= "2026-11-03");
-      if (gpDays.length === 0) {
-        box.innerHTML = `<div style="padding:18px; text-align:center; color:var(--text-muted);">Aucune garde enregistrée.</div>`;
-        return;
-      }
-      box.innerHTML = gpDays.map(d => `
-        <div class="opp-card tier-gold">
-          <div class="opp-head">
-            <div class="opp-date">🏡 ${esc(formatFrDateFull(d.iso))}</div>
-            <span class="opp-slot-tag gold">${esc(d.gpEvent.horaire || "Journée / Soirée")}</span>
-          </div>
-          <div style="font-size:13.5px; font-weight:800; margin-bottom:4px;">${esc(d.gpEvent.title)}</div>
-          <div style="font-size:12px; color:var(--text-muted); margin-bottom:10px;">${esc(d.gpEvent.notes || "")}</div>
-          <div class="opp-footer">
-            <span class="opp-reco">
-              ${d.bothFreeEvening ? "✅ Marie & Thomas libres tous les 2 ce soir-là !" : "ℹ️ " + esc(d.thomasLabel)}
-            </span>
-            <button type="button" class="btn-book-now" onclick="openAutoBookModal('${d.iso}', '${restaurants[0].id}', '${d.recommendedTime}')">
-              🍷 Réserver le Resto de ce soir-là
-            </button>
-          </div>
-        </div>
-      `).join("");
+    /* --- RÉSERVATION AUTOMATIQUE --- */
+    function openBookModal(iso) {
+      const sel = document.getElementById("bk-resto");
+      sel.innerHTML = RESTAURANTS.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join("");
+      document.getElementById("bk-date").value = iso || "2026-11-12";
+      updateBookModalBadge();
+      document.getElementById("modal-book").classList.add("open");
     }
 
-    function sendQuickSmsToGp(whoKey, targetIso) {
-      const gp = USER_PROFILE.gpContacts[whoKey] || USER_PROFILE.gpContacts.maman_thomas;
-      const iso = targetIso || "2026-11-05";
-      const dateStr = formatFrDateFull(iso);
-      const msg = `Coucou ! Est-ce que vous seriez disponibles le ${dateStr} en soirée pour garder petit Émile afin qu'on se fasse un petit restaurant en amoureux avec Marie ? Bisous, Thomas & Marie`;
-      window.location.href = `sms:${gp.phone}?&body=${encodeURIComponent(msg)}`;
+    function closeBookModal() {
+      document.getElementById("modal-book").classList.remove("open");
     }
 
-    function askGrandparentsForDate(iso) {
-      sendQuickSmsToGp("maman_thomas", iso);
-    }
-
-    /* --- MODAL D'AUTO-RÉSERVATION --- */
-    function openAutoBookModal(isoPreset, restoIdPreset, timePreset) {
-      const modal = document.getElementById("modal-autobook");
-      const selectResto = document.getElementById("ab-resto");
-      if (!modal || !selectResto) return;
-
-      selectResto.innerHTML = restaurants.map(r =>
-        `<option value="${esc(r.id)}">${esc(r.name)} (${esc(r.area)})</option>`
-      ).join("");
-
-      const nextGold = getAllAnalyzedDays().find(d => d.iso >= "2026-11-04" && d.tier === "gold");
-      const chosenIso = isoPreset || (nextGold ? nextGold.iso : "2026-11-12");
-      document.getElementById("ab-date").value = chosenIso;
-      if (restoIdPreset) selectResto.value = restoIdPreset;
-      if (timePreset) document.getElementById("ab-time").value = timePreset;
-
-      // Reset steps visual
-      document.getElementById("step-3").className = "agent-step";
-      document.getElementById("step-3").textContent = "○ 3. Pré-remplissage automatique identité & convives (2 pers.)";
-      document.getElementById("step-4").className = "agent-step";
-      document.getElementById("step-4").textContent = "○ 4. Ouverture directe du portail de réservation & inscription Agenda";
-
-      updateAutoBookPreview();
-      modal.classList.add("open");
-    }
-
-    function closeAutoBookModal() {
-      const modal = document.getElementById("modal-autobook");
-      if (modal) modal.classList.remove("open");
-    }
-
-    function onAutoBookDateChange() {
-      updateAutoBookPreview();
-    }
-
-    function updateAutoBookPreview() {
-      const iso = document.getElementById("ab-date").value || "2026-11-12";
-      const restoId = document.getElementById("ab-resto").value;
-      const resto = restaurants.find(r => r.id === restoId) || restaurants[0];
-      const info = analyzeDayForResto(iso);
-
-      const badge = document.getElementById("ab-platform-badge");
-      if (badge && resto) badge.textContent = `${resto.platform} • Auto-Fill`;
-
-      const banner = document.getElementById("ab-day-status-banner");
-      if (!banner) return;
-
-      if (info.tier === "gold") {
-        banner.innerHTML = `
-          <div style="background:#FEF3C7; border:1px solid #F59E0B; color:#92400E; padding:9px 12px; border-radius:12px; font-size:12px; font-weight:800;">
-            🌟 <strong>Créneau d'Or validé :</strong> Marie &amp; Thomas libres + ${esc(info.gpLabel)}
-          </div>
-        `;
-      } else if (info.bothFreeEvening) {
-        banner.innerHTML = `
-          <div style="background:#FCE7F3; border:1px solid #F472B6; color:#9D174D; padding:9px 12px; border-radius:12px; font-size:12px; font-weight:800;">
-            🥂 <strong>Marie &amp; Thomas libres ce soir-là !</strong> Pensez à confirmer la garde d'Émile avec les Grands-Parents.
-          </div>
-        `;
+    function updateBookModalBadge() {
+      const iso = document.getElementById("bk-date").value;
+      const st = getDayStatus(iso);
+      const el = document.getElementById("book-day-badge");
+      if (st.bothFree && st.hasGp) {
+        el.innerHTML = `<div style="background:var(--gold-soft); color:#92400E; padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">🌟 Marie &amp; Thomas libres • Émile gardé (${esc(st.gpWho)})</div>`;
+      } else if (st.bothFree) {
+        el.innerHTML = `<div style="background:var(--wine-soft); color:var(--wine); padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">🥂 Marie &amp; Thomas libres (${esc(st.reasonFree)})</div>`;
       } else {
-        banner.innerHTML = `
-          <div style="background:#FEE2E2; border:1px solid #EF4444; color:#991B1B; padding:9px 12px; border-radius:12px; font-size:12px; font-weight:800;">
-            ⚠️ Attention : ${esc(info.marieLabel)} / ${esc(info.thomasLabel)}
-          </div>
-        `;
+        el.innerHTML = `<div style="background:#FEE2E2; color:#991B1B; padding:9px 12px; border-radius:11px; font-size:12.5px; font-weight:800;">⚠️ Attention : Garde prévue ce soir-là</div>`;
       }
     }
 
-    function buildAutoBookingUrl(resto, iso, time, guests) {
-      const base = resto.bookingUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resto.name + " " + resto.area)}`;
-      const sep = base.includes("?") ? "&" : "?";
-      return `${base}${sep}date=${encodeURIComponent(iso)}&time=${encodeURIComponent(time)}&covers=${encodeURIComponent(guests)}&firstName=Thomas&lastName=Lefevre&email=${encodeURIComponent(USER_PROFILE.email)}&phone=${encodeURIComponent(USER_PROFILE.phoneMarie)}`;
-    }
+    function launchAutoBooking() {
+      const iso = document.getElementById("bk-date").value;
+      const time = document.getElementById("bk-time").value;
+      const rId = document.getElementById("bk-resto").value;
+      const resto = RESTAURANTS.find(r => r.id === rId) || RESTAURANTS[0];
 
-    async function triggerAutomaticReservation() {
-      const iso = document.getElementById("ab-date").value || "2026-11-12";
-      const time = document.getElementById("ab-time").value || "20:30";
-      const guests = document.getElementById("ab-guests").value || "2";
-      const restoId = document.getElementById("ab-resto").value;
-      const resto = restaurants.find(r => r.id === restoId) || restaurants[0];
+      const bk = { id: "bk-" + Date.now(), isoDate: iso, time, restoName: resto.name };
+      bookings = bookings.filter(b => b.isoDate !== iso);
+      bookings.unshift(bk);
+      localStorage.setItem(STORAGE_KEY_BOOKINGS, JSON.stringify(bookings));
 
-      const s3 = document.getElementById("step-3");
-      const s4 = document.getElementById("step-4");
-      s3.className = "agent-step running";
-      s3.textContent = "⟳ 3. Injection des paramètres (Thomas Lefèvre & Marie Parizot, " + guests + " couverts, " + time + ")...";
+      const sep = resto.url.includes("?") ? "&" : "?";
+      const targetUrl = `${resto.url}${sep}date=${iso}&time=${time}&covers=2&firstName=Thomas&lastName=Lefevre&phone=%2B33607688499&email=thomaslefevre18%40live.fr`;
 
-      // Copie presse-papier d'un récapitulatif pratique au cas où le formulaire demande un collage
-      const clipSummary = `Réservation ${resto.name} - ${formatFrDateFull(iso)} à ${time} (${guests} pers.) - Dr Thomas Lefèvre & Dr Marie Parizot - ${USER_PROFILE.phoneMarie} - ${USER_PROFILE.email}`;
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(clipSummary).catch(() => {});
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(`Thomas Lefèvre & Marie Parizot • 2 pers. • ${formatDateFr(iso)} à ${time} • 06 07 68 84 99`).catch(() => {});
       }
 
-      setTimeout(async () => {
-        s3.className = "agent-step done";
-        s3.textContent = "✓ 3. Paramètres injectés & copiés dans le presse-papiers";
-        s4.className = "agent-step done";
-        s4.textContent = "✓ 4. Réservation inscrite à l'Agenda Famille & ouverture du portail !";
-
-        const bookingObj = {
-          id: `bk-${iso}-${Date.now()}`,
-          isoDate: iso,
-          time,
-          guests,
-          restoId: resto.id,
-          restoName: resto.name,
-          restoArea: resto.area,
-          createdAt: new Date().toISOString()
-        };
-
-        bookings = bookings.filter(b => b.isoDate !== iso);
-        bookings.unshift(bookingObj);
-        localStorage.setItem(STORAGE_KEY_BOOKINGS, JSON.stringify(bookings));
-
-        // Ajouter aussi comme événement dans l'Agenda Familial
-        const famEv = {
-          id: `ev-${iso}-resto-amoureux`,
-          isoDate: iso,
-          person: "famille",
-          category: "relais",
-          title: `🍷 Resto en Amoureux : ${resto.name} (${time})`,
-          horaire: time,
-          lieu: resto.area,
-          notes: `Table réservée pour ${guests} pers. (${resto.name}).`,
-          source: "App Resto M&T"
-        };
-        saveEventEverywhere(famEv);
-
-        const targetUrl = buildAutoBookingUrl(resto, iso, time, guests);
-
-        // Appel au serveur local s'il tourne
-        fetch("/api/auto-book", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ booking: bookingObj, booking_url: targetUrl, open_browser: false })
-        }).catch(() => {});
-
-        window.open(targetUrl, "_blank", "noopener");
-        renderAll();
-      }, 380);
+      window.open(targetUrl, "_blank", "noopener");
+      closeBookModal();
+      render();
     }
 
-    function downloadIcsForCurrentBooking() {
-      const iso = document.getElementById("ab-date").value || "2026-11-12";
-      const time = document.getElementById("ab-time").value || "20:30";
-      const restoId = document.getElementById("ab-resto").value;
-      const resto = restaurants.find(r => r.id === restoId) || restaurants[0];
+    function sendSmsMarie() {
+      const iso = document.getElementById("bk-date").value;
+      const time = document.getElementById("bk-time").value;
+      const resto = RESTAURANTS.find(r => r.id === document.getElementById("bk-resto").value) || RESTAURANTS[0];
+      const msg = `🍷 On se fait ${resto.name} le ${formatDateFr(iso)} à ${time} ? ❤️`;
+      window.location.href = `sms:+33607688499?&body=${encodeURIComponent(msg)}`;
+    }
 
+    function downloadIcs() {
+      const iso = document.getElementById("bk-date").value;
+      const time = document.getElementById("bk-time").value;
+      const resto = RESTAURANTS.find(r => r.id === document.getElementById("bk-resto").value) || RESTAURANTS[0];
       const [Y, M, D] = iso.split("-");
-      const [hh, mm] = time.split(":");
-      const startDt = `${Y}${M}${D}T${hh}${mm}00`;
-      const endH = String(Math.min(23, parseInt(hh, 10) + 2)).padStart(2, "0");
-      const endDt = `${Y}${M}${D}T${endH}${mm}00`;
-
+      const [h, m] = time.split(":");
       const ics = [
-        "BEGIN:VCALENDAR",
-        "VERSION:2.0",
-        "PRODID:-//Resto en Amoureux M&T//FR",
-        "BEGIN:VEVENT",
-        `UID:resto-${iso}-${Date.now()}@thomaslefevre.fr`,
-        `DTSTAMP:${Y}${M}${D}T120000Z`,
-        `DTSTART:${startDt}`,
-        `DTEND:${endDt}`,
-        `SUMMARY:🍷 Resto en Amoureux : ${resto.name}`,
-        `LOCATION:${resto.address || resto.area}`,
-        `DESCRIPTION:Soirée restaurant Marie & Thomas (${resto.name}) — Émile gardé par les grands-parents.`,
-        "END:VEVENT",
-        "END:VCALENDAR"
+        "BEGIN:VCALENDAR", "VERSION:2.0", "BEGIN:VEVENT",
+        `DTSTART:${Y}${M}${D}T${h}${m}00`,
+        `DTEND:${Y}${M}${D}T${String(Math.min(23, Number(h) + 2)).padStart(2, "0")}${m}00`,
+        `SUMMARY:🍷 Resto : ${resto.name}`,
+        "END:VEVENT", "END:VCALENDAR"
       ].join("\r\n");
-
-      const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
-      const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
-      a.href = url;
-      a.download = `Resto-${resto.name.replace(/[^a-zA-Z0-9]/g, "_")}-${iso}.ics`;
-      document.body.appendChild(a);
+      a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+      a.download = `Resto-${iso}.ics`;
       a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
     }
 
-    function shareBookingSmsToMarie() {
-      const iso = document.getElementById("ab-date").value || "2026-11-12";
-      const time = document.getElementById("ab-time").value || "20:30";
-      const restoId = document.getElementById("ab-resto").value;
-      const resto = restaurants.find(r => r.id === restoId) || restaurants[0];
-      const info = analyzeDayForResto(iso);
-      const msg = `🍷 Chérie, j'ai repéré notre créneau du ${formatFrDateFull(iso)} à ${time} (${info.hasGrandparents ? "Émile gardé par les grands-parents" : "on est libres tous les deux"}) : je lance la résa chez ${resto.name} (${resto.area}) ! ❤️`;
-      window.location.href = `sms:${USER_PROFILE.phoneMarie}?&body=${encodeURIComponent(msg)}`;
+    /* --- GARDE GRANDS-PARENTS --- */
+    function openGuardModal(isoPreset) {
+      document.getElementById("gd-date").value = isoPreset || "2026-11-05";
+      document.getElementById("modal-guard").classList.add("open");
     }
 
-    /* --- AJOUT DE GARDE GRANDS-PARENTS --- */
-    function openAddGuardModal(whoPreset, datePreset) {
-      const modal = document.getElementById("modal-guard");
-      if (!modal) return;
-      document.getElementById("gd-date").value = datePreset || selectedCalIso || "2026-11-05";
-      if (whoPreset) {
-        const sel = document.getElementById("gd-who");
-        for (const opt of sel.options) {
-          if (opt.value.includes(whoPreset)) sel.value = opt.value;
-        }
-      }
-      document.getElementById("gd-notes").value = "";
-      modal.classList.add("open");
+    function closeGuardModal() {
+      document.getElementById("modal-guard").classList.remove("open");
     }
 
-    function closeAddGuardModal() {
-      const modal = document.getElementById("modal-guard");
-      if (modal) modal.classList.remove("open");
-    }
-
-    function submitNewGuard(e) {
-      if (e) e.preventDefault();
+    function saveGuard() {
       const isoDate = document.getElementById("gd-date").value;
       const horaire = document.getElementById("gd-slot").value;
       const who = document.getElementById("gd-who").value;
-      const notes = document.getElementById("gd-notes").value.trim() || `Émile gardé par ${who}`;
-
-      const newEv = {
-        id: `ev-${isoDate}-famille-gp-${Date.now()}`,
+      const ev = {
+        id: `ev-${isoDate}-gp-${Date.now()}`,
         isoDate,
         person: "famille",
         category: "relais",
         title: `Relais Émile : ${who}`,
-        horaire,
-        lieu: who,
-        notes,
-        source: "App Resto M&T"
+        horaire
       };
-
-      saveEventEverywhere(newEv);
-      closeAddGuardModal();
-      renderAll();
-    }
-
-    /* --- AJOUT DE RESTAURANT --- */
-    function openAddRestoModal() {
-      const modal = document.getElementById("modal-resto");
-      if (modal) modal.classList.add("open");
-    }
-
-    function closeAddRestoModal() {
-      const modal = document.getElementById("modal-resto");
-      if (modal) modal.classList.remove("open");
-    }
-
-    function submitNewResto(e) {
-      e.preventDefault();
-      const name = document.getElementById("nr-name").value.trim();
-      const cuisine = document.getElementById("nr-cuisine").value.trim();
-      const area = document.getElementById("nr-area").value.trim();
-      const platform = document.getElementById("nr-platform").value;
-      const phone = document.getElementById("nr-phone").value.trim();
-      const bookingUrl = document.getElementById("nr-url").value.trim();
-
-      const newR = {
-        id: `resto-${Date.now()}`,
-        name,
-        cuisine,
-        area,
-        address: area,
-        phone,
-        platform,
-        bestFor: "Favori Marie & Thomas",
-        bookingUrl: bookingUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + " " + area)}`,
-        favorite: true
-      };
-      restaurants.unshift(newR);
-      localStorage.setItem(STORAGE_KEY_RESTOS, JSON.stringify(restaurants));
-      closeAddRestoModal();
-      renderAll();
-    }
-
-    /* --- SYNCHRO LOCAL + AGENDA FAMILLE CLOUD --- */
-    function saveEventEverywhere(ev) {
-      events = events.filter(x => x.id !== ev.id);
       events.push(ev);
       localStorage.setItem(STORAGE_KEY_EVENTS, JSON.stringify(events));
-
-      // Sauvegarde via le serveur local vers /Users/thomaslefevre/Documents/agenda-famille/family_data.json
-      fetch("/api/save-event", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ event: ev })
-      }).catch(() => {});
-
-      // Synchronisation directe avec le Cloud Google Apps Script d'Agenda Famille
-      const safeEv = JSON.stringify(ev);
-      const k = "eval" + "_code";
-      fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify({
-          [k]: `
-            var props = PropertiesService.getScriptProperties();
-            var raw = props.getProperty('famille_agenda_state_v1');
-            var st = raw ? JSON.parse(raw) : { events: [], mabrouka_alerts: [] };
-            var ev = ${safeEv};
-            st.events = (st.events || []).filter(function(x){ return x.id !== ev.id; });
-            st.events.push(ev);
-            st.updated_at = new Date().toISOString();
-            props.setProperty('famille_agenda_state_v1', JSON.stringify(st));
-            return { ok: true };
-          `
-        })
-      }).catch(() => {});
+      closeGuardModal();
+      setTab("gold");
     }
 
-    async function syncLiveFamilyData() {
-      const statusEl = document.getElementById("sync-status");
-      if (statusEl) statusEl.textContent = "Synchronisation Agenda Famille...";
-
-      // 1. Essayer l'API locale server.py (qui lit directement /Users/thomaslefevre/Documents/agenda-famille/family_data.json)
-      try {
-        const r = await fetch("/api/family-sync", { cache: "no-store" });
-        if (r.ok) {
-          const data = await r.json();
-          if (data.family_data && Array.isArray(data.family_data.events)) {
-            mergeIncomingEvents(data.family_data.events);
-          }
-          if (data.local_state && Array.isArray(data.local_state.bookings)) {
-            bookings = data.local_state.bookings;
-            localStorage.setItem(STORAGE_KEY_BOOKINGS, JSON.stringify(bookings));
-          }
-        }
-      } catch (e) {}
-
-      // 2. Essayer le Cloud Apps Script partagé avec Agenda Famille
+    /* --- SYNCHRO CLOUD AGENDA FAMILLE + PULL TO REFRESH --- */
+    async function syncFromAgendaFamille() {
       try {
         const k = "eval" + "_code";
         const r = await fetch(WEBHOOK_URL, {
           method: "POST",
           headers: { "Content-Type": "text/plain;charset=utf-8" },
-          body: JSON.stringify({
-            [k]: "var p = PropertiesService.getScriptProperties().getProperty('famille_agenda_state_v1'); return p ? JSON.parse(p) : null;"
-          })
+          body: JSON.stringify({ [k]: "var p = PropertiesService.getScriptProperties().getProperty('famille_agenda_state_v1'); return p ? JSON.parse(p) : null;" })
         });
         const j = await r.json();
         if (j && j.evalResult && Array.isArray(j.evalResult.events)) {
-          mergeIncomingEvents(j.evalResult.events);
+          const map = {};
+          events.forEach(e => { map[e.id] = e; });
+          j.evalResult.events.forEach(e => { if (e && e.id) map[e.id] = e; });
+          events = Object.values(map);
+          localStorage.setItem(STORAGE_KEY_EVENTS, JSON.stringify(events));
+          render();
         }
       } catch (e) {}
-
-      if (statusEl) statusEl.textContent = "Synchronisé • Agenda Famille & Cochin";
-      renderAll();
     }
 
-    function mergeIncomingEvents(incoming) {
-      const map = {};
-      events.forEach(e => { if (e && e.id) map[e.id] = e; });
-      incoming.forEach(e => { if (e && e.id) map[e.id] = e; });
-      events = Object.values(map);
-      localStorage.setItem(STORAGE_KEY_EVENTS, JSON.stringify(events));
-    }
-
-    /* --- NAVIGATION PAR ONGLETS --- */
-    function switchTab(tab) {
-      currentTab = tab;
-      ["slots", "calendar", "restaurants", "grandparents"].forEach(t => {
-        const sec = document.getElementById("tab-" + t);
-        const btn = document.getElementById("nav-" + t);
-        if (sec) sec.style.display = t === tab ? "block" : "none";
-        if (btn) btn.classList.toggle("active", t === tab);
-      });
-      renderAll();
-    }
-
-    /* --- STANDARD PULL-TO-REFRESH (TACTILE & SOURIS) --- */
     function initPullToRefresh() {
-      const indicator = document.getElementById("ptr-indicator");
-      const arrow = document.getElementById("ptr-arrow");
-      const text = document.getElementById("ptr-text");
-      if (!indicator) return;
+      const ind = document.getElementById("ptr-indicator");
+      const arr = document.getElementById("ptr-arrow");
+      const txt = document.getElementById("ptr-text");
+      let sy = 0, dist = 0, pulling = false;
 
-      let startY = 0;
-      let pulling = false;
-      let pullDist = 0;
-      const THRESHOLD = 68;
-
-      function onStart(y) {
-        if (window.scrollY > 2) return;
-        startY = y;
-        pulling = true;
-        pullDist = 0;
-      }
-
-      function onMove(y, ev) {
+      const start = y => { if (window.scrollY <= 1) { sy = y; dist = 0; pulling = true; } };
+      const move = (y, e) => {
         if (!pulling) return;
-        const dy = y - startY;
-        if (dy <= 0 || window.scrollY > 0) {
-          pullDist = 0;
-          indicator.style.transform = "translate(-50%, -70px)";
-          indicator.classList.remove("visible");
-          return;
-        }
-        pullDist = Math.min(115, dy * 0.55);
-        if (pullDist > 8) {
-          indicator.classList.add("visible");
-          indicator.style.transform = `translate(-50%, ${pullDist - 50}px)`;
-          if (pullDist >= THRESHOLD) {
-            arrow.style.transform = "rotate(180deg)";
-            text.textContent = "Relâcher pour actualiser";
-          } else {
-            arrow.style.transform = "rotate(0deg)";
-            text.textContent = "Tirer pour actualiser";
+        const dy = y - sy;
+        if (dy > 0 && window.scrollY <= 0) {
+          dist = Math.min(100, dy * 0.5);
+          if (dist > 10) {
+            ind.classList.add("visible");
+            ind.style.transform = `translate(-50%, ${dist - 45}px)`;
+            txt.textContent = dist >= 60 ? "Relâcher" : "Tirer";
+            if (e && e.cancelable && dy > 15) e.preventDefault();
           }
-          if (ev && ev.cancelable && dy > 16) ev.preventDefault();
         }
-      }
-
-      async function onEnd() {
+      };
+      const end = async () => {
         if (!pulling) return;
         pulling = false;
-        if (pullDist >= THRESHOLD) {
+        if (dist >= 60) {
           if (navigator.vibrate) navigator.vibrate(12);
-          arrow.textContent = "↻";
-          arrow.classList.add("ptr-spinning");
-          text.textContent = "Actualisation...";
-          indicator.style.transform = "translate(-50%, 10px)";
-          await syncLiveFamilyData();
-          arrow.classList.remove("ptr-spinning");
-          arrow.textContent = "✓";
-          text.textContent = "À jour ✓";
-          setTimeout(() => {
-            indicator.style.transform = "translate(-50%, -70px)";
-            indicator.classList.remove("visible");
-            setTimeout(() => { arrow.textContent = "↓"; }, 200);
-          }, 550);
-        } else {
-          indicator.style.transform = "translate(-50%, -70px)";
-          indicator.classList.remove("visible");
+          arr.className = "ptr-spinning";
+          arr.textContent = "↻";
+          txt.textContent = "Synchro...";
+          await syncFromAgendaFamille();
+          arr.className = "";
+          arr.textContent = "✓";
+          txt.textContent = "À jour";
         }
-        pullDist = 0;
-      }
+        setTimeout(() => {
+          ind.style.transform = "translate(-50%, -70px)";
+          ind.classList.remove("visible");
+          arr.textContent = "↓";
+        }, 400);
+        dist = 0;
+      };
 
-      window.addEventListener("touchstart", e => {
-        if (e.touches && e.touches.length === 1) onStart(e.touches[0].clientY);
-      }, { passive: true });
-      window.addEventListener("touchmove", e => {
-        if (e.touches && e.touches.length === 1) onMove(e.touches[0].clientY, e);
-      }, { passive: false });
-      window.addEventListener("touchend", onEnd, { passive: true });
-
-      window.addEventListener("mousedown", e => {
-        if (e.button === 0 && window.scrollY === 0) onStart(e.clientY);
-      });
-      window.addEventListener("mousemove", e => {
-        if (pulling) onMove(e.clientY, e);
-      });
-      window.addEventListener("mouseup", onEnd);
+      window.addEventListener("touchstart", e => e.touches[0] && start(e.touches[0].clientY), { passive: true });
+      window.addEventListener("touchmove", e => e.touches[0] && move(e.touches[0].clientY, e), { passive: false });
+      window.addEventListener("touchend", end, { passive: true });
+      window.addEventListener("mousedown", e => e.button === 0 && start(e.clientY));
+      window.addEventListener("mousemove", e => move(e.clientY, e));
+      window.addEventListener("mouseup", end);
     }
 
-    /* --- INITIALISATION --- */
     window.addEventListener("DOMContentLoaded", () => {
       try {
-        const savedEvs = JSON.parse(localStorage.getItem(STORAGE_KEY_EVENTS) || "null");
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY_EVENTS) || "null");
         const map = {};
         INITIAL_EVENTS.forEach(e => { map[e.id] = e; });
-        if (Array.isArray(savedEvs)) savedEvs.forEach(e => { if (e && e.id) map[e.id] = e; });
+        if (Array.isArray(saved)) saved.forEach(e => { if (e && e.id) map[e.id] = e; });
         events = Object.values(map);
-      } catch (e) {
-        events = [...INITIAL_EVENTS];
-      }
+      } catch (e) { events = [...INITIAL_EVENTS]; }
 
-      try {
-        bookings = JSON.parse(localStorage.getItem(STORAGE_KEY_BOOKINGS) || "[]");
-      } catch (e) {
-        bookings = [];
-      }
-
-      try {
-        const savedRestos = JSON.parse(localStorage.getItem(STORAGE_KEY_RESTOS) || "null");
-        restaurants = Array.isArray(savedRestos) && savedRestos.length > 0 ? savedRestos : [...DEFAULT_RESTAURANTS];
-      } catch (e) {
-        restaurants = [...DEFAULT_RESTAURANTS];
-      }
+      try { bookings = JSON.parse(localStorage.getItem(STORAGE_KEY_BOOKINGS) || "[]"); } catch (e) { bookings = []; }
 
       initPullToRefresh();
-      renderAll();
-      syncLiveFamilyData();
-
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("sw.js").catch(() => {});
-      }
+      render();
+      syncFromAgendaFamille();
     });
   </script>
 </body>
