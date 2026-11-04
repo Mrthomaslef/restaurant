@@ -99,9 +99,14 @@
       border-radius: 11px;
     }
     .brand-title {
-      font-size: 17px;
+      font-size: 16.5px;
       font-weight: 900;
       letter-spacing: -0.02em;
+    }
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
     }
     .btn-add-gp {
       height: 36px;
@@ -110,9 +115,10 @@
       border: 1px solid var(--border);
       background: var(--card);
       color: var(--text);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 800;
       cursor: pointer;
+      white-space: nowrap;
     }
 
     /* MAIN */
@@ -182,8 +188,8 @@
     /* TABS SIMPLES */
     .seg-bar {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
       background: var(--subtle);
       padding: 4px;
       border-radius: 14px;
@@ -196,9 +202,11 @@
       border-radius: 10px;
       background: transparent;
       color: var(--muted);
-      font-size: 12.5px;
+      font-size: 11.5px;
       font-weight: 800;
       cursor: pointer;
+      padding: 0 4px;
+      white-space: nowrap;
     }
     .seg-btn.active {
       background: var(--card);
@@ -206,7 +214,35 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
 
-    /* LISTE DES JOURS */
+    /* FILTRES RESTOS */
+    .filter-row {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      margin-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .filter-row::-webkit-scrollbar { display: none; }
+    .chip {
+      height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .chip.active {
+      background: var(--wine);
+      border-color: var(--wine);
+      color: #FFF;
+    }
+
+    /* LISTE DES JOURS & RESTOS */
     .slot-list {
       display: flex;
       flex-direction: column;
@@ -240,6 +276,12 @@
       text-transform: capitalize;
       margin-bottom: 4px;
     }
+    .slot-sub {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
     .slot-meta {
       display: flex;
       flex-wrap: wrap;
@@ -249,14 +291,19 @@
       font-weight: 700;
     }
     .tag {
-      padding: 2px 8px;
-      border-radius: 6px;
+      padding: 3px 8px;
+      border-radius: 7px;
       font-size: 11px;
       font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
     }
     .tag.gold { background: var(--gold-soft); color: #92400E; }
     .tag.free { background: var(--wine-soft); color: var(--wine); }
     .tag.booked { background: var(--green-soft); color: #166534; }
+    .tag.dist { background: #EEF2FF; color: #3730A3; }
+    .tag.michelin { background: #FEE2E2; color: #991B1B; }
 
     .slot-actions {
       display: flex;
@@ -417,9 +464,22 @@
       border-radius: 12px;
       border: 1px solid var(--border);
       background: var(--subtle);
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
       color: var(--text);
+    }
+    .resto-preview {
+      background: var(--subtle);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
     }
     .row-2 {
       display: grid;
@@ -466,7 +526,10 @@
     <div class="header-inner">
       <div class="brand">
         <img src="assets/icon.svg" alt="Resto M&amp;T" />
-        <div class="brand-title">Resto Marie &amp; Thomas</div>
+        <div>
+          <div class="brand-title">Resto Marie &amp; Thomas</div>
+          <div class="brand-sub">📍 Depuis le 7 ter rue du Colonel Oudot</div>
+        </div>
       </div>
       <button type="button" class="btn-add-gp" onclick="openGuardModal()">🏡 + Garde Émile</button>
     </div>
@@ -476,17 +539,28 @@
     <!-- CARTE PROCHAIN CRÉNEAU -->
     <div id="hero-box"></div>
 
-    <!-- 3 ONGLETS ULTRA SIMPLES -->
+    <!-- 4 ONGLETS SIMPLES -->
     <div class="seg-bar">
       <button type="button" class="seg-btn active" id="tab-gold" onclick="setTab('gold')">
-        🌟 Émile gardé (<span id="cnt-gold">0</span>)
+        🌟 Gardé (<span id="cnt-gold">0</span>)
+      </button>
+      <button type="button" class="seg-btn" id="tab-restos" onclick="setTab('restos')">
+        🍽️ Restos (18)
       </button>
       <button type="button" class="seg-btn" id="tab-free" onclick="setTab('free')">
-        🥂 Tous les 2 libres
+        🥂 Libres
       </button>
       <button type="button" class="seg-btn" id="tab-cal" onclick="setTab('cal')">
-        📅 Calendrier
+        📅 Mois
       </button>
+    </div>
+
+    <!-- FILTRES RESTOS -->
+    <div id="resto-filters" class="filter-row" style="display:none;">
+      <button type="button" class="chip active" data-rf="all" onclick="setRestoFilter('all')">Tous (18) • Par distance</button>
+      <button type="button" class="chip" data-rf="walk" onclick="setRestoFilter('walk')">🚶 À pied (&lt; 15 min)</button>
+      <button type="button" class="chip" data-rf="top" onclick="setRestoFilter('top')">⭐ Note 4,7+ sur Google</button>
+      <button type="button" class="chip" data-rf="gastro" onclick="setRestoFilter('gastro')">💎 Michelin &amp; Gastro</button>
     </div>
 
     <!-- CONTENU -->
@@ -505,9 +579,11 @@
       <div id="book-day-badge" style="margin-bottom:12px;"></div>
 
       <div class="field">
-        <label>Restaurant</label>
-        <select id="bk-resto"></select>
+        <label>Restaurant proche de la maison</label>
+        <select id="bk-resto" onchange="updateRestoPreview()"></select>
       </div>
+
+      <div id="bk-resto-preview" class="resto-preview"></div>
 
       <div class="row-2">
         <div class="field">
@@ -576,13 +652,267 @@
     const STORAGE_KEY_EVENTS = "resto_mt_family_events_v1";
     const STORAGE_KEY_BOOKINGS = "resto_mt_bookings_v1";
 
+    // Restaurants proches du 7 ter rue du Colonel Oudot, 75012 Paris (triés par distance)
     const RESTAURANTS = [
-      { id: "lours", name: "L'Ours ★ (Vincennes)", url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ours+Vincennes+reservation" },
-      { id: "virtus", name: "Virtus ★ (Paris 12e)", url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Virtus+29+rue+de+Cotte+75012+Paris" },
-      { id: "passerini", name: "Passerini (Paris 12e)", url: "https://www.passerini.paris/" },
-      { id: "septime", name: "Septime ★ (Paris 11e)", url: "https://www.septime-charonne.fr/" },
-      { id: "train-bleu", name: "Le Train Bleu (Paris 12e)", url: "https://www.le-train-bleu.com/fr/reservation/" },
-      { id: "thefork", name: "TheFork (Autour du 12e)", url: "https://www.thefork.fr/search?cityId=415144" }
+      {
+        id: "le-swann",
+        name: "Le Swann",
+        cuisine: "Brasserie bistronomique & terrasse",
+        address: "271 av. Daumesnil, Paris 12e",
+        rating: "4,2",
+        ratingNum: 4.2,
+        reviews: "860 avis",
+        distMeters: 50,
+        distLabel: "50 m • 1 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Le+Swann+271+avenue+Daumesnil+75012+Paris"
+      },
+      {
+        id: "beyit-jedo",
+        name: "Beyït Jedo",
+        cuisine: "Libanais contemporain & mezzés",
+        address: "249 av. Daumesnil, Paris 12e",
+        rating: "4,6",
+        ratingNum: 4.6,
+        reviews: "420 avis",
+        distMeters: 250,
+        distLabel: "250 m • 3 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Beyit+Jedo+249+avenue+Daumesnil+75012+Paris"
+      },
+      {
+        id: "la-belle-table",
+        name: "La Belle Table",
+        cuisine: "Gastronomique français de saison",
+        address: "44 rue Claude Decaen, Paris 12e",
+        rating: "4,6",
+        ratingNum: 4.6,
+        reviews: "190 avis",
+        distMeters: 450,
+        distLabel: "450 m • 6 min à pied",
+        walk: true,
+        gastro: true,
+        badge: "Gastro",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+La+Belle+Table+44+rue+Claude+Decaen+75012+Paris"
+      },
+      {
+        id: "bistrot-bel-air",
+        name: "Le Bistrot de Bel Air",
+        cuisine: "Bistronomie de quartier & vins",
+        address: "23 bd de Picpus, Paris 12e",
+        rating: "4,8",
+        ratingNum: 4.8,
+        reviews: "180 avis",
+        distMeters: 650,
+        distLabel: "650 m • 8 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Le+Bistrot+de+Bel+Air+23+boulevard+de+Picpus+75012+Paris"
+      },
+      {
+        id: "trou-gascon",
+        name: "Au Trou Gascon",
+        cuisine: "Bistronomie bourgeoise (Sarah Chougnet-Strudel)",
+        address: "40 rue Taine, Paris 12e",
+        rating: "4,4",
+        ratingNum: 4.4,
+        reviews: "480 avis",
+        distMeters: 650,
+        distLabel: "650 m • 8 min à pied",
+        walk: true,
+        gastro: true,
+        badge: "Guide Michelin",
+        url: "https://www.autrougascon.com/"
+      },
+      {
+        id: "sourire-asie",
+        name: "Sourire d'Asie",
+        cuisine: "Vietnamien raffiné & intimiste",
+        address: "18 rue Taine, Paris 12e",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "310 avis",
+        distMeters: 700,
+        distLabel: "700 m • 9 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Sourire+d+Asie+18+rue+Taine+75012+Paris"
+      },
+      {
+        id: "gourmet-picpus",
+        name: "Au Gourmet de Picpus",
+        cuisine: "Bistrot traditionnel français",
+        address: "58 rue de Picpus, Paris 12e",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "240 avis",
+        distMeters: 850,
+        distLabel: "850 m • 10 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Au+Gourmet+de+Picpus+58+rue+de+Picpus+75012+Paris"
+      },
+      {
+        id: "beriz",
+        name: "Bériz",
+        cuisine: "Cuisine créative du marché & vins nature",
+        address: "80 av. de Saint-Mandé, Paris 12e",
+        rating: "4,9",
+        ratingNum: 4.9,
+        reviews: "315 avis",
+        distMeters: 900,
+        distLabel: "900 m • 11 min à pied",
+        walk: true,
+        gastro: true,
+        badge: "Coup de cœur",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Beriz+80+avenue+de+Saint+Mande+75012+Paris"
+      },
+      {
+        id: "parigini",
+        name: "Parigini Bistro",
+        cuisine: "Bistrot franco-italien fait maison",
+        address: "47 av. de Saint-Mandé, Paris 12e",
+        rating: "4,8",
+        ratingNum: 4.8,
+        reviews: "210 avis",
+        distMeters: 950,
+        distLabel: "950 m • 12 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Parigini+Bistro+47+avenue+de+Saint+Mande+75012+Paris"
+      },
+      {
+        id: "tomo-st-mande",
+        name: "Tomo",
+        cuisine: "Japonais authentique & poissons frais",
+        address: "70 av. du Général de Gaulle, Saint-Mandé",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "290 avis",
+        distMeters: 950,
+        distLabel: "950 m • 12 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Tomo+70+avenue+du+General+de+Gaulle+Saint+Mande"
+      },
+      {
+        id: "les-affranchis",
+        name: "Les Affranchis",
+        cuisine: "Bistronomie franco-italienne rétro-chic",
+        address: "7 bd de Reuilly, Paris 12e",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "540 avis",
+        distMeters: 1100,
+        distLabel: "1,1 km • 13 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Les+Affranchis+7+boulevard+de+Reuilly+75012+Paris"
+      },
+      {
+        id: "le-caracal",
+        name: "Le Caracal",
+        cuisine: "Brasserie chic & grillades au feu de bois",
+        address: "Av. du Général de Gaulle, Saint-Mandé",
+        rating: "4,6",
+        ratingNum: 4.6,
+        reviews: "620 avis",
+        distMeters: 1100,
+        distLabel: "1,1 km • 13 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Le+Caracal+Saint+Mande"
+      },
+      {
+        id: "chez-marcel",
+        name: "Chez Marcel",
+        cuisine: "Bistrot de terroir & plats mijotés",
+        address: "8 rue Jeanne d'Arc, Saint-Mandé",
+        rating: "4,6",
+        ratingNum: 4.6,
+        reviews: "330 avis",
+        distMeters: 1200,
+        distLabel: "1,2 km • 14 min à pied",
+        walk: true,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+Chez+Marcel+8+rue+Jeanne+d+Arc+Saint+Mande"
+      },
+      {
+        id: "virtus",
+        name: "Virtus ★",
+        cuisine: "Gastronomique créatif (1 Étoile Michelin)",
+        address: "29 rue de Cotte, Paris 12e (Aligre)",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "390 avis",
+        distMeters: 2200,
+        distLabel: "2,2 km • 8 min vélo / métro",
+        walk: false,
+        gastro: true,
+        badge: "1★ Michelin",
+        url: "https://www.virtus-paris.com/"
+      },
+      {
+        id: "cotte-roti",
+        name: "Le Cotte Rôti",
+        cuisine: "Bistronomie & rôtisserie d'Aligre",
+        address: "1 rue de Cotte, Paris 12e (Aligre)",
+        rating: "4,7",
+        ratingNum: 4.7,
+        reviews: "450 avis",
+        distMeters: 2200,
+        distLabel: "2,2 km • 8 min vélo / métro",
+        walk: false,
+        gastro: true,
+        badge: "Bistronomie",
+        url: "https://www.google.com/maps/search/?api=1&query=Le+Cotte+Roti+1+rue+de+Cotte+75012+Paris"
+      },
+      {
+        id: "may-bay",
+        name: "Mây Bay",
+        cuisine: "Vietnamien créatif & chaleureux",
+        address: "33 rue des Laitières, Vincennes",
+        rating: "4,8",
+        ratingNum: 4.8,
+        reviews: "370 avis",
+        distMeters: 2300,
+        distLabel: "2,3 km • 8 min vélo / G7",
+        walk: false,
+        gastro: false,
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+May+Bay+33+rue+des+Laitieres+Vincennes"
+      },
+      {
+        id: "passerini",
+        name: "Passerini",
+        cuisine: "Haute cuisine italienne & pâtes fraîches",
+        address: "65 rue Traversière, Paris 12e (Aligre)",
+        rating: "4,5",
+        ratingNum: 4.5,
+        reviews: "1 450 avis",
+        distMeters: 2400,
+        distLabel: "2,4 km • 9 min métro / G7",
+        walk: false,
+        gastro: true,
+        badge: "Top Italien",
+        url: "https://www.passerini.paris/"
+      },
+      {
+        id: "lours",
+        name: "L'Ours ★ (Jacky Ribault)",
+        cuisine: "Haute gastronomie (1 Étoile Michelin)",
+        address: "10 rue de l'Église, Vincennes",
+        rating: "4,8",
+        ratingNum: 4.8,
+        reviews: "790 avis",
+        distMeters: 2500,
+        distLabel: "2,5 km • 8 min en G7 / vélo",
+        walk: false,
+        gastro: true,
+        badge: "1★ Michelin",
+        url: "https://www.google.com/maps/search/?api=1&query=Restaurant+L+Ours+Vincennes+reservation"
+      }
     ];
 
     const INITIAL_EVENTS = [
@@ -614,6 +944,7 @@
     let events = [];
     let bookings = [];
     let activeTab = "gold";
+    let restoFilter = "all";
     let calMonth = new Date(2026, 10, 1, 12, 0, 0);
 
     function esc(s) {
@@ -682,11 +1013,20 @@
 
     function setTab(t) {
       activeTab = t;
-      ["gold", "free", "cal"].forEach(k => {
+      ["gold", "restos", "free", "cal"].forEach(k => {
         document.getElementById("tab-" + k).classList.toggle("active", k === t);
       });
+      document.getElementById("resto-filters").style.display = t === "restos" ? "flex" : "none";
       document.getElementById("main-list").style.display = t === "cal" ? "none" : "flex";
       document.getElementById("cal-view").style.display = t === "cal" ? "block" : "none";
+      render();
+    }
+
+    function setRestoFilter(rf) {
+      restoFilter = rf;
+      document.querySelectorAll("#resto-filters .chip").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-rf") === rf);
+      });
       render();
     }
 
@@ -710,15 +1050,20 @@
               <span class="h-pill">👵 Émile : ${esc(next.hasGp ? next.gpWho : "À confier aux grands-parents")}</span>
             </div>
             <button type="button" class="btn-main-book" onclick="openBookModal('${next.iso}')">
-              🍷 Réserver un restaurant automatiquement
+              🍷 Réserver un restaurant proche
             </button>
           </div>
         `;
       }
 
-      // 2. Liste selon l'onglet actif
+      // 2. Vue selon l'onglet actif
       if (activeTab === "cal") {
         renderCalendar();
+        return;
+      }
+
+      if (activeTab === "restos") {
+        renderRestos(next ? next.iso : "2026-11-12");
         return;
       }
 
@@ -754,6 +1099,38 @@
           </div>
         `;
       }).join("");
+    }
+
+    function renderRestos(defaultIso) {
+      const listEl = document.getElementById("main-list");
+      let items = [...RESTAURANTS];
+
+      if (restoFilter === "walk") {
+        items = items.filter(r => r.walk);
+      } else if (restoFilter === "top") {
+        items = items.filter(r => r.ratingNum >= 4.7).sort((a, b) => b.ratingNum - a.ratingNum || a.distMeters - b.distMeters);
+      } else if (restoFilter === "gastro") {
+        items = items.filter(r => r.gastro);
+      }
+
+      listEl.innerHTML = items.map(r => `
+        <div class="slot-card">
+          <div class="slot-left">
+            <div class="slot-date" style="text-transform:none;">${esc(r.name)}</div>
+            <div class="slot-sub">${esc(r.cuisine)} • ${esc(r.address)}</div>
+            <div class="slot-meta">
+              <span class="tag gold">★ ${esc(r.rating)}/5 (${esc(r.reviews)})</span>
+              <span class="tag dist">📍 ${esc(r.distLabel)}</span>
+              ${r.badge ? `<span class="tag michelin">${esc(r.badge)}</span>` : ""}
+            </div>
+          </div>
+          <div class="slot-actions">
+            <button type="button" class="btn-book" onclick="openBookModal('${defaultIso}', '${r.id}')">
+              🍷 Réserver
+            </button>
+          </div>
+        </div>
+      `).join("");
     }
 
     function renderCalendar() {
@@ -812,16 +1189,37 @@
     }
 
     /* --- RÉSERVATION AUTOMATIQUE --- */
-    function openBookModal(iso) {
+    function openBookModal(iso, restoId) {
       const sel = document.getElementById("bk-resto");
-      sel.innerHTML = RESTAURANTS.map(r => `<option value="${r.id}">${esc(r.name)}</option>`).join("");
+      sel.innerHTML = RESTAURANTS.map(r =>
+        `<option value="${r.id}">${esc(r.name)} — ★ ${esc(r.rating)} (${esc(r.distLabel.split("•")[0].trim())})</option>`
+      ).join("");
+      if (restoId) sel.value = restoId;
       document.getElementById("bk-date").value = iso || "2026-11-12";
       updateBookModalBadge();
+      updateRestoPreview();
       document.getElementById("modal-book").classList.add("open");
     }
 
     function closeBookModal() {
       document.getElementById("modal-book").classList.remove("open");
+    }
+
+    function updateRestoPreview() {
+      const rId = document.getElementById("bk-resto").value;
+      const r = RESTAURANTS.find(x => x.id === rId) || RESTAURANTS[0];
+      const el = document.getElementById("bk-resto-preview");
+      if (!el || !r) return;
+      el.innerHTML = `
+        <div>
+          <div style="color:var(--text); font-weight:900;">${esc(r.cuisine)}</div>
+          <div style="color:var(--muted); font-size:11px;">${esc(r.address)}</div>
+        </div>
+        <div style="text-align:right; flex-shrink:0;">
+          <div style="color:#92400E; font-weight:900;">★ ${esc(r.rating)}/5 <span style="font-weight:700; font-size:10.5px;">(${esc(r.reviews)})</span></div>
+          <div style="color:#3730A3; font-size:11px; font-weight:800;">📍 ${esc(r.distLabel)}</div>
+        </div>
+      `;
     }
 
     function updateBookModalBadge() {
@@ -864,7 +1262,7 @@
       const iso = document.getElementById("bk-date").value;
       const time = document.getElementById("bk-time").value;
       const resto = RESTAURANTS.find(r => r.id === document.getElementById("bk-resto").value) || RESTAURANTS[0];
-      const msg = `🍷 On se fait ${resto.name} le ${formatDateFr(iso)} à ${time} ? ❤️`;
+      const msg = `🍷 On se fait ${resto.name} (★ ${resto.rating}/5 • ${resto.distLabel}) le ${formatDateFr(iso)} à ${time} ? ❤️`;
       window.location.href = `sms:+33607688499?&body=${encodeURIComponent(msg)}`;
     }
 
@@ -879,6 +1277,7 @@
         `DTSTART:${Y}${M}${D}T${h}${m}00`,
         `DTEND:${Y}${M}${D}T${String(Math.min(23, Number(h) + 2)).padStart(2, "0")}${m}00`,
         `SUMMARY:🍷 Resto : ${resto.name}`,
+        `LOCATION:${resto.address}`,
         "END:VEVENT", "END:VCALENDAR"
       ].join("\r\n");
       const a = document.createElement("a");
