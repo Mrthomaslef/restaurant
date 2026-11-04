@@ -1,0 +1,18 @@
+{
+  "name": "Resto en Amoureux • Marie & Thomas",
+  "short_name": "Resto M&T",
+  "description": "Détection automatique des créneaux libres Marie & Thomas avec Émile gardé par les grands-parents + Réservation automatique de restaurant.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FCF8F2",
+  "theme_color": "#BE123C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
