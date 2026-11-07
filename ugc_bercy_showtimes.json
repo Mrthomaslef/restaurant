@@ -3,89 +3,64 @@
   "updatedAt": "2026-11-05",
   "movies": [
     {
+      "id": "1000048020",
+      "title": "Infirmary",
+      "runtime": "1h 27min",
+      "genres": "Epouvante-horreur",
+      "rating": "—",
+      "ratingNum": 0.0,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": null,
+      "userCount": 0,
+      "poster": "https://fr.web.img6.acsta.net/img/65/97/6597b4d07ce512c9eebe240fc67babd7.jpg",
+      "synopsis": "Un gardien a disparu lors de sa première nuit dans un ancien hôpital psychiatrique. Les images de vidéosurveillance montrent des incidents inexplicables qui continuent de déconcerter les enquêteurs.",
+      "slots": [
+        {
+          "time": "20:00",
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091504956&part=all"
+        }
+      ]
+    },
+    {
       "id": "1000036932",
       "title": "Club Kid",
       "runtime": "2h 02min",
       "genres": "Comédie dramatique",
-      "rating": "4,2",
-      "ratingNum": 4.2,
+      "rating": "4,1",
+      "ratingNum": 4.1,
       "pressRating": "4,2",
       "pressCount": 35,
-      "userRating": "4,2",
-      "userCount": 139,
+      "userRating": "4,1",
+      "userCount": 232,
       "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
       "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
       "slots": [
         {
           "time": "10:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506673&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506672&part=all"
         },
         {
           "time": "14:00",
-          "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506666&part=all"
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506994&part=all"
         },
         {
           "time": "16:30",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506993&part=all"
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506658&part=all"
         },
         {
           "time": "19:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506602&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506601&part=all"
         },
         {
           "time": "21:45",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506595&part=all"
-        }
-      ]
-    },
-    {
-      "id": "323550",
-      "title": "L'Affaire Marie-Claire",
-      "runtime": "1h 42min",
-      "genres": "Thriller • Judiciaire",
-      "rating": "4,2",
-      "ratingNum": 4.2,
-      "pressRating": "3,3",
-      "pressCount": 34,
-      "userRating": "4,2",
-      "userCount": 349,
-      "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
-      "slots": [
-        {
-          "time": "10:30",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506437&part=all"
-        },
-        {
-          "time": "13:30",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506434&part=all"
-        },
-        {
-          "time": "15:40",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506394&part=all"
-        },
-        {
-          "time": "17:50",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506401&part=all"
-        },
-        {
-          "time": "20:00",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506408&part=all"
-        },
-        {
-          "time": "22:10",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506439&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506594&part=all"
         }
       ]
     },
@@ -99,34 +74,80 @@
       "pressRating": "3,9",
       "pressCount": 33,
       "userRating": "4,0",
-      "userCount": 154,
+      "userCount": 275,
       "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
       "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
       "slots": [
         {
           "time": "10:30",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506545&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506536&part=all"
         },
         {
           "time": "14:00",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506963&part=all"
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506543&part=all"
         },
         {
           "time": "16:30",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506549&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506550&part=all"
         },
         {
           "time": "19:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506488&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506557&part=all"
         },
         {
           "time": "21:45",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506420&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506421&part=all"
+        }
+      ]
+    },
+    {
+      "id": "323550",
+      "title": "L'Affaire Marie-Claire",
+      "runtime": "1h 42min",
+      "genres": "Thriller • Judiciaire",
+      "rating": "4,2",
+      "ratingNum": 4.2,
+      "pressRating": "3,3",
+      "pressCount": 34,
+      "userRating": "4,2",
+      "userCount": 454,
+      "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
+      "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
+      "slots": [
+        {
+          "time": "10:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506428&part=all"
+        },
+        {
+          "time": "13:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506435&part=all"
+        },
+        {
+          "time": "15:40",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506395&part=all"
+        },
+        {
+          "time": "17:50",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506402&part=all"
+        },
+        {
+          "time": "20:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506990&part=all"
+        },
+        {
+          "time": "22:10",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506440&part=all"
         }
       ]
     },
@@ -135,44 +156,44 @@
       "title": "Un bon patron",
       "runtime": "1h 27min",
       "genres": "Comédie",
-      "rating": "3,0",
-      "ratingNum": 3.0,
+      "rating": "2,5",
+      "ratingNum": 2.5,
       "pressRating": "2,7",
       "pressCount": 3,
-      "userRating": "3,0",
-      "userCount": 53,
+      "userRating": "2,5",
+      "userCount": 87,
       "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
       "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
       "slots": [
         {
           "time": "10:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506470&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506471&part=all"
         },
         {
           "time": "14:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506477&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506478&part=all"
         },
         {
           "time": "16:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506484&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506464&part=all"
         },
         {
           "time": "18:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506443&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506988&part=all"
         },
         {
           "time": "20:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506451&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506461&part=all"
         },
         {
           "time": "22:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506457&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506458&part=all"
         }
       ]
     },
@@ -184,52 +205,73 @@
       "rating": "4,0",
       "ratingNum": 4.0,
       "pressRating": "3,7",
-      "pressCount": 24,
+      "pressCount": 25,
       "userRating": "4,0",
-      "userCount": 142,
+      "userCount": 223,
       "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
       "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
       "slots": [
         {
           "time": "10:45",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506996&part=all"
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506727&part=all"
         },
         {
           "time": "14:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506722&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506721&part=all"
         },
         {
           "time": "17:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506716&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506715&part=all"
         },
         {
           "time": "20:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506710&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506709&part=all"
         }
       ]
     },
     {
-      "id": "1000047396",
-      "title": "Lorie Party 2026 au cinéma",
-      "runtime": "1h 45min",
-      "genres": "Concert",
-      "rating": "3,0",
-      "ratingNum": 3.0,
+      "id": "1000026918",
+      "title": "Ramayana : L'avènement d'une légende",
+      "runtime": "3h 15min",
+      "genres": "Action • Aventure",
+      "rating": "3,4",
+      "ratingNum": 3.4,
       "pressRating": null,
       "pressCount": 0,
-      "userRating": "3,0",
-      "userCount": 3,
-      "poster": "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
-      "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphorique et festive autour des hits « Près de moi », « Je serai (ta meilleure amie) », « Sur un air latino », « La Positive Attitude », « Week-end »…",
+      "userRating": "3,4",
+      "userCount": 11,
+      "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
+      "synopsis": "",
+      "slots": [
+        {
+          "time": "20:00",
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506950&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000051942",
+      "title": "Rammstein - Live in Mexico City",
+      "runtime": "1h 54min",
+      "genres": "Concert",
+      "rating": "3,4",
+      "ratingNum": 3.4,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": "3,4",
+      "userCount": 2,
+      "poster": "https://fr.web.img4.acsta.net/img/e1/3d/e13dc3f4068ce0e5c855d3223a9a54fd.jpg",
+      "synopsis": "Tourné sur trois soirées à guichets fermés au Foro Sol, d’une capacité de 65 000 spectateurs, Rammstein – Live in Mexico City capture l’une des performances emblématiques de la monumentale tournée mondiale des stades du groupe, qui s’est étendue sur cinq ans.",
       "slots": [
         {
           "time": "20:30",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091494182&part=all"
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091502966&part=all"
         }
       ]
     },
@@ -238,34 +280,34 @@
       "title": "Hope",
       "runtime": "2h 37min",
       "genres": "Thriller • Science Fiction",
-      "rating": "3,5",
-      "ratingNum": 3.5,
+      "rating": "3,4",
+      "ratingNum": 3.4,
       "pressRating": "4,1",
       "pressCount": 36,
-      "userRating": "3,5",
-      "userCount": 1382,
+      "userRating": "3,4",
+      "userCount": 1461,
       "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
       "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
       "slots": [
         {
           "time": "10:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506512&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506513&part=all"
         },
         {
           "time": "14:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506519&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506520&part=all"
         },
         {
           "time": "17:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506526&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506527&part=all"
         },
         {
           "time": "20:30",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506510&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506509&part=all"
         }
       ]
     },
@@ -279,29 +321,29 @@
       "pressRating": "3,1",
       "pressCount": 38,
       "userRating": "4,1",
-      "userCount": 3164,
+      "userCount": 3213,
       "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
       "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
       "slots": [
         {
           "time": "10:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506588&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506587&part=all"
         },
         {
           "time": "13:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506603&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506605&part=all"
         },
         {
           "time": "17:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506624&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506623&part=all"
         },
         {
           "time": "20:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506617&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506616&part=all"
         }
       ]
     },
@@ -310,39 +352,39 @@
       "title": "Le Fantôme de l'Opéra",
       "runtime": "2h 14min",
       "genres": "Drame • Romance",
-      "rating": "3,0",
-      "ratingNum": 3.0,
+      "rating": "2,9",
+      "ratingNum": 2.9,
       "pressRating": "1,6",
       "pressCount": 7,
-      "userRating": "3,0",
-      "userCount": 630,
+      "userRating": "2,9",
+      "userCount": 656,
       "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
       "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
       "slots": [
         {
           "time": "10:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506791&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506790&part=all"
         },
         {
           "time": "13:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506784&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506783&part=all"
         },
         {
           "time": "16:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506815&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506814&part=all"
         },
         {
           "time": "19:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506808&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506807&part=all"
         },
         {
           "time": "21:40",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506801&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506800&part=all"
         }
       ]
     },
@@ -356,29 +398,19 @@
       "pressRating": "4,5",
       "pressCount": 38,
       "userRating": "4,0",
-      "userCount": 1293,
+      "userCount": 1337,
       "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
       "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
       "slots": [
         {
           "time": "10:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506651&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506650&part=all"
         },
         {
-          "time": "13:45",
+          "time": "15:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506644&part=all"
-        },
-        {
-          "time": "17:00",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506637&part=all"
-        },
-        {
-          "time": "20:30",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506655&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506643&part=all"
         }
       ]
     },
@@ -392,39 +424,39 @@
       "pressRating": "3,1",
       "pressCount": 17,
       "userRating": "3,8",
-      "userCount": 1098,
+      "userCount": 1120,
       "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
       "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
       "slots": [
         {
           "time": "10:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506493&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506494&part=all"
         },
         {
           "time": "13:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506570&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506580&part=all"
         },
         {
           "time": "15:15",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506500&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506501&part=all"
         },
         {
           "time": "17:30",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506507&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506521&part=all"
         },
         {
           "time": "19:45",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506562&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506563&part=all"
         },
         {
           "time": "22:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506576&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506577&part=all"
         }
       ]
     },
@@ -438,34 +470,34 @@
       "pressRating": "3,3",
       "pressCount": 37,
       "userRating": "3,5",
-      "userCount": 1296,
+      "userCount": 1354,
       "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
       "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
       "slots": [
         {
           "time": "10:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506918&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506917&part=all"
         },
         {
           "time": "13:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506911&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506910&part=all"
         },
         {
           "time": "16:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506904&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506903&part=all"
         },
         {
           "time": "19:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506897&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506871&part=all"
         },
         {
           "time": "21:40",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506840&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506839&part=all"
         }
       ]
     },
@@ -479,24 +511,24 @@
       "pressRating": "3,1",
       "pressCount": 13,
       "userRating": "4,4",
-      "userCount": 515,
+      "userCount": 533,
       "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
       "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
       "slots": [
         {
           "time": "10:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506684&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506683&part=all"
         },
         {
           "time": "13:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506691&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506690&part=all"
         },
         {
-          "time": "17:45",
+          "time": "15:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506769&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506697&part=all"
         }
       ]
     },
@@ -510,29 +542,29 @@
       "pressRating": "3,0",
       "pressCount": 34,
       "userRating": "4,1",
-      "userCount": 2208,
+      "userCount": 2290,
       "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
       "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
       "slots": [
         {
           "time": "10:45",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506820&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506907&part=all"
         },
         {
           "time": "14:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506888&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506887&part=all"
         },
         {
           "time": "17:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506881&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506880&part=all"
         },
         {
           "time": "20:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506874&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506873&part=all"
         }
       ]
     },
@@ -546,60 +578,34 @@
       "pressRating": "3,8",
       "pressCount": 36,
       "userRating": "4,0",
-      "userCount": 663,
+      "userCount": 710,
       "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
       "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
       "slots": [
         {
           "time": "11:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506833&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506832&part=all"
         },
         {
           "time": "13:45",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506826&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506825&part=all"
         },
         {
           "time": "15:50",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506868&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506846&part=all"
         },
         {
           "time": "18:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506862&part=all"
-        },
-        {
-          "time": "20:10",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506855&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506861&part=all"
         },
         {
           "time": "22:15",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506848&part=all"
-        }
-      ]
-    },
-    {
-      "id": "1000024131",
-      "title": "Shaun le Mouton : La Bêêête d'Halloween",
-      "runtime": "1h 20min",
-      "genres": "Animation • Famille",
-      "rating": "3,9",
-      "ratingNum": 3.9,
-      "pressRating": "3,9",
-      "pressCount": 18,
-      "userRating": "3,9",
-      "userCount": 261,
-      "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-      "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
-      "slots": [
-        {
-          "time": "13:45",
-          "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091507013&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506847&part=all"
         }
       ]
     },
@@ -613,19 +619,71 @@
       "pressRating": "3,1",
       "pressCount": 27,
       "userRating": "3,1",
-      "userCount": 291,
+      "userCount": 303,
       "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
       "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
       "slots": [
         {
-          "time": "15:40",
+          "time": "13:30",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506746&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506752&part=all"
         },
         {
-          "time": "17:50",
+          "time": "15:40",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506739&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506745&part=all"
+        },
+        {
+          "time": "20:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506753&part=all"
+        },
+        {
+          "time": "22:10",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506775&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000012316",
+      "title": "Le Mystère Lucy Lost",
+      "runtime": "1h 29min",
+      "genres": "Animation • Famille",
+      "rating": "4,5",
+      "ratingNum": 4.5,
+      "pressRating": "3,9",
+      "pressCount": 26,
+      "userRating": "4,5",
+      "userCount": 224,
+      "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
+      "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
+      "slots": [
+        {
+          "time": "18:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506953&part=all"
+        }
+      ]
+    },
+    {
+      "id": "296642",
+      "title": "L'île des souvenirs",
+      "runtime": "1h 48min",
+      "genres": "Animation • Comédie",
+      "rating": "3,9",
+      "ratingNum": 3.9,
+      "pressRating": "3,5",
+      "pressCount": 11,
+      "userRating": "3,9",
+      "userCount": 392,
+      "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
+      "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
+      "slots": [
+        {
+          "time": "18:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506954&part=all"
         }
       ]
     },
@@ -639,711 +697,280 @@
       "pressRating": "2,5",
       "pressCount": 11,
       "userRating": "2,3",
-      "userCount": 280,
+      "userCount": 286,
       "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
       "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
       "slots": [
         {
-          "time": "15:45",
+          "time": "18:00",
           "version": "VF",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506956&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506955&part=all"
         }
       ]
     },
     {
-      "id": "12587",
-      "title": "Safe",
-      "runtime": "1h 59min",
-      "genres": "Drame",
-      "rating": "3,4",
-      "ratingNum": 3.4,
+      "id": "1000053534",
+      "title": "Stray Kids World Tour <RUN IT> Live viewing",
+      "runtime": "3h 15min",
+      "genres": "Concert",
+      "rating": "—",
+      "ratingNum": 0.0,
       "pressRating": null,
       "pressCount": 0,
-      "userRating": "3,4",
-      "userCount": 150,
-      "poster": "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
-      "synopsis": "",
+      "userRating": null,
+      "userCount": 0,
+      "poster": "https://fr.web.img6.acsta.net/img/74/75/74750df809ce03d9ef93502e9b287402.jpg",
+      "synopsis": "Pour la première fois, Stray Kids investit les salles de cinéma du monde entier avec une projection événement de sa tournée mondiale « Stray Kids World Tour », filmée au Tokyo Dome.",
+      "slots": [
+        {
+          "time": "13:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091504940&part=all"
+        }
+      ]
+    },
+    {
+      "id": "258080",
+      "title": "Hunger Games: la Ballade du serpent et de l'oiseau chanteur",
+      "runtime": "2h 38min",
+      "genres": "Science Fiction • Action",
+      "rating": "3,7",
+      "ratingNum": 3.7,
+      "pressRating": "3,0",
+      "pressCount": 22,
+      "userRating": "3,7",
+      "userCount": 7394,
+      "poster": "https://fr.web.img4.acsta.net/img/83/fd/83fdacdaceb7e25b257d44bef7f6d133.jpg",
+      "synopsis": "Le jeune Coriolanus est le dernier espoir de sa lignée, la famille Snow autrefois riche et fière est aujourd’hui tombée en disgrâce dans un Capitole d'après-guerre. À l’approche des 10ème HUNGER GAMES, il est assigné à contrecœur à être le mentor de Lucy Gray Baird, une tribut originaire du District 12.",
+      "slots": [
+        {
+          "time": "18:00",
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091500015&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000013643",
+      "title": "Mochy",
+      "runtime": "1h 25min",
+      "genres": "Animation",
+      "rating": "3,2",
+      "ratingNum": 3.2,
+      "pressRating": "3,2",
+      "pressCount": 16,
+      "userRating": "3,2",
+      "userCount": 149,
+      "poster": "https://fr.web.img4.acsta.net/img/2e/29/2e292d36aa0d7fc0efb2e1d08578357d.jpg",
+      "synopsis": "Mochy est un jeune chien au grand cœur… mais il n’a pas un physique facile… Ça ne l’empêche pas d’avoir un rêve : participer au concours du plus beau chien.",
+      "slots": [
+        {
+          "time": "10:45",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506958&part=all"
+        },
+        {
+          "time": "13:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506972&part=all"
+        },
+        {
+          "time": "15:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506974&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000023068",
+      "title": "Malfaisante",
+      "runtime": "1h 34min",
+      "genres": "Epouvante-horreur",
+      "rating": "1,9",
+      "ratingNum": 1.9,
+      "pressRating": "2,0",
+      "pressCount": 6,
+      "userRating": "1,9",
+      "userCount": 570,
+      "poster": "https://fr.web.img5.acsta.net/img/9e/c5/9ec5c971224bc443153c1a8da6c73e07.jpg",
+      "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entretient, au cœur de sa propre maison, avec une entité malveillante qui ressemble étrangement à sa propre mère.",
+      "slots": [
+        {
+          "time": "22:00",
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506980&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000040172",
+      "title": "15/18",
+      "runtime": "1h 44min",
+      "genres": "Drame",
+      "rating": "—",
+      "ratingNum": 0.0,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": null,
+      "userCount": 0,
+      "poster": "https://fr.web.img5.acsta.net/img/04/a4/04a4c539c199c806d48c2f2e4eaf6607.jpg",
+      "synopsis": "Lucia, 17 ans, est amenée par la police dans une unité de soins pédopsychiatriques de l’hôpital public. Ici tous les patients ont entre 15 et 18 ans. Lucia connaît l’endroit, elle y a fait de nombreux séjours. Elle retrouve son amie Eloïse, en hospitalisation longue durée, mais aussi Yasmine, Camilia, Ulysse, André… tous ont des pathologies et des parcours différents.",
+      "slots": [
+        {
+          "time": "18:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506992&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000046255",
+      "title": "Roméo et Juliette (Opéra de Paris)",
+      "runtime": "2h 35min",
+      "genres": "Ballet",
+      "rating": "—",
+      "ratingNum": 0.0,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": null,
+      "userCount": 0,
+      "poster": "https://fr.web.img2.acsta.net/img/52/4f/524f18fa05092e02f9cc0ffd728c1123.jpg",
+      "synopsis": "A Vérone, Roméo Montaigu et Juliette Capulet se rencontrent et tombent éperdument amoureux, mais leurs deux familles se vouent une haine ancestrale. Portés par une passion aussi foudroyante qu'impossible, les deux amants se heurtent à un destin tragique qui les réunit pour toujours.",
+      "slots": [
+        {
+          "time": "16:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091496346&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000024131",
+      "title": "Shaun le Mouton : La Bêêête d'Halloween",
+      "runtime": "1h 20min",
+      "genres": "Animation • Famille",
+      "rating": "3,9",
+      "ratingNum": 3.9,
+      "pressRating": "3,9",
+      "pressCount": 18,
+      "userRating": "3,9",
+      "userCount": 269,
+      "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
+      "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
+      "slots": [
+        {
+          "time": "10:30",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506979&part=all"
+        },
+        {
+          "time": "14:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506962&part=all"
+        },
+        {
+          "time": "16:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506977&part=all"
+        }
+      ]
+    },
+    {
+      "id": "194879",
+      "title": "L'Étrange pouvoir de Norman",
+      "runtime": "1h 27min",
+      "genres": "Animation • Aventure",
+      "rating": "3,7",
+      "ratingNum": 3.7,
+      "pressRating": "3,8",
+      "pressCount": 17,
+      "userRating": "3,7",
+      "userCount": 2303,
+      "poster": "https://fr.web.img6.acsta.net/medias/nmedia/18/89/45/25/20135954.jpg",
+      "synopsis": "Norman est un petit garçon qui a la capacité de parler aux morts. Celui-ci va devoir sauver sa ville d'une invasion de zombies.",
+      "slots": [
+        {
+          "time": "11:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091504965&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000030383",
+      "title": "Le Roi du Game",
+      "runtime": "1h 28min",
+      "genres": "Comédie",
+      "rating": "3,2",
+      "ratingNum": 3.2,
+      "pressRating": "2,8",
+      "pressCount": 29,
+      "userRating": "3,2",
+      "userCount": 590,
+      "poster": "https://fr.web.img5.acsta.net/img/21/11/211184243b4ab7c37127ace9ced2e939.jpg",
+      "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette quête improbable pourrait bien le ramener à ses propres rêves oubliés...",
+      "slots": [
+        {
+          "time": "18:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506967&part=all"
+        },
+        {
+          "time": "20:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506969&part=all"
+        },
+        {
+          "time": "22:00",
+          "version": "VF",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506971&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000026649",
+      "title": "The Social Reckoning",
+      "runtime": "1h 52min",
+      "genres": "Drame",
+      "rating": "3,7",
+      "ratingNum": 3.7,
+      "pressRating": "3,1",
+      "pressCount": 30,
+      "userRating": "3,7",
+      "userCount": 1243,
+      "poster": "https://fr.web.img6.acsta.net/img/9e/55/9e553042ac8f31f580cb0540fae60dc4.jpg",
+      "synopsis": "Le film s'inspire de l'histoire vraie d'une jeune ingénieure chez Facebook, qui sollicite l'aide d'un journaliste au Wall Street Journal. Ensemble, ils se lancent dans une enquête pour révéler les secrets les mieux gardés du puissant réseau social.",
+      "slots": [
+        {
+          "time": "19:50",
+          "version": "VOST",
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091506983&part=all"
+        }
+      ]
+    },
+    {
+      "id": "1000044814",
+      "title": "The Irregular at Magic High School : La Succession des Yotsuba",
+      "runtime": "1h 43min",
+      "genres": "Animation",
+      "rating": "—",
+      "ratingNum": 0.0,
+      "pressRating": null,
+      "pressCount": 0,
+      "userRating": null,
+      "userCount": 0,
+      "poster": "https://fr.web.img4.acsta.net/img/8f/67/8f673152a7a36c7fbd84949dd05e8bf2.jpg",
+      "synopsis": "Le deuxième long-métrage de la franchise \"The Irregular at Magic High School\".",
       "slots": [
         {
           "time": "20:00",
           "version": "VOST",
-          "url": "https://www.ugc.fr/reservationSeances.html?id=330091504949&part=all"
+          "url": "https://www.ugc.fr/reservationSeances.html?id=330091505520&part=all"
         }
       ]
     }
   ],
   "byDate": {
-    "2026-11-05": [
-      {
-        "id": "1000036932",
-        "title": "Club Kid",
-        "runtime": "2h 02min",
-        "genres": "Comédie dramatique",
-        "rating": "4,2",
-        "ratingNum": 4.2,
-        "pressRating": "4,2",
-        "pressCount": 35,
-        "userRating": "4,2",
-        "userCount": 139,
-        "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
-        "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
-        "slots": [
-          {
-            "time": "10:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506673&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506666&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506993&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506602&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506595&part=all"
-          }
-        ]
-      },
-      {
-        "id": "323550",
-        "title": "L'Affaire Marie-Claire",
-        "runtime": "1h 42min",
-        "genres": "Thriller • Judiciaire",
-        "rating": "4,2",
-        "ratingNum": 4.2,
-        "pressRating": "3,3",
-        "pressCount": 34,
-        "userRating": "4,2",
-        "userCount": 349,
-        "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
-        "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506437&part=all"
-          },
-          {
-            "time": "13:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506434&part=all"
-          },
-          {
-            "time": "15:40",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506394&part=all"
-          },
-          {
-            "time": "17:50",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506401&part=all"
-          },
-          {
-            "time": "20:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506408&part=all"
-          },
-          {
-            "time": "22:10",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506439&part=all"
-          }
-        ]
-      },
-      {
-        "id": "298024",
-        "title": "Wild Horse Nine",
-        "runtime": "1h 58min",
-        "genres": "Thriller",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,9",
-        "pressCount": 33,
-        "userRating": "4,0",
-        "userCount": 154,
-        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506545&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506963&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506549&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506488&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506420&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000031925",
-        "title": "Un bon patron",
-        "runtime": "1h 27min",
-        "genres": "Comédie",
-        "rating": "3,0",
-        "ratingNum": 3.0,
-        "pressRating": "2,7",
-        "pressCount": 3,
-        "userRating": "3,0",
-        "userCount": 53,
-        "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
-        "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506470&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506477&part=all"
-          },
-          {
-            "time": "16:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506484&part=all"
-          },
-          {
-            "time": "18:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506443&part=all"
-          },
-          {
-            "time": "20:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506451&part=all"
-          },
-          {
-            "time": "22:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506457&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000014492",
-        "title": "Godzilla Minus Zero",
-        "runtime": "2h 15min",
-        "genres": "Science Fiction",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,7",
-        "pressCount": 24,
-        "userRating": "4,0",
-        "userCount": 142,
-        "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
-        "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
-        "slots": [
-          {
-            "time": "10:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506996&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506722&part=all"
-          },
-          {
-            "time": "17:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506716&part=all"
-          },
-          {
-            "time": "20:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506710&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000047396",
-        "title": "Lorie Party 2026 au cinéma",
-        "runtime": "1h 45min",
-        "genres": "Concert",
-        "rating": "3,0",
-        "ratingNum": 3.0,
-        "pressRating": null,
-        "pressCount": 0,
-        "userRating": "3,0",
-        "userCount": 3,
-        "poster": "https://fr.web.img6.acsta.net/img/f9/4e/f94ef029ebe995c277b481578b93a603.jpg",
-        "synopsis": "Lorie signe son grand retour sur scène avec la Lorie Party, le concert événement qui ravive toute l’énergie des années 2000 dans une ambiance euphorique et festive autour des hits « Près de moi », « Je serai (ta meilleure amie) », « Sur un air latino », « La Positive Attitude », « Week-end »…",
-        "slots": [
-          {
-            "time": "20:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091494182&part=all"
-          }
-        ]
-      },
-      {
-        "id": "314882",
-        "title": "Hope",
-        "runtime": "2h 37min",
-        "genres": "Thriller • Science Fiction",
-        "rating": "3,5",
-        "ratingNum": 3.5,
-        "pressRating": "4,1",
-        "pressCount": 36,
-        "userRating": "3,5",
-        "userCount": 1382,
-        "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
-        "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
-        "slots": [
-          {
-            "time": "10:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506512&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506519&part=all"
-          },
-          {
-            "time": "17:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506526&part=all"
-          },
-          {
-            "time": "20:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506510&part=all"
-          }
-        ]
-      },
-      {
-        "id": "326160",
-        "title": "Les Misérables",
-        "runtime": "2h 56min",
-        "genres": "Drame • Historique",
-        "rating": "4,1",
-        "ratingNum": 4.1,
-        "pressRating": "3,1",
-        "pressCount": 38,
-        "userRating": "4,1",
-        "userCount": 3164,
-        "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
-        "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
-        "slots": [
-          {
-            "time": "10:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506588&part=all"
-          },
-          {
-            "time": "13:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506603&part=all"
-          },
-          {
-            "time": "17:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506624&part=all"
-          },
-          {
-            "time": "20:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506617&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000019622",
-        "title": "Le Fantôme de l'Opéra",
-        "runtime": "2h 14min",
-        "genres": "Drame • Romance",
-        "rating": "3,0",
-        "ratingNum": 3.0,
-        "pressRating": "1,6",
-        "pressCount": 7,
-        "userRating": "3,0",
-        "userCount": 630,
-        "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
-        "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
-        "slots": [
-          {
-            "time": "10:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506791&part=all"
-          },
-          {
-            "time": "13:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506784&part=all"
-          },
-          {
-            "time": "16:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506815&part=all"
-          },
-          {
-            "time": "19:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506808&part=all"
-          },
-          {
-            "time": "21:40",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506801&part=all"
-          }
-        ]
-      },
-      {
-        "id": "318225",
-        "title": "La Gradiva",
-        "runtime": "2h 25min",
-        "genres": "Drame • Comédie",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "4,5",
-        "pressCount": 38,
-        "userRating": "4,0",
-        "userCount": 1293,
-        "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
-        "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
-        "slots": [
-          {
-            "time": "10:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506651&part=all"
-          },
-          {
-            "time": "13:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506644&part=all"
-          },
-          {
-            "time": "17:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506637&part=all"
-          },
-          {
-            "time": "20:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506655&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000016901",
-        "title": "Clayface",
-        "runtime": "1h 49min",
-        "genres": "Epouvante-horreur • Thriller",
-        "rating": "3,8",
-        "ratingNum": 3.8,
-        "pressRating": "3,1",
-        "pressCount": 17,
-        "userRating": "3,8",
-        "userCount": 1098,
-        "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
-        "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
-        "slots": [
-          {
-            "time": "10:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506493&part=all"
-          },
-          {
-            "time": "13:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506570&part=all"
-          },
-          {
-            "time": "15:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506500&part=all"
-          },
-          {
-            "time": "17:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506507&part=all"
-          },
-          {
-            "time": "19:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506562&part=all"
-          },
-          {
-            "time": "22:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506576&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000020311",
-        "title": "Moulin",
-        "runtime": "2h 14min",
-        "genres": "Drame • Historique",
-        "rating": "3,5",
-        "ratingNum": 3.5,
-        "pressRating": "3,3",
-        "pressCount": 37,
-        "userRating": "3,5",
-        "userCount": 1296,
-        "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
-        "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506918&part=all"
-          },
-          {
-            "time": "13:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506911&part=all"
-          },
-          {
-            "time": "16:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506904&part=all"
-          },
-          {
-            "time": "19:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506897&part=all"
-          },
-          {
-            "time": "21:40",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506840&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000051934",
-        "title": "Papa où t'es ?",
-        "runtime": "1h 41min",
-        "genres": "Documentaire",
-        "rating": "4,4",
-        "ratingNum": 4.4,
-        "pressRating": "3,1",
-        "pressCount": 13,
-        "userRating": "4,4",
-        "userCount": 515,
-        "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
-        "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506684&part=all"
-          },
-          {
-            "time": "13:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506691&part=all"
-          },
-          {
-            "time": "17:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506769&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000018384",
-        "title": "Karma",
-        "runtime": "2h 20min",
-        "genres": "Thriller • Drame",
-        "rating": "4,1",
-        "ratingNum": 4.1,
-        "pressRating": "3,0",
-        "pressCount": 34,
-        "userRating": "4,1",
-        "userCount": 2208,
-        "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
-        "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
-        "slots": [
-          {
-            "time": "10:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506820&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506888&part=all"
-          },
-          {
-            "time": "17:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506881&part=all"
-          },
-          {
-            "time": "20:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506874&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000036515",
-        "title": "Quelques mots d'amour",
-        "runtime": "1h 37min",
-        "genres": "Comédie dramatique",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,8",
-        "pressCount": 36,
-        "userRating": "4,0",
-        "userCount": 663,
-        "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
-        "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
-        "slots": [
-          {
-            "time": "11:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506833&part=all"
-          },
-          {
-            "time": "13:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506826&part=all"
-          },
-          {
-            "time": "15:50",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506868&part=all"
-          },
-          {
-            "time": "18:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506862&part=all"
-          },
-          {
-            "time": "20:10",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506855&part=all"
-          },
-          {
-            "time": "22:15",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506848&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000024131",
-        "title": "Shaun le Mouton : La Bêêête d'Halloween",
-        "runtime": "1h 20min",
-        "genres": "Animation • Famille",
-        "rating": "3,9",
-        "ratingNum": 3.9,
-        "pressRating": "3,9",
-        "pressCount": 18,
-        "userRating": "3,9",
-        "userCount": 261,
-        "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
-        "slots": [
-          {
-            "time": "13:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091507013&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000023600",
-        "title": "Sanguine",
-        "runtime": "1h 43min",
-        "genres": "Epouvante-horreur",
-        "rating": "3,1",
-        "ratingNum": 3.1,
-        "pressRating": "3,1",
-        "pressCount": 27,
-        "userRating": "3,1",
-        "userCount": 291,
-        "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
-        "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
-        "slots": [
-          {
-            "time": "15:40",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506746&part=all"
-          },
-          {
-            "time": "17:50",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506739&part=all"
-          }
-        ]
-      },
-      {
-        "id": "1000019249",
-        "title": "Ducobu et le fantôme de Saint-Potache",
-        "runtime": "1h 30min",
-        "genres": "Comédie • Famille",
-        "rating": "2,3",
-        "ratingNum": 2.3,
-        "pressRating": "2,5",
-        "pressCount": 11,
-        "userRating": "2,3",
-        "userCount": 280,
-        "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
-        "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
-        "slots": [
-          {
-            "time": "15:45",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506956&part=all"
-          }
-        ]
-      },
-      {
-        "id": "12587",
-        "title": "Safe",
-        "runtime": "1h 59min",
-        "genres": "Drame",
-        "rating": "3,4",
-        "ratingNum": 3.4,
-        "pressRating": null,
-        "pressCount": 0,
-        "userRating": "3,4",
-        "userCount": 150,
-        "poster": "https://fr.web.img6.acsta.net/img/1d/fe/1dfed9d7867585bb7dd807c63d9382a4.jpg",
-        "synopsis": "",
-        "slots": [
-          {
-            "time": "20:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091504949&part=all"
-          }
-        ]
-      }
-    ],
     "2026-11-06": [
       {
         "id": "1000048020",
@@ -1371,12 +998,12 @@
         "title": "Club Kid",
         "runtime": "2h 02min",
         "genres": "Comédie dramatique",
-        "rating": "4,2",
-        "ratingNum": 4.2,
+        "rating": "4,1",
+        "ratingNum": 4.1,
         "pressRating": "4,2",
         "pressCount": 35,
-        "userRating": "4,2",
-        "userCount": 139,
+        "userRating": "4,1",
+        "userCount": 232,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
         "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
@@ -1408,6 +1035,47 @@
         ]
       },
       {
+        "id": "298024",
+        "title": "Wild Horse Nine",
+        "runtime": "1h 58min",
+        "genres": "Thriller",
+        "rating": "4,0",
+        "ratingNum": 4.0,
+        "pressRating": "3,9",
+        "pressCount": 33,
+        "userRating": "4,0",
+        "userCount": 275,
+        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+        "slots": [
+          {
+            "time": "10:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506536&part=all"
+          },
+          {
+            "time": "14:00",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506543&part=all"
+          },
+          {
+            "time": "16:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506550&part=all"
+          },
+          {
+            "time": "19:15",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506557&part=all"
+          },
+          {
+            "time": "21:45",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506421&part=all"
+          }
+        ]
+      },
+      {
         "id": "323550",
         "title": "L'Affaire Marie-Claire",
         "runtime": "1h 42min",
@@ -1417,7 +1085,7 @@
         "pressRating": "3,3",
         "pressCount": 34,
         "userRating": "4,2",
-        "userCount": 349,
+        "userCount": 454,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
         "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
@@ -1454,57 +1122,16 @@
         ]
       },
       {
-        "id": "298024",
-        "title": "Wild Horse Nine",
-        "runtime": "1h 58min",
-        "genres": "Thriller",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,9",
-        "pressCount": 33,
-        "userRating": "4,0",
-        "userCount": 154,
-        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506536&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506543&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506550&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506557&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506421&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000031925",
         "title": "Un bon patron",
         "runtime": "1h 27min",
         "genres": "Comédie",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,5",
+        "ratingNum": 2.5,
         "pressRating": "2,7",
         "pressCount": 3,
-        "userRating": "3,0",
-        "userCount": 53,
+        "userRating": "2,5",
+        "userCount": 87,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -1548,9 +1175,9 @@
         "rating": "4,0",
         "ratingNum": 4.0,
         "pressRating": "3,7",
-        "pressCount": 24,
+        "pressCount": 25,
         "userRating": "4,0",
-        "userCount": 142,
+        "userCount": 223,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
         "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
@@ -1581,12 +1208,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "—",
-        "ratingNum": 0.0,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": null,
         "pressCount": 0,
-        "userRating": null,
-        "userCount": 0,
+        "userRating": "3,4",
+        "userCount": 11,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -1602,12 +1229,12 @@
         "title": "Rammstein - Live in Mexico City",
         "runtime": "1h 54min",
         "genres": "Concert",
-        "rating": "—",
-        "ratingNum": 0.0,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": null,
         "pressCount": 0,
-        "userRating": null,
-        "userCount": 0,
+        "userRating": "3,4",
+        "userCount": 2,
         "poster": "https://fr.web.img4.acsta.net/img/e1/3d/e13dc3f4068ce0e5c855d3223a9a54fd.jpg",
         "synopsis": "Tourné sur trois soirées à guichets fermés au Foro Sol, d’une capacité de 65 000 spectateurs, Rammstein – Live in Mexico City capture l’une des performances emblématiques de la monumentale tournée mondiale des stades du groupe, qui s’est étendue sur cinq ans.",
         "slots": [
@@ -1623,12 +1250,12 @@
         "title": "Hope",
         "runtime": "2h 37min",
         "genres": "Thriller • Science Fiction",
-        "rating": "3,5",
-        "ratingNum": 3.5,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": "4,1",
         "pressCount": 36,
-        "userRating": "3,5",
-        "userCount": 1382,
+        "userRating": "3,4",
+        "userCount": 1461,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
         "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
@@ -1664,7 +1291,7 @@
         "pressRating": "3,1",
         "pressCount": 38,
         "userRating": "4,1",
-        "userCount": 3164,
+        "userCount": 3213,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
         "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
@@ -1695,12 +1322,12 @@
         "title": "Le Fantôme de l'Opéra",
         "runtime": "2h 14min",
         "genres": "Drame • Romance",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,9",
+        "ratingNum": 2.9,
         "pressRating": "1,6",
         "pressCount": 7,
-        "userRating": "3,0",
-        "userCount": 630,
+        "userRating": "2,9",
+        "userCount": 656,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
         "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
@@ -1741,7 +1368,7 @@
         "pressRating": "4,5",
         "pressCount": 38,
         "userRating": "4,0",
-        "userCount": 1293,
+        "userCount": 1337,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
         "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
@@ -1767,7 +1394,7 @@
         "pressRating": "3,1",
         "pressCount": 17,
         "userRating": "3,8",
-        "userCount": 1098,
+        "userCount": 1120,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
         "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
@@ -1813,7 +1440,7 @@
         "pressRating": "3,3",
         "pressCount": 37,
         "userRating": "3,5",
-        "userCount": 1296,
+        "userCount": 1354,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
         "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
@@ -1854,7 +1481,7 @@
         "pressRating": "3,1",
         "pressCount": 13,
         "userRating": "4,4",
-        "userCount": 515,
+        "userCount": 533,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
         "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
@@ -1885,7 +1512,7 @@
         "pressRating": "3,0",
         "pressCount": 34,
         "userRating": "4,1",
-        "userCount": 2268,
+        "userCount": 2290,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
         "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
@@ -1921,7 +1548,7 @@
         "pressRating": "3,8",
         "pressCount": 36,
         "userRating": "4,0",
-        "userCount": 696,
+        "userCount": 710,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
         "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
@@ -1962,7 +1589,7 @@
         "pressRating": "3,1",
         "pressCount": 27,
         "userRating": "3,1",
-        "userCount": 297,
+        "userCount": 303,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
         "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
@@ -1998,7 +1625,7 @@
         "pressRating": "3,9",
         "pressCount": 26,
         "userRating": "4,5",
-        "userCount": 223,
+        "userCount": 224,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
         "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
@@ -2019,7 +1646,7 @@
         "pressRating": "3,5",
         "pressCount": 11,
         "userRating": "3,9",
-        "userCount": 391,
+        "userCount": 392,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
         "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
@@ -2040,7 +1667,7 @@
         "pressRating": "2,5",
         "pressCount": 11,
         "userRating": "2,3",
-        "userCount": 283,
+        "userCount": 286,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
         "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
@@ -2063,7 +1690,7 @@
         "pressRating": "4,2",
         "pressCount": 35,
         "userRating": "4,2",
-        "userCount": 139,
+        "userCount": 282,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
         "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
@@ -2095,6 +1722,47 @@
         ]
       },
       {
+        "id": "298024",
+        "title": "Wild Horse Nine",
+        "runtime": "1h 58min",
+        "genres": "Thriller",
+        "rating": "4,0",
+        "ratingNum": 4.0,
+        "pressRating": "3,9",
+        "pressCount": 33,
+        "userRating": "4,0",
+        "userCount": 343,
+        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+        "slots": [
+          {
+            "time": "10:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506537&part=all"
+          },
+          {
+            "time": "14:00",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506544&part=all"
+          },
+          {
+            "time": "16:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506551&part=all"
+          },
+          {
+            "time": "19:15",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506487&part=all"
+          },
+          {
+            "time": "21:45",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506422&part=all"
+          }
+        ]
+      },
+      {
         "id": "323550",
         "title": "L'Affaire Marie-Claire",
         "runtime": "1h 42min",
@@ -2104,7 +1772,7 @@
         "pressRating": "3,3",
         "pressCount": 34,
         "userRating": "4,2",
-        "userCount": 349,
+        "userCount": 499,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
         "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
@@ -2141,57 +1809,16 @@
         ]
       },
       {
-        "id": "298024",
-        "title": "Wild Horse Nine",
-        "runtime": "1h 58min",
-        "genres": "Thriller",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,9",
-        "pressCount": 33,
-        "userRating": "4,0",
-        "userCount": 154,
-        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506537&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506544&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506551&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506487&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506422&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000031925",
         "title": "Un bon patron",
         "runtime": "1h 27min",
         "genres": "Comédie",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,3",
+        "ratingNum": 2.3,
         "pressRating": "2,7",
         "pressCount": 3,
-        "userRating": "3,0",
-        "userCount": 53,
+        "userRating": "2,3",
+        "userCount": 94,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -2235,9 +1862,9 @@
         "rating": "4,0",
         "ratingNum": 4.0,
         "pressRating": "3,7",
-        "pressCount": 24,
+        "pressCount": 25,
         "userRating": "4,0",
-        "userCount": 142,
+        "userCount": 282,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
         "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
@@ -2289,12 +1916,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "—",
-        "ratingNum": 0.0,
+        "rating": "3,5",
+        "ratingNum": 3.5,
         "pressRating": null,
         "pressCount": 0,
-        "userRating": null,
-        "userCount": 0,
+        "userRating": "3,5",
+        "userCount": 17,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -2315,7 +1942,7 @@
         "pressRating": "3,0",
         "pressCount": 22,
         "userRating": "3,7",
-        "userCount": 7381,
+        "userCount": 7394,
         "poster": "https://fr.web.img4.acsta.net/img/83/fd/83fdacdaceb7e25b257d44bef7f6d133.jpg",
         "synopsis": "Le jeune Coriolanus est le dernier espoir de sa lignée, la famille Snow autrefois riche et fière est aujourd’hui tombée en disgrâce dans un Capitole d'après-guerre. À l’approche des 10ème HUNGER GAMES, il est assigné à contrecœur à être le mentor de Lucy Gray Baird, une tribut originaire du District 12.",
         "slots": [
@@ -2331,12 +1958,12 @@
         "title": "Hope",
         "runtime": "2h 37min",
         "genres": "Thriller • Science Fiction",
-        "rating": "3,5",
-        "ratingNum": 3.5,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": "4,1",
         "pressCount": 36,
-        "userRating": "3,5",
-        "userCount": 1382,
+        "userRating": "3,4",
+        "userCount": 1505,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
         "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
@@ -2372,7 +1999,7 @@
         "pressRating": "3,1",
         "pressCount": 38,
         "userRating": "4,1",
-        "userCount": 3164,
+        "userCount": 3249,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
         "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
@@ -2398,12 +2025,12 @@
         "title": "Le Fantôme de l'Opéra",
         "runtime": "2h 14min",
         "genres": "Drame • Romance",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,9",
+        "ratingNum": 2.9,
         "pressRating": "1,6",
         "pressCount": 7,
-        "userRating": "3,0",
-        "userCount": 630,
+        "userRating": "2,9",
+        "userCount": 684,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
         "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
@@ -2444,7 +2071,7 @@
         "pressRating": "3,1",
         "pressCount": 17,
         "userRating": "3,8",
-        "userCount": 1098,
+        "userCount": 1136,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
         "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
@@ -2490,7 +2117,7 @@
         "pressRating": "3,3",
         "pressCount": 37,
         "userRating": "3,5",
-        "userCount": 1296,
+        "userCount": 1392,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
         "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
@@ -2526,12 +2153,12 @@
         "title": "L'île des souvenirs",
         "runtime": "1h 48min",
         "genres": "Animation • Comédie",
-        "rating": "3,8",
-        "ratingNum": 3.8,
+        "rating": "3,9",
+        "ratingNum": 3.9,
         "pressRating": "3,5",
         "pressCount": 11,
-        "userRating": "3,8",
-        "userCount": 384,
+        "userRating": "3,9",
+        "userCount": 395,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
         "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
@@ -2562,7 +2189,7 @@
         "pressRating": "3,0",
         "pressCount": 34,
         "userRating": "4,1",
-        "userCount": 2208,
+        "userCount": 2333,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
         "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
@@ -2629,7 +2256,7 @@
         "pressRating": "3,9",
         "pressCount": 26,
         "userRating": "4,5",
-        "userCount": 223,
+        "userCount": 225,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
         "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
@@ -2660,7 +2287,7 @@
         "pressRating": "2,5",
         "pressCount": 11,
         "userRating": "2,3",
-        "userCount": 283,
+        "userCount": 286,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
         "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
@@ -2682,37 +2309,16 @@
         ]
       },
       {
-        "id": "1000024131",
-        "title": "Shaun le Mouton : La Bêêête d'Halloween",
-        "runtime": "1h 20min",
-        "genres": "Animation • Famille",
-        "rating": "3,9",
-        "ratingNum": 3.9,
-        "pressRating": "3,9",
-        "pressCount": 18,
-        "userRating": "3,9",
-        "userCount": 264,
-        "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
-        "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
-        "slots": [
-          {
-            "time": "16:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506976&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000051934",
         "title": "Papa où t'es ?",
         "runtime": "1h 41min",
         "genres": "Documentaire",
-        "rating": "4,4",
-        "ratingNum": 4.4,
+        "rating": "4,3",
+        "ratingNum": 4.3,
         "pressRating": "3,1",
         "pressCount": 13,
-        "userRating": "4,4",
-        "userCount": 527,
+        "userRating": "4,3",
+        "userCount": 542,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
         "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
@@ -2743,7 +2349,7 @@
         "pressRating": "3,1",
         "pressCount": 27,
         "userRating": "3,1",
-        "userCount": 297,
+        "userCount": 305,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
         "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
@@ -2774,7 +2380,7 @@
         "pressRating": "4,5",
         "pressCount": 38,
         "userRating": "4,0",
-        "userCount": 1326,
+        "userCount": 1368,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
         "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
@@ -2800,7 +2406,7 @@
         "pressRating": "3,8",
         "pressCount": 36,
         "userRating": "4,0",
-        "userCount": 698,
+        "userCount": 728,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
         "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
@@ -2822,37 +2428,6 @@
         ]
       },
       {
-        "id": "1000030383",
-        "title": "Le Roi du Game",
-        "runtime": "1h 28min",
-        "genres": "Comédie",
-        "rating": "3,2",
-        "ratingNum": 3.2,
-        "pressRating": "2,8",
-        "pressCount": 29,
-        "userRating": "3,2",
-        "userCount": 583,
-        "poster": "https://fr.web.img5.acsta.net/img/21/11/211184243b4ab7c37127ace9ced2e939.jpg",
-        "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette quête improbable pourrait bien le ramener à ses propres rêves oubliés...",
-        "slots": [
-          {
-            "time": "18:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506966&part=all"
-          },
-          {
-            "time": "20:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506968&part=all"
-          },
-          {
-            "time": "22:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506970&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000023068",
         "title": "Malfaisante",
         "runtime": "1h 34min",
@@ -2862,7 +2437,7 @@
         "pressRating": "2,0",
         "pressCount": 6,
         "userRating": "1,9",
-        "userCount": 568,
+        "userCount": 570,
         "poster": "https://fr.web.img5.acsta.net/img/9e/c5/9ec5c971224bc443153c1a8da6c73e07.jpg",
         "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entretient, au cœur de sa propre maison, avec une entité malveillante qui ressemble étrangement à sa propre mère.",
         "slots": [
@@ -2906,7 +2481,7 @@
         "pressRating": "4,2",
         "pressCount": 35,
         "userRating": "4,2",
-        "userCount": 139,
+        "userCount": 279,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
         "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
@@ -2938,6 +2513,47 @@
         ]
       },
       {
+        "id": "298024",
+        "title": "Wild Horse Nine",
+        "runtime": "1h 58min",
+        "genres": "Thriller",
+        "rating": "4,0",
+        "ratingNum": 4.0,
+        "pressRating": "3,9",
+        "pressCount": 33,
+        "userRating": "4,0",
+        "userCount": 343,
+        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+        "slots": [
+          {
+            "time": "10:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506538&part=all"
+          },
+          {
+            "time": "14:00",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506546&part=all"
+          },
+          {
+            "time": "16:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506552&part=all"
+          },
+          {
+            "time": "19:15",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506462&part=all"
+          },
+          {
+            "time": "21:45",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506423&part=all"
+          }
+        ]
+      },
+      {
         "id": "323550",
         "title": "L'Affaire Marie-Claire",
         "runtime": "1h 42min",
@@ -2947,7 +2563,7 @@
         "pressRating": "3,3",
         "pressCount": 34,
         "userRating": "4,2",
-        "userCount": 349,
+        "userCount": 494,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
         "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
@@ -2984,57 +2600,16 @@
         ]
       },
       {
-        "id": "298024",
-        "title": "Wild Horse Nine",
-        "runtime": "1h 58min",
-        "genres": "Thriller",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,9",
-        "pressCount": 33,
-        "userRating": "4,0",
-        "userCount": 154,
-        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506538&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506546&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506552&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506462&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506423&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000031925",
         "title": "Un bon patron",
         "runtime": "1h 27min",
         "genres": "Comédie",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,4",
+        "ratingNum": 2.4,
         "pressRating": "2,7",
         "pressCount": 3,
-        "userRating": "3,0",
-        "userCount": 53,
+        "userRating": "2,4",
+        "userCount": 93,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -3078,9 +2653,9 @@
         "rating": "4,0",
         "ratingNum": 4.0,
         "pressRating": "3,7",
-        "pressCount": 24,
+        "pressCount": 25,
         "userRating": "4,0",
-        "userCount": 142,
+        "userCount": 282,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
         "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
@@ -3111,12 +2686,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "—",
-        "ratingNum": 0.0,
+        "rating": "3,5",
+        "ratingNum": 3.5,
         "pressRating": null,
         "pressCount": 0,
-        "userRating": null,
-        "userCount": 0,
+        "userRating": "3,5",
+        "userCount": 16,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -3153,12 +2728,12 @@
         "title": "Hope",
         "runtime": "2h 37min",
         "genres": "Thriller • Science Fiction",
-        "rating": "3,5",
-        "ratingNum": 3.5,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": "4,1",
         "pressCount": 36,
-        "userRating": "3,5",
-        "userCount": 1382,
+        "userRating": "3,4",
+        "userCount": 1505,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
         "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
@@ -3194,7 +2769,7 @@
         "pressRating": "3,1",
         "pressCount": 38,
         "userRating": "4,1",
-        "userCount": 3164,
+        "userCount": 3246,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
         "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
@@ -3225,12 +2800,12 @@
         "title": "Le Fantôme de l'Opéra",
         "runtime": "2h 14min",
         "genres": "Drame • Romance",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,9",
+        "ratingNum": 2.9,
         "pressRating": "1,6",
         "pressCount": 7,
-        "userRating": "3,0",
-        "userCount": 630,
+        "userRating": "2,9",
+        "userCount": 682,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
         "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
@@ -3271,7 +2846,7 @@
         "pressRating": "3,1",
         "pressCount": 17,
         "userRating": "3,8",
-        "userCount": 1098,
+        "userCount": 1136,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
         "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
@@ -3317,7 +2892,7 @@
         "pressRating": "3,3",
         "pressCount": 37,
         "userRating": "3,5",
-        "userCount": 1296,
+        "userCount": 1391,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
         "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
@@ -3353,12 +2928,12 @@
         "title": "L'île des souvenirs",
         "runtime": "1h 48min",
         "genres": "Animation • Comédie",
-        "rating": "3,8",
-        "ratingNum": 3.8,
+        "rating": "3,9",
+        "ratingNum": 3.9,
         "pressRating": "3,5",
         "pressCount": 11,
-        "userRating": "3,8",
-        "userCount": 384,
+        "userRating": "3,9",
+        "userCount": 394,
         "poster": "https://fr.web.img6.acsta.net/img/56/7e/567e74d867a1c88b20897c5d7f92d4dd.jpg",
         "synopsis": "Tandis qu’elles fêtent leur dernière soirée ensemble, deux meilleures amies tombent sur un portail mystérieux qui les emmène sur l’île fantastique de Nakali, peuplée de créatures féeriques et mythologiques, tout droit sorties des contes philippins de leur enfance.",
         "slots": [
@@ -3389,7 +2964,7 @@
         "pressRating": "3,9",
         "pressCount": 18,
         "userRating": "3,9",
-        "userCount": 261,
+        "userCount": 269,
         "poster": "https://fr.web.img6.acsta.net/img/4f/da/4fda4090f417ac9b0e78ccc48f43ea2c.jpg",
         "synopsis": "A Halloween, les habitants de la ferme de Mossy Bottom se réjouissent des festivités, jusqu’à ce que le Fermier maladroit saccage les citrouilles bien-aimées du troupeau. Lorsque Shaun se transforme en scientifique fou pour résoudre le problème, les choses dérapent : le Fermier disparaît et une bête sauvage rôde dans les bois.",
         "slots": [
@@ -3420,7 +2995,7 @@
         "pressRating": "3,0",
         "pressCount": 34,
         "userRating": "4,1",
-        "userCount": 2268,
+        "userCount": 2333,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
         "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
@@ -3482,7 +3057,7 @@
         "pressRating": "3,9",
         "pressCount": 26,
         "userRating": "4,5",
-        "userCount": 223,
+        "userCount": 225,
         "poster": "https://fr.web.img6.acsta.net/img/37/8b/378b27edb6f6e4af9118a32aa23bce23.jpg",
         "synopsis": "Lucy vit avec sa famille dans un village sur une petite île isolée. Ses dons extraordinaires suscitent le rejet des habitants. Lorsqu'elle rencontre Milly - une petite fille qu'elle seule peut voir - Lucy embarque dans une grande aventure pour percer le secret de ses mystérieux pouvoirs.",
         "slots": [
@@ -3513,7 +3088,7 @@
         "pressRating": "2,5",
         "pressCount": 11,
         "userRating": "2,3",
-        "userCount": 283,
+        "userCount": 286,
         "poster": "https://fr.web.img6.acsta.net/img/54/16/54167f9b523fff67b07b2e80f5f9dd71.jpg",
         "synopsis": "C’est Halloween, et Ducobu revient pour une aventure pleine de rires et de mystères ! Le professeur Latouche et Mademoiselle Rateau emménagent dans une maison… hantée par le ​ fantôme d'Anatole, le plus grand cancre de l’histoire de l’école Saint-Potache.",
         "slots": [
@@ -3560,12 +3135,12 @@
         "title": "Papa où t'es ?",
         "runtime": "1h 41min",
         "genres": "Documentaire",
-        "rating": "4,4",
-        "ratingNum": 4.4,
+        "rating": "4,3",
+        "ratingNum": 4.3,
         "pressRating": "3,1",
         "pressCount": 13,
-        "userRating": "4,4",
-        "userCount": 527,
+        "userRating": "4,3",
+        "userCount": 542,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
         "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
@@ -3596,7 +3171,7 @@
         "pressRating": "4,5",
         "pressCount": 38,
         "userRating": "4,0",
-        "userCount": 1326,
+        "userCount": 1368,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
         "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
@@ -3622,7 +3197,7 @@
         "pressRating": "3,8",
         "pressCount": 36,
         "userRating": "4,0",
-        "userCount": 698,
+        "userCount": 727,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
         "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
@@ -3653,7 +3228,7 @@
         "pressRating": "2,8",
         "pressCount": 29,
         "userRating": "3,2",
-        "userCount": 583,
+        "userCount": 590,
         "poster": "https://fr.web.img5.acsta.net/img/21/11/211184243b4ab7c37127ace9ced2e939.jpg",
         "synopsis": "Alexandre est prêt à tout pour renouer avec sa fille. Quitte à infiltrer une équipe de bras cassés dans un univers de jeu médiéval-fantastique. Cette quête improbable pourrait bien le ramener à ses propres rêves oubliés...",
         "slots": [
@@ -3684,7 +3259,7 @@
         "pressRating": "3,1",
         "pressCount": 30,
         "userRating": "3,7",
-        "userCount": 1239,
+        "userCount": 1243,
         "poster": "https://fr.web.img6.acsta.net/img/9e/55/9e553042ac8f31f580cb0540fae60dc4.jpg",
         "synopsis": "Le film s'inspire de l'histoire vraie d'une jeune ingénieure chez Facebook, qui sollicite l'aide d'un journaliste au Wall Street Journal. Ensemble, ils se lancent dans une enquête pour révéler les secrets les mieux gardés du puissant réseau social.",
         "slots": [
@@ -3705,7 +3280,7 @@
         "pressRating": "3,1",
         "pressCount": 27,
         "userRating": "3,1",
-        "userCount": 297,
+        "userCount": 305,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
         "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
@@ -3726,7 +3301,7 @@
         "pressRating": "2,0",
         "pressCount": 6,
         "userRating": "1,9",
-        "userCount": 568,
+        "userCount": 570,
         "poster": "https://fr.web.img5.acsta.net/img/9e/c5/9ec5c971224bc443153c1a8da6c73e07.jpg",
         "synopsis": "MALFAISANTE nous entraine dans l’univers de la très jeune Bela, dont le quotidien se détériore de jour en jour en raison de la relation qu’elle entretient, au cœur de sa propre maison, avec une entité malveillante qui ressemble étrangement à sa propre mère.",
         "slots": [
@@ -3749,7 +3324,7 @@
         "pressRating": "4,2",
         "pressCount": 35,
         "userRating": "4,2",
-        "userCount": 139,
+        "userCount": 279,
         "poster": "https://fr.web.img4.acsta.net/img/13/ce/13ce08b4b1cd5a6f30247161eea15143.jpg",
         "synopsis": "Peter (Jordan Firstman), organisateur de soirées branchées à New York, mène une existence aussi effrénée qu’insouciante, rythmée par les nuits festives et les excès. Sa vie bascule lorsqu'Arlo, le fils de 10 ans dont il ignorait l'existence, frappe à sa porte. Dépassé par ce rôle de père qu'il n'avait jamais envisagé, il est rapidement conquis par le charme et la spontanéité de l’enfant. Au fil du temps, un lien aussi inattendu que profond se tisse entre eux, et Peter découvre enfin qu’il existe une vie au-delà de la prochaine fête.",
         "slots": [
@@ -3781,6 +3356,47 @@
         ]
       },
       {
+        "id": "298024",
+        "title": "Wild Horse Nine",
+        "runtime": "1h 58min",
+        "genres": "Thriller",
+        "rating": "4,0",
+        "ratingNum": 4.0,
+        "pressRating": "3,9",
+        "pressCount": 33,
+        "userRating": "4,0",
+        "userCount": 343,
+        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
+        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
+        "slots": [
+          {
+            "time": "10:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506539&part=all"
+          },
+          {
+            "time": "14:00",
+            "version": "VF",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506964&part=all"
+          },
+          {
+            "time": "16:30",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506553&part=all"
+          },
+          {
+            "time": "19:15",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506417&part=all"
+          },
+          {
+            "time": "21:45",
+            "version": "VOST",
+            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506424&part=all"
+          }
+        ]
+      },
+      {
         "id": "323550",
         "title": "L'Affaire Marie-Claire",
         "runtime": "1h 42min",
@@ -3790,7 +3406,7 @@
         "pressRating": "3,3",
         "pressCount": 34,
         "userRating": "4,2",
-        "userCount": 349,
+        "userCount": 494,
         "poster": "https://fr.web.img2.acsta.net/img/4a/3c/4a3cf95bb345d5d71bdc7acf3430323b.jpg",
         "synopsis": "Novembre 1972. Au tribunal de Bobigny, un procès hors norme secoue la France entière. Marie-Claire Chevalier, 16 ans, est accusée d’avoir avorté illégalement. À la barre, sa mère et toutes les femmes qui l’ont aidée. Leur avocate, Gisèle Halimi, fait un pari fou, insensé : elle leur demande de ne pas plaider coupable. Gisèle va faire ce qui n’a jamais été fait auparavant, elle va accuser et attaquer la loi, au risque de tout perdre.",
         "slots": [
@@ -3827,57 +3443,16 @@
         ]
       },
       {
-        "id": "298024",
-        "title": "Wild Horse Nine",
-        "runtime": "1h 58min",
-        "genres": "Thriller",
-        "rating": "4,0",
-        "ratingNum": 4.0,
-        "pressRating": "3,9",
-        "pressCount": 33,
-        "userRating": "4,0",
-        "userCount": 154,
-        "poster": "https://fr.web.img5.acsta.net/img/19/2c/192c21b88207a32bb9c1a043c51f053b.jpg",
-        "synopsis": "Peu avant le coup d'État chilien de 1973, deux agents de la CIA, Chris et Lee, sont envoyés de Santiago vers l'île de Pâques par leur supérieur, MJ. Au milieu des statues emblématiques de l'île, tandis que ces partenaires de longue date sont confrontés à leur sombre passé et aux complots en cours, Chris noue une relation avec deux étudiantes rebelles qui menace de faire basculer dans le chaos leur séjour dans ce paradis isolé…",
-        "slots": [
-          {
-            "time": "10:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506539&part=all"
-          },
-          {
-            "time": "14:00",
-            "version": "VF",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506964&part=all"
-          },
-          {
-            "time": "16:30",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506553&part=all"
-          },
-          {
-            "time": "19:15",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506417&part=all"
-          },
-          {
-            "time": "21:45",
-            "version": "VOST",
-            "url": "https://www.ugc.fr/reservationSeances.html?id=330091506424&part=all"
-          }
-        ]
-      },
-      {
         "id": "1000031925",
         "title": "Un bon patron",
         "runtime": "1h 27min",
         "genres": "Comédie",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,4",
+        "ratingNum": 2.4,
         "pressRating": "2,7",
         "pressCount": 3,
-        "userRating": "3,0",
-        "userCount": 53,
+        "userRating": "2,4",
+        "userCount": 93,
         "poster": "https://fr.web.img5.acsta.net/img/e0/fa/e0fa1b691ed74bcdc54a9761aa33dbb4.jpg",
         "synopsis": "En quelques jours seulement, tout semble virer à la catastrophe pour Antoine Blanchet, héritier de l’ancestrale fabrique familiale de balances.",
         "slots": [
@@ -3921,9 +3496,9 @@
         "rating": "4,0",
         "ratingNum": 4.0,
         "pressRating": "3,7",
-        "pressCount": 24,
+        "pressCount": 25,
         "userRating": "4,0",
-        "userCount": 142,
+        "userCount": 282,
         "poster": "https://fr.web.img6.acsta.net/img/62/57/625799426a89e53445b5fb0b842cd241.jpg",
         "synopsis": "La guerre a détruit le Japon. Godzilla a réduit ses ultimes espoirs à zéro. Deux ans ont passé. Alors que l’humanité commence enfin à renouer avec une paix difficilement acquise, une nouvelle menace surgit et anéantit tout espoir en un instant.",
         "slots": [
@@ -3954,12 +3529,12 @@
         "title": "Ramayana : L'avènement d'une légende",
         "runtime": "3h 15min",
         "genres": "Action • Aventure",
-        "rating": "—",
-        "ratingNum": 0.0,
+        "rating": "3,5",
+        "ratingNum": 3.5,
         "pressRating": null,
         "pressCount": 0,
-        "userRating": null,
-        "userCount": 0,
+        "userRating": "3,5",
+        "userCount": 16,
         "poster": "https://fr.web.img6.acsta.net/img/9f/94/9f9441504c3da3a4469548e15ba9cb3d.jpg",
         "synopsis": "",
         "slots": [
@@ -3975,12 +3550,12 @@
         "title": "Hope",
         "runtime": "2h 37min",
         "genres": "Thriller • Science Fiction",
-        "rating": "3,5",
-        "ratingNum": 3.5,
+        "rating": "3,4",
+        "ratingNum": 3.4,
         "pressRating": "4,1",
         "pressCount": 36,
-        "userRating": "3,5",
-        "userCount": 1382,
+        "userRating": "3,4",
+        "userCount": 1505,
         "poster": "https://fr.web.img2.acsta.net/img/37/eb/37eb88a0ce51e0295cac6fca4884a609.jpg",
         "synopsis": "Au poste de police de Hope, Bum-seok et Sung-ae se démènent pour défendre leur village à la population vieillissante. Pendant ce temps, Sung-ki et ses amis partent à la poursuite de la bête dans la montagne mais se retrouvent eux-mêmes pris pour cible.",
         "slots": [
@@ -4016,7 +3591,7 @@
         "pressRating": "3,1",
         "pressCount": 38,
         "userRating": "4,1",
-        "userCount": 3164,
+        "userCount": 3246,
         "poster": "https://fr.web.img4.acsta.net/img/5a/41/5a4186d62d534f2da65c2e9e8e822a34.jpg",
         "synopsis": "Libéré après 19 ans de bagne pour le vol d’un pain, Jean Valjean décide de changer de vie et de faire le bien autour de lui. Sous une fausse identité, il devient avec le temps un notable respecté de tous. Mais son passé le rattrape...",
         "slots": [
@@ -4047,12 +3622,12 @@
         "title": "Le Fantôme de l'Opéra",
         "runtime": "2h 14min",
         "genres": "Drame • Romance",
-        "rating": "3,0",
-        "ratingNum": 3.0,
+        "rating": "2,9",
+        "ratingNum": 2.9,
         "pressRating": "1,6",
         "pressCount": 7,
-        "userRating": "3,0",
-        "userCount": 630,
+        "userRating": "2,9",
+        "userCount": 682,
         "poster": "https://fr.web.img6.acsta.net/img/9e/85/9e85825c32a9d2be8135074c9e45c870.jpg",
         "synopsis": "Dans le Paris d'aujourd'hui, Anastasia, jeune danseuse, intègre le prestigieux Opéra de Paris. Alors qu’elle répète l'Orpheus, un opéra maudit qui aurait été composé par le Fantôme de l'Opéra, elle tombe amoureuse d'un mystérieux pianiste.",
         "slots": [
@@ -4093,7 +3668,7 @@
         "pressRating": "4,5",
         "pressCount": 38,
         "userRating": "4,0",
-        "userCount": 1293,
+        "userCount": 1368,
         "poster": "https://fr.web.img4.acsta.net/img/23/a7/23a7c2106f6141b87e1381da3beaf635.jpg",
         "synopsis": "Un groupe de lycéens français part en voyage scolaire à Naples pour découvrir les ruines de Pompéi et ses corps pétrifiés par le Vésuve. C’est là que le vertige les saisit brutalement. L’un après l’autre, ils se laissent submerger par le désir et la colère jusqu’à s’y abandonner complètement.",
         "slots": [
@@ -4124,7 +3699,7 @@
         "pressRating": "3,1",
         "pressCount": 17,
         "userRating": "3,8",
-        "userCount": 1098,
+        "userCount": 1136,
         "poster": "https://fr.web.img6.acsta.net/img/98/f1/98f14da258dd56c0ff1bcb12a4929e85.jpg",
         "synopsis": "Star hollywoodienne en pleine ascension, Matt Hagen se retrouve atrocement défiguré par un baron du crime. Il se tourne vers un traitement expérimental qui lui rend miraculeusement son apparence… mais altère profondément sa perception de la réalité.",
         "slots": [
@@ -4170,7 +3745,7 @@
         "pressRating": "3,3",
         "pressCount": 37,
         "userRating": "3,5",
-        "userCount": 1296,
+        "userCount": 1391,
         "poster": "https://fr.web.img6.acsta.net/img/0f/7f/0f7fb216155bf7bcf7bb69d9e2f65310.jpg",
         "synopsis": "Juin 1943, Jean Moulin, chef de la Résistance, est arrêté alors qu'il tente de réunifier les forces de l’Armée Secrète. Interrogé par Klaus Barbie, le chef de la Gestapo de Lyon, Moulin est entraîné dans une confrontation implacable.",
         "slots": [
@@ -4206,12 +3781,12 @@
         "title": "Papa où t'es ?",
         "runtime": "1h 41min",
         "genres": "Documentaire",
-        "rating": "4,4",
-        "ratingNum": 4.4,
+        "rating": "4,3",
+        "ratingNum": 4.3,
         "pressRating": "3,1",
         "pressCount": 13,
-        "userRating": "4,4",
-        "userCount": 515,
+        "userRating": "4,3",
+        "userCount": 542,
         "poster": "https://fr.web.img2.acsta.net/img/2d/5b/2d5be7939e2b342391de951db5694ca7.jpg",
         "synopsis": "À 27 ans, Nicolas n’a presque aucun souvenir de son enfance et n’a jamais connu son père. Décidé à le retrouver, il récupère son dossier de l’Aide sociale à l’enfance et se lance sur sa trace.",
         "slots": [
@@ -4247,7 +3822,7 @@
         "pressRating": "3,0",
         "pressCount": 34,
         "userRating": "4,1",
-        "userCount": 2208,
+        "userCount": 2333,
         "poster": "https://fr.web.img2.acsta.net/img/94/0a/940afff3ed3b09677bf94e2bc7c3009b.jpg",
         "synopsis": "Dans un village au nord de l’Espagne, Jeanne tente de reconstruire sa vie avec Daniel, qui ne connaît rien de son passé trouble. Un jour, Mateo, le filleul de Jeanne âgé de six ans, disparaît mystérieusement… Afin d’échapper à la police qui la soupçonne rapidement, Jeanne se réfugie en France dans la communauté où elle est née et qu’elle a fuie quelques années auparavant. Daniel ne croit pas à la culpabilité de la femme qu’il aime et va tout faire pour la retrouver avant la police.",
         "slots": [
@@ -4283,7 +3858,7 @@
         "pressRating": "3,8",
         "pressCount": 36,
         "userRating": "4,0",
-        "userCount": 663,
+        "userCount": 727,
         "poster": "https://fr.web.img4.acsta.net/img/d2/e4/d2e423fe953024eca9f0ebb7b2552db2.jpg",
         "synopsis": "Sarcelles, 1995. Erika élève seule ses deux enfants. Sa fille Abigaëlle se persuade que son père, qu’elle n’a jamais connu, l’aime en silence quelque part. Lorsqu’elle se met en tête de le retrouver, Erika se sent obligée de l’aider, tout en cherchant à la protéger. En grandissant, la quête d’Abigaëlle se transforme en obsession, entraînant avec elle sa mère, sa meilleure amie, et tous ceux qui comptent.",
         "slots": [
@@ -4329,7 +3904,7 @@
         "pressRating": "3,1",
         "pressCount": 27,
         "userRating": "3,1",
-        "userCount": 297,
+        "userCount": 305,
         "poster": "https://fr.web.img3.acsta.net/img/cb/93/cb93a3a86bd02e7b49e976435d28d3fb.jpg",
         "synopsis": "Margot débute son internat aux urgences, où elle peine à s’adapter. Très vite, elle fait face à des patients de son âge aux symptômes inexpliqués. La récurrence de ces cas exceptionnels l’interroge, d’autant qu’elle observe, sur son propre corps, des manifestations de plus en plus inquiétantes…",
         "slots": [
